@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -17,7 +16,6 @@ public class GameController : MonoBehaviour
     [SerializeField] private List<Gift> gifts;
     [SerializeField] private CharacterCollect collect;
     [SerializeField] private TutController tut;
-    [SerializeField] private Transform posWar;
 
     public static GameController Ins { get; private set; }
 
@@ -91,16 +89,9 @@ public class GameController : MonoBehaviour
         currentProgress++;
         progressText.text = string.Format("{0}/{1}", currentProgress, target);
 
-        if (gifts.Count == 2) MoveCollectToWar();
-
         if (currentProgress >= target) StartCoroutine(ShowComplete());
     }
 
-    private void MoveCollectToWar()
-    {
-        if (collect == null || posWar == null) return;
-        collect.Teleport(posWar.position, posWar.rotation);
-    }
 
     private void Complete()
     {
