@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -17,7 +16,6 @@ public class GameController : MonoBehaviour
     [SerializeField] private List<Gift> gifts;
     [SerializeField] private CharacterCollect collect;
     [SerializeField] private TutController tut;
-    [SerializeField] private Transform posWar;
 
     public static GameController Ins { get; private set; }
 
@@ -28,10 +26,7 @@ public class GameController : MonoBehaviour
         CreateIns();
     }
 
-    private void Start()
-    {
-        UpdateProgress();
-    }
+   
 
     private void CreateIns()
     {
@@ -75,6 +70,7 @@ public class GameController : MonoBehaviour
         {
             collectText.transform.DOScale(1f, 0.2f).SetEase(Ease.OutCubic);
         });
+        UpdateProgress();
         DOVirtual.DelayedCall(1f, () => { collectText.transform.localScale = Vector3.zero; });
         StartCoroutine(WaitForCollect(g));
     }
@@ -83,24 +79,16 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitUntil(() => g.collectDone);
         g.RemoveGift();
-        UpdateProgress();
     }
 
     private void UpdateProgress()
     {
         currentProgress++;
-        progressText.text = string.Format("{0}/{1}", currentProgress, target);
-
-        if (gifts.Count == 2) MoveCollectToWar();
+        // progressText.text = string.Format("{0}/{1}", currentProgress, target);
 
         if (currentProgress >= target) StartCoroutine(ShowComplete());
     }
 
-    private void MoveCollectToWar()
-    {
-        if (collect == null || posWar == null) return;
-        collect.Teleport(posWar.position, posWar.rotation);
-    }
 
     private void Complete()
     {

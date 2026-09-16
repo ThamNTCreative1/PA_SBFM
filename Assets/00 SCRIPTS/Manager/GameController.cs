@@ -26,10 +26,7 @@ public class GameController : MonoBehaviour
         CreateIns();
     }
 
-    private void Start()
-    {
-        UpdateProgress();
-    }
+   
 
     private void CreateIns()
     {
@@ -73,6 +70,7 @@ public class GameController : MonoBehaviour
         {
             collectText.transform.DOScale(1f, 0.2f).SetEase(Ease.OutCubic);
         });
+        UpdateProgress();
         DOVirtual.DelayedCall(1f, () => { collectText.transform.localScale = Vector3.zero; });
         StartCoroutine(WaitForCollect(g));
     }
@@ -81,13 +79,12 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitUntil(() => g.collectDone);
         g.RemoveGift();
-        UpdateProgress();
     }
 
     private void UpdateProgress()
     {
         currentProgress++;
-        progressText.text = string.Format("{0}/{1}", currentProgress, target);
+        // progressText.text = string.Format("{0}/{1}", currentProgress, target);
 
         if (currentProgress >= target) StartCoroutine(ShowComplete());
     }
