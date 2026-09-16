@@ -2,7 +2,7 @@
     "version": "7.2.0",
     "projectId": "1cbfda1e906e7db4a9fd3c53e24fceff",
     "applicationID": 42700,
-    "creativeName": "FSAHM_V03_HoaiTT_HuyNQ",
+    "creativeName": "FSAHM_V02_HoaiTT_HuyNQ",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -3092,6 +3092,14 @@
                 "excluded": true
             },
             {
+                "name": "UnityEngine.GradientAlphaKey",
+                "excluded": true
+            },
+            {
+                "name": "UnityEngine.GradientColorKey",
+                "excluded": true
+            },
+            {
                 "name": "UnityEngine.GUI",
                 "excluded": true
             },
@@ -3253,6 +3261,30 @@
             },
             {
                 "name": "UnityEngine.Rendering.GraphicsSettings",
+                "excluded": true
+            },
+            {
+                "name": "UnityEngine.Rendering.Lines.LineHelper",
+                "excluded": true
+            },
+            {
+                "name": "UnityEngine.Rendering.Lines.LineHelper.LineCache",
+                "excluded": true
+            },
+            {
+                "name": "UnityEngine.Rendering.Lines.LineMesh",
+                "excluded": true
+            },
+            {
+                "name": "UnityEngine.Rendering.Lines.LineNormals",
+                "excluded": true
+            },
+            {
+                "name": "UnityEngine.Rendering.Lines.LinePoints",
+                "excluded": true
+            },
+            {
+                "name": "UnityEngine.Rendering.Lines.LineProperties",
                 "excluded": true
             },
             {
@@ -5529,7 +5561,7 @@
             },
             {
                 "name": "UnityEngine.LineAlignment",
-                "excluded": false
+                "excluded": true
             },
             {
                 "name": "UnityEngine.LineTextureMode",
@@ -7604,6 +7636,10 @@
                 "excluded": true
             },
             {
+                "name": "UnityEngine.UI.AspectRatioFitter",
+                "excluded": true
+            },
+            {
                 "name": "UnityEngine.UI.BaseMeshEffect",
                 "excluded": true
             },
@@ -7697,7 +7733,7 @@
             },
             {
                 "name": "UnityEngine.UI.AspectRatioFitter.AspectMode",
-                "excluded": false
+                "excluded": true
             },
             {
                 "name": "UnityEngine.UI.IMeshModifier",
@@ -8197,6 +8233,10 @@
             },
             {
                 "name": "DG.Tweening.Plugins.PathPlugin",
+                "excluded": true
+            },
+            {
+                "name": "DG.Tweening.Plugins.QuaternionPlugin",
                 "excluded": true
             },
             {
@@ -15187,7 +15227,7 @@
                     },
                     {
                         "name": "InternalErrorShaderMaterial#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "Blit",
@@ -17655,7 +17695,7 @@
                     },
                     {
                         "name": "shader#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "passCount#get",
@@ -17687,7 +17727,7 @@
                     },
                     {
                         "name": "$ctor2",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "CopyPropertiesFromMaterial",
@@ -18039,7 +18079,7 @@
                     },
                     {
                         "name": "localToWorldMatrix#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "localEulerAngles#get",
@@ -18059,7 +18099,7 @@
                     },
                     {
                         "name": "localRotation#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "forward#set",
@@ -18715,7 +18755,7 @@
                     },
                     {
                         "name": "cullingMask#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "cullingMask#set",
@@ -19045,7 +19085,7 @@
                     },
                     {
                         "name": "receiveShadows#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "shadowCastingMode#get",
@@ -19053,7 +19093,7 @@
                     },
                     {
                         "name": "shadowCastingMode#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "motionVectorGenerationMode#get",
@@ -19085,7 +19125,7 @@
                     },
                     {
                         "name": "sharedMaterial#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "sharedMaterials#get",
@@ -19093,7 +19133,7 @@
                     },
                     {
                         "name": "sharedMaterials#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "localToWorldMatrix#get",
@@ -19101,7 +19141,7 @@
                     },
                     {
                         "name": "localToWorldMatrix#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "worldToLocalMatrix#get",
@@ -19133,7 +19173,7 @@
                     },
                     {
                         "name": "sortingLayerID#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "sortingLayerIndex#get",
@@ -19231,19 +19271,19 @@
                     },
                     {
                         "name": "anchorMax#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "anchorMax#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "anchorMin#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "anchorMin#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "offsetMin#get",
@@ -19271,7 +19311,7 @@
                     },
                     {
                         "name": "sizeDelta#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "anchoredPosition3D#get",
@@ -27489,7 +27529,7 @@
                     },
                     {
                         "name": "positionCount#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "startWidth#get",
@@ -27497,7 +27537,7 @@
                     },
                     {
                         "name": "startWidth#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "endWidth#get",
@@ -27505,47 +27545,47 @@
                     },
                     {
                         "name": "endWidth#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "widthMultiplier#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "widthMultiplier#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "numCornerVertices#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "numCornerVertices#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "numCapVertices#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "numCapVertices#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "useWorldSpace#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "useWorldSpace#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "loop#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "loop#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "startColor#get",
@@ -27553,7 +27593,7 @@
                     },
                     {
                         "name": "startColor#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "endColor#get",
@@ -27561,39 +27601,39 @@
                     },
                     {
                         "name": "endColor#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "textureMode#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "textureMode#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "alignment#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "alignment#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "widthCurve#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "widthCurve#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "colorGradient#get",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "colorGradient#set",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "numPositions#get",
@@ -27605,11 +27645,11 @@
                     },
                     {
                         "name": "init",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "ctor",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "SetPosition",
@@ -27657,7 +27697,7 @@
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "OnDisable",
@@ -27665,11 +27705,11 @@
                     },
                     {
                         "name": "OnBeforeRender",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "OnCameraPreCull",
-                        "excluded": false
+                        "excluded": true
                     }
                 ]
             },
@@ -32121,7 +32161,7 @@
                     },
                     {
                         "name": "To$9",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "To$8",
@@ -32671,7 +32711,7 @@
                     },
                     {
                         "name": "DOLocalRotate",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "DOLocalRotateQuaternion",
@@ -33591,19 +33631,19 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "init",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "ctor",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "Reset",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "getHashCode",
@@ -33615,7 +33655,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": false
+                        "excluded": true
                     }
                 ]
             },
@@ -34452,6 +34492,14 @@
                     {
                         "name": "FirstGift#get",
                         "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "MoveCollectToWar",
+                        "excluded": false
                     }
                 ]
             },
@@ -34880,6 +34928,40 @@
                 ]
             },
             {
+                "className": "Playable.ResponsiveCanvasScaler",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnValidate",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ApplyScaleSettings",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetMatchValue",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
                 "className": "DG.Tweening.DOVirtual",
                 "staticMethods": [],
                 "instanceMethods": [
@@ -35014,444 +35096,6 @@
                         "excluded": false
                     }
                 ]
-            },
-            {
-                "className": "UnityEngine.GradientAlphaKey",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "ctor",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "UnityEngine.GradientColorKey",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ctor",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "UnityEngine.Rendering.Lines.LineHelper",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ctor",
-                        "excluded": false
-                    },
-                    {
-                        "name": "MarkViewAlignmentCacheNormalsDirty",
-                        "excluded": false
-                    },
-                    {
-                        "name": "MarkViewAlignmentCacheMeshDirty",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetOrCreateViewAlignmentCache",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Attach",
-                        "excluded": false
-                    },
-                    {
-                        "name": "UpdateProperties",
-                        "excluded": false
-                    },
-                    {
-                        "name": "CheckTransformChanged",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetTransformAlignmentMesh",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetMeshForCamera",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "UnityEngine.Rendering.Lines.LineHelper.LineCache",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "UnityEngine.Rendering.Lines.LineMesh",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ctor",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ConfigureMeshData",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Generate",
-                        "excluded": false
-                    },
-                    {
-                        "name": "UpdateMesh",
-                        "excluded": false
-                    },
-                    {
-                        "name": "CalculateTrianglesLength",
-                        "excluded": true
-                    },
-                    {
-                        "name": "CalculatePointsLength",
-                        "excluded": true
-                    },
-                    {
-                        "name": "StorePoint",
-                        "excluded": true
-                    },
-                    {
-                        "name": "StoreTriangle",
-                        "excluded": true
-                    },
-                    {
-                        "name": "CalculatePoints",
-                        "excluded": true
-                    },
-                    {
-                        "name": "CalculateCorner",
-                        "excluded": true
-                    },
-                    {
-                        "name": "CalculateCap",
-                        "excluded": true
-                    },
-                    {
-                        "name": "VectorsToArc",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
-                "className": "UnityEngine.Rendering.Lines.LineNormals",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GenerateByTransformAlignment",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GenerateByViewAlignment",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetScaledCornerNormal",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetScaledNormal",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetNormal",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetCornerNormal",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetAlignment",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetCornerAngle",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetDirection",
-                        "excluded": true
-                    },
-                    {
-                        "name": "ResizeArrays",
-                        "excluded": true
-                    },
-                    {
-                        "name": "ApplyTransformAlignment",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateSegmentsNormalsForTransformAlignment",
-                        "excluded": true
-                    },
-                    {
-                        "name": "ApplyViewAlignment",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateSegmentsNormalsForViewAlignment",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateCornerAndEndNormals",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateCornerNormal",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateEndNormal",
-                        "excluded": true
-                    },
-                    {
-                        "name": "ScaleVector",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
-                "className": "UnityEngine.Rendering.Lines.LinePoints",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Generate",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetNormalizedProgress",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetProgress",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetPoint",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetColor",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetUCoordinate",
-                        "excluded": true
-                    },
-                    {
-                        "name": "GetWidth",
-                        "excluded": true
-                    },
-                    {
-                        "name": "ResizeArrays",
-                        "excluded": true
-                    },
-                    {
-                        "name": "CopyPoints",
-                        "excluded": true
-                    },
-                    {
-                        "name": "TransformPoints",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateWidthColorsAndUV",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateSegmentsLengthAndProgress",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateSegmentsCrossProducts",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
-                "className": "UnityEngine.Rendering.Lines.LineProperties",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "isValid#get",
-                        "excluded": false
-                    },
-                    {
-                        "name": "isLoop#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "transformPoints#get",
-                        "excluded": false
-                    },
-                    {
-                        "name": "useTransformMatrixForRenderer#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "scaleWidth#get",
-                        "excluded": false
-                    },
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Attach",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Generate",
-                        "excluded": false
-                    },
-                    {
-                        "name": "CopyPoints",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ApplyTransformMatrix",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "UnityEngine.UI.AspectRatioFitter",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "aspectMode#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "aspectMode#set",
-                        "excluded": true
-                    },
-                    {
-                        "name": "aspectRatio#get",
-                        "excluded": false
-                    },
-                    {
-                        "name": "aspectRatio#set",
-                        "excluded": true
-                    },
-                    {
-                        "name": "rectTransform#get",
-                        "excluded": false
-                    },
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "UpdateRect",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetSizeDeltaToProduceSize",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetParentSize",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnEnable",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SetDirty",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnRectTransformDimensionsChange",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "SelectPanel",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "Start",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
-                "className": "DG.Tweening.Plugins.QuaternionPlugin",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "Reset",
-                        "excluded": true
-                    },
-                    {
-                        "name": "SetFrom$1",
-                        "excluded": true
-                    },
-                    {
-                        "name": "SetFrom",
-                        "excluded": true
-                    },
-                    {
-                        "name": "ConvertToStartValue",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SetRelativeEndValue",
-                        "excluded": true
-                    },
-                    {
-                        "name": "SetChangeValue",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetSpeedBasedDuration",
-                        "excluded": true
-                    },
-                    {
-                        "name": "EvaluateAndApply",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetEulerValForCalculations",
-                        "excluded": false
-                    },
-                    {
-                        "name": "FlipEulerAngles",
-                        "excluded": false
-                    }
-                ]
             }
         ],
         "stubberDataList": [],
@@ -35509,36 +35153,6 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/01 RESOURCES/Fonts/SDF/a_ConceptoTitulNrFy SDF.asset"
-                    },
-                    {
-                        "maxWidth": 644,
-                        "maxHeight": 78,
-                        "format": "png32",
-                        "compression": "none",
-                        "quality": 65,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/01 RESOURCES/Texture/V03 - Choose Your Map (Assets playable) (HoaiTT) (AnhNTN) (1)/CHOOSE A MAP!.png"
-                    },
-                    {
-                        "maxWidth": 1031,
-                        "maxHeight": 78,
-                        "format": "png32",
-                        "compression": "none",
-                        "quality": 65,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/01 RESOURCES/Texture/V03 - Choose Your Map (Assets playable) (HoaiTT) (AnhNTN) (1)/CAN YOU FIND THEM ALL_.png"
-                    },
-                    {
-                        "maxWidth": 1920,
-                        "maxHeight": 1080,
-                        "format": "png32",
-                        "compression": "quantSize",
-                        "quality": 65,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/01 RESOURCES/Texture/V03 - Choose Your Map (Assets playable) (HoaiTT) (AnhNTN) (1)/bg.png"
                     }
                 ]
             },
@@ -35572,16 +35186,6 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/01 RESOURCES/Audio/BG2.mp3"
-                    },
-                    {
-                        "channels": 1,
-                        "startTime": "00:01.682",
-                        "endTime": "00:30.284",
-                        "lengthInSeconds": 28.602001190185548,
-                        "bitrate": 56,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/01 RESOURCES/Audio/BG1.mp3"
                     }
                 ]
             },
