@@ -1,0 +1,292 @@
+{
+    "BuildID": "6008423e-c225-4822-b196-126c9dc0b6c5",
+    "Command": "project:deploy",
+    "ProjectID": "1cbfda1e906e7db4a9fd3c53e24fceff",
+    "ProjectStateHash": "609502ddae8e17951e407c552a365e4071840e521d25243e6f2024100c0e8945",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1789554563243,
+    "EndTime": 1789554597743,
+    "PlaygroundUserID": 37069,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.60f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 9,
+    "Logs": [
+        {
+            "LogID": "2fc3ee9c-7c19-4f12-b44c-fc6ce51da817",
+            "Order": 8,
+            "Timestamp": 1789554597991,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "0f8faccf-5c81-4ae5-8545-aa90471ecd32",
+            "Order": 8,
+            "Timestamp": 1789554597993,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3012",
+            "Description": "You are not using the minimum recommended amount of LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using the minimum recommended amount of LunaPlaygroundFields attributes, you are using: 2 and we recommend using a minimum of: 3. It allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": [
+                "2",
+                "3"
+            ],
+            "DetailsValues": [
+                "2",
+                "3"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "2fe475b1-e292-4aeb-ad8b-1e77137e374b",
+            "Order": 0,
+            "Timestamp": 1789554574914,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1001",
+            "Description": "Update shader stripping settings",
+            "Details": [
+                "Some of the scenes appear to have fog enabled and / or lightmapping data. Please modify 'Shader stripping' settings to always include required shader variants."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "0a5f7f3d-c013-4f74-8055-2f5eaa0da5ae",
+            "Order": 1,
+            "Timestamp": 1789554577599,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1007",
+            "Description": "Extensive use of mesh colliders",
+            "Details": [
+                "Usage of mesh colliders has negative effect on performance. You can use primitive colliders instead."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "4c39ee9f-7b1e-4ff3-b65c-331cd7e22710",
+            "Order": 2,
+            "Timestamp": 1789554577599,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "d3a72f26-3119-43e8-8e0e-37543645e0e7",
+            "Order": 3,
+            "Timestamp": 1789554577599,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 13."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "13"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "639d73e5-9219-495e-b2fb-0e1780fe6bfa",
+            "Order": 4,
+            "Timestamp": 1789554577612,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1022",
+            "Description": "Extensive use of shader variants",
+            "Details": [
+                "Extensive usage of shader variants negatively affects playable startup time. Please consider them to be less than 20 (40 found). Check Runtime analysis -> shader tab to see used shaders."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "20",
+                "40"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "b85e6d0c-4630-4cdc-8a23-a78e28d7b982",
+            "Order": 5,
+            "Timestamp": 1789554577631,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.12)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "D:/Source/PA_SBFM/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "40d97974-ad89-493e-963d-1ab00bdcc33b",
+            "Order": 6,
+            "Timestamp": 1789554577631,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "HiddenCharacter29",
+                "HiddenCharacter28",
+                "HiddenCharacter30",
+                "Top",
+                "1",
+                "2",
+                "3",
+                "4",
+                "Bot",
+                "tile-plain_sand (1)",
+                "tile-plain_sand (1)",
+                "world-oasis",
+                "pyramid",
+                "tile-plain_grass",
+                "egypt-statue-cat",
+                "hindu-palace-small",
+                "egypt-obelisk-old",
+                "scifi-planet-base-hall-one-end",
+                "scifi-planet-base-hall-start",
+                "Cube",
+                "scifi-portal",
+                "Stairs",
+                "Stairs",
+                "Stairs (1)",
+                "Stairs (1)",
+                "Stairs (2)",
+                "Stairs (2)",
+                "Stairs (3)",
+                "Stairs (3)",
+                "Stairs (4)",
+                "Stairs (4)",
+                "Stairs (5)",
+                "Stairs (5)",
+                "Planet",
+                "moon",
+                "Cube",
+                "scifi-portal",
+                "house-egypt-medium",
+                "egypt-stand",
+                "egypt-stand-small",
+                "egypt-spice-medium",
+                "egypt-spice-big",
+                "egypt-spice-medium (1)",
+                "egypt-spice-big (1)",
+                "crater-deep",
+                "crater-big",
+                "scifi-buggy-cabin",
+                "scifi-buggy-chassis",
+                "scifi-buggy-wheel_BL",
+                "scifi-buggy-wheel_BR",
+                "scifi-buggy-wheel_FL",
+                "scifi-buggy-wheel_FR",
+                "lunar-rover-base_BL",
+                "lunar-rover-base_BR",
+                "lunar-rover-base_FL",
+                "lunar-rover-base_FR",
+                "lunar-rover-wheel",
+                "hindu-pillars-middle-big",
+                "gate-india",
+                "crater-water",
+                "scifi-printer-3D",
+                "scifi-stairs-narrow",
+                "sun",
+                "jeep-open-base",
+                "jeep-open-wheel_BL",
+                "jeep-open-wheel_BR",
+                "jeep-open-wheel_FL",
+                "jeep-open-wheel_FR",
+                "house-egypt-small",
+                "egypt-rack",
+                "egypt-rack (1)"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 71,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

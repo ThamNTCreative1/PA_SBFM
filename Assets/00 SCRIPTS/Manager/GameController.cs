@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -12,7 +13,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private int target;
     [SerializeField] private TMP_Text progressText;
     [SerializeField] private TMP_Text collectText;
-    [SerializeField] private RectTransform completeScene;
+    [SerializeField] private SelectPanel completeScene;
     [SerializeField] private List<Gift> gifts;
     [SerializeField] private CharacterCollect collect;
     [SerializeField] private TutController tut;
@@ -21,12 +22,17 @@ public class GameController : MonoBehaviour
 
     public Gift FirstGift => gifts != null && gifts.Count > 0 ? gifts[0] : null;
 
+    public SelectPanel CompleteScene => completeScene;
+
     private void Awake()
     {
         CreateIns();
     }
 
-   
+    private void Start()
+    {
+        UpdateProgress();
+    }
 
     private void CreateIns()
     {
@@ -84,16 +90,16 @@ public class GameController : MonoBehaviour
     private void UpdateProgress()
     {
         currentProgress++;
-        // progressText.text = string.Format("{0}/{1}", currentProgress, target);
+        progressText.text = $"{currentProgress}/{target}";
 
-        if (currentProgress >= target) StartCoroutine(ShowComplete());
+        if (gifts.Count <= 0) StartCoroutine(ShowComplete());
     }
 
 
     private void Complete()
     {
         tut.StopTut();
-        completeScene.gameObject.SetActive(true);
+        completeScene.OpenCTA();
     }
 
     private IEnumerator ShowComplete()

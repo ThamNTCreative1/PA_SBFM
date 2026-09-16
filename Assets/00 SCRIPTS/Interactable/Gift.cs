@@ -15,7 +15,7 @@ public class Gift : MonoBehaviour
 
     private void Start()
     {
-        arrow.DOLocalMoveY(5.8f, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+        arrow.DOLocalMoveY(4f, 0.5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
     }
 
     public void ShowHints()
