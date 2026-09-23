@@ -1,0 +1,314 @@
+Authorized using stored user info.
+stderr: 'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+Exporting assets from Unity.........................
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+Found custom rules for sound Assets/01 RESOURCES/Audio/BG2.mp3
+  {"channels":1,"startTime":"00:01.000","endTime":"02:01.704","lengthInSeconds":120.7040023803711,"bitrate":32,"script":"","ext":"","name":"Assets/01 RESOURCES/Audio/BG2.mp3","isOverride":true}
+Found custom rules for texture Assets/01 RESOURCES/Fonts/SDF/a_AlternaSw SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/01 RESOURCES/Fonts/SDF/a_AlternaSw SDF.asset","isOverride":true}
+Found custom rules for texture Assets/01 RESOURCES/Fonts/SDF/a_ConceptoTitulNrFy SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/01 RESOURCES/Fonts/SDF/a_ConceptoTitulNrFy SDF.asset","isOverride":true}
+Resources:
+{}
+[ Stage2 ] Assets postprocessed and bundled successfully
+Authorized using stored user info.
+MSBuild version 18.8.2+ce25c0108 for .NET Framework
+
+Build started 9/22/2026 4:19:55 PM.
+
+
+
+Project "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" on node 1 (Rebuild target(s)).
+CoreClean:
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll".
+
+  Deleting file "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb".
+
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+
+CoreCompile:
+  Setting DOTNET_TieredCompilation to '0'
+
+  C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_6000;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_0;UNITY_6000_0_78 /highentropyva+ /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraFollow.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraLook.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterAnimation.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterCollect.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterRotation.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\GroundChecker.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\CharacterInput.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\Joystick.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\JumpButton.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\CollectAction.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RoundEffect.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RunAction.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Hint\Hint.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Hint\JumpHint.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Hint\SoundHint.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\IInteractable.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\AudioController.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\HideOnPointer.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\InputManager.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\LunaController.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs" F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenDeAudio.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenDeUnityExtended.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenProShortcuts.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenTextMeshPro.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenTk2d.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+  Compilation request Scripts, PathToTool=C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\csc.exe
+
+  CommandLine = ' /noconfig'
+  BuildResponseFile = '/nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_6000;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_0;UNITY_6000_0_78 /highentropyva+ /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraFollow.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraLook.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\
+Assets\00 SCRIPTS\Character\CharacterAnimation.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterCollect.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterRotation.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\GroundChecker.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\CharacterInput.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\Joystick.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\JumpButton.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\CollectAction.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RoundEffect.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RunAction.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Hint\Hint.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Hint\JumpHint.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Hint\SoundHint.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\IInteractable.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\AudioController.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\HideOnPointer.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\InputManager.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\LunaController.cs" "F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs" F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenDeAudio.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenDeUnityExtended.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenProShortcuts.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenTextMeshPro.cs F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTweenPro\DOTweenTk2d.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"'
+
+  Attempting to create process 'C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\VBCSCompiler.exe' "-pipename:JaSzLJ79ohNwuN4YExVd335aZo5AVCxG2mZ7CTAeWIc"
+
+  Setting DOTNET_TieredCompilation to '0'
+
+  Successfully created process with process id 23776
+
+  Attempt to open named pipe 'JaSzLJ79ohNwuN4YExVd335aZo5AVCxG2mZ7CTAeWIc'
+
+  Attempt to connect named pipe 'JaSzLJ79ohNwuN4YExVd335aZo5AVCxG2mZ7CTAeWIc'
+
+  Named pipe 'JaSzLJ79ohNwuN4YExVd335aZo5AVCxG2mZ7CTAeWIc' connected
+
+  Begin writing request for Scripts
+
+  End writing request for Scripts
+  Begin reading response for Scripts
+
+  End reading response for Scripts
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\AudioController.cs(7,42): warning CS0169: The field 'AudioController.musicSource' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs(7,40): warning CS0649: Field 'CharacterMotor.cameraYawTransform' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(12,44): warning CS0649: Field 'GameController.tut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\InputManager.cs(9,37): warning CS0169: The field 'InputManager.worldCamera' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(16,47): warning CS0649: Field 'GameController.collector' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(8,36): warning CS0169: The field 'GameController.timeToShowHint' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RunAction.cs(6,40): warning CS0649: Field 'RunEffect.targetPos' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterAnimation.cs(6,45): warning CS0649: Field 'CharacterAnimation.motor' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RunAction.cs(5,40): warning CS0169: The field 'RunEffect.controller' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\Joystick.cs(6,44): warning CS0649: Field 'Joystick.background' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\AudioController.cs(9,34): warning CS0649: Field 'AudioController.startSize' is never assigned to, and will always have its default value 0 [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs(14,44): warning CS0649: Field 'CharacterMotor.groundChecker' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\GroundChecker.cs(5,40): warning CS0649: Field 'GroundChecker.groundPoint' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\CharacterInput.cs(6,41): warning CS0649: Field 'CharacterInput.jumpButton' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraFollow.cs(5,40): warning CS0649: Field 'CameraFollow.target' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(14,44): warning CS0649: Field 'GameController.completeScene' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs(25,40): warning CS0649: Field 'CharacterMotor.controller' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\CharacterInput.cs(5,39): warning CS0649: Field 'CharacterInput.joystick' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\JumpButton.cs(6,37): warning CS0649: Field 'JumpButton.button' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\GroundChecker.cs(7,40): warning CS0649: Field 'GroundChecker.groundLayer' is never assigned to, and will always have its default value [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs(7,40): warning CS0649: Field 'Gift.collectSound' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs(9,44): warning CS0649: Field 'Gift.action' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs(8,45): warning CS0169: The field 'Gift.collectEffect' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\AudioController.cs(8,40): warning CS0649: Field 'AudioController.poolParent' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(6,44): warning CS0649: Field 'TutController.tutScene' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterCollect.cs(6,45): warning CS0649: Field 'CharacterCollect.motor' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(10,47): warning CS0649: Field 'TutController.failTut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(8,44): warning CS0649: Field 'TutController.playTut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(9,47): warning CS0649: Field 'TutController.farTut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterCollect.cs(7,49): warning CS0649: Field 'CharacterCollect.avatar' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(13,44): warning CS0649: Field 'GameController.inputUI' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterRotation.cs(5,45): warning CS0649: Field 'CharacterRotation.motor' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\Joystick.cs(7,44): warning CS0649: Field 'Joystick.joy' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RunAction.cs(7,41): warning CS0649: Field 'RunEffect.look' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(7,44): warning CS0649: Field 'TutController.startTut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraLook.cs(6,40): warning CS0649: Field 'CameraLook.yawPivot' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\LunaController.cs(10,43): warning CS0649: Field 'LunaController.CTA' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(7,36): warning CS0649: Field 'GameController.timeToShowComplete' is never assigned to, and will always have its default value 0 [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraLook.cs(5,43): warning CS0649: Field 'CameraLook.input' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraLook.cs(7,40): warning CS0649: Field 'CameraLook.pitchPivot' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(10,34): warning CS0649: Field 'GameController.target' is never assigned to, and will always have its default value 0 [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(11,46): warning CS0649: Field 'GameController.progressText' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs(6,41): warning CS0649: Field 'Gift.hints' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs(6,45): warning CS0649: Field 'CharacterMotor.characterInput' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - Scripts
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Creating "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" because "AlwaysCreate" was specified.
+
+  Touching "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+CopyFilesToOutputDirectory:
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Scripts -> F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
+
+  Copying file from "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" to "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+BridgeNetCompilerTask:
+  Bridge started
+
+      To enable detailed logging, configure "logging" in bridge.json.
+      https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
+
+  Bridge done
+
+Done Building Project "F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target(s)).
+
+
+Build succeeded.
+
+
+"F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
+(CoreCompile target) -> 
+
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\AudioController.cs(7,42): warning CS0169: The field 'AudioController.musicSource' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs(7,40): warning CS0649: Field 'CharacterMotor.cameraYawTransform' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(12,44): warning CS0649: Field 'GameController.tut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\InputManager.cs(9,37): warning CS0169: The field 'InputManager.worldCamera' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(16,47): warning CS0649: Field 'GameController.collector' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(8,36): warning CS0169: The field 'GameController.timeToShowHint' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RunAction.cs(6,40): warning CS0649: Field 'RunEffect.targetPos' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterAnimation.cs(6,45): warning CS0649: Field 'CharacterAnimation.motor' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RunAction.cs(5,40): warning CS0169: The field 'RunEffect.controller' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\Joystick.cs(6,44): warning CS0649: Field 'Joystick.background' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\AudioController.cs(9,34): warning CS0649: Field 'AudioController.startSize' is never assigned to, and will always have its default value 0 [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs(14,44): warning CS0649: Field 'CharacterMotor.groundChecker' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\GroundChecker.cs(5,40): warning CS0649: Field 'GroundChecker.groundPoint' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\CharacterInput.cs(6,41): warning CS0649: Field 'CharacterInput.jumpButton' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraFollow.cs(5,40): warning CS0649: Field 'CameraFollow.target' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(14,44): warning CS0649: Field 'GameController.completeScene' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs(25,40): warning CS0649: Field 'CharacterMotor.controller' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\CharacterInput.cs(5,39): warning CS0649: Field 'CharacterInput.joystick' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\JumpButton.cs(6,37): warning CS0649: Field 'JumpButton.button' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\GroundChecker.cs(7,40): warning CS0649: Field 'GroundChecker.groundLayer' is never assigned to, and will always have its default value [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs(7,40): warning CS0649: Field 'Gift.collectSound' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs(9,44): warning CS0649: Field 'Gift.action' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs(8,45): warning CS0169: The field 'Gift.collectEffect' is never used [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\AudioController.cs(8,40): warning CS0649: Field 'AudioController.poolParent' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(6,44): warning CS0649: Field 'TutController.tutScene' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterCollect.cs(6,45): warning CS0649: Field 'CharacterCollect.motor' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(10,47): warning CS0649: Field 'TutController.failTut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(8,44): warning CS0649: Field 'TutController.playTut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(9,47): warning CS0649: Field 'TutController.farTut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterCollect.cs(7,49): warning CS0649: Field 'CharacterCollect.avatar' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(13,44): warning CS0649: Field 'GameController.inputUI' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterRotation.cs(5,45): warning CS0649: Field 'CharacterRotation.motor' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Input\Joystick.cs(7,44): warning CS0649: Field 'Joystick.joy' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Collect\RunAction.cs(7,41): warning CS0649: Field 'RunEffect.look' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\TutController.cs(7,44): warning CS0649: Field 'TutController.startTut' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraLook.cs(6,40): warning CS0649: Field 'CameraLook.yawPivot' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\LunaController.cs(10,43): warning CS0649: Field 'LunaController.CTA' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(7,36): warning CS0649: Field 'GameController.timeToShowComplete' is never assigned to, and will always have its default value 0 [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraLook.cs(5,43): warning CS0649: Field 'CameraLook.input' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Camera\CameraLook.cs(7,40): warning CS0649: Field 'CameraLook.pitchPivot' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(10,34): warning CS0649: Field 'GameController.target' is never assigned to, and will always have its default value 0 [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Manager\GameController.cs(11,46): warning CS0649: Field 'GameController.progressText' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Interactable\Gift.cs(6,41): warning CS0649: Field 'Gift.hints' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  F:\UnityProjects\FSAHM_V05\LunaTemp\stage3\processed-scripts\Assets\00 SCRIPTS\Character\CharacterMotor.cs(6,45): warning CS0649: Field 'CharacterMotor.characterInput' is never assigned to, and will always have its default value null [F:\LunaPlayworks\7.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+    44 Warning(s)
+    0 Error(s)
+
+
+Time Elapsed 00:00:10.42
+
+Source code compiled successfully!
+∩╗┐
+[ error ] $∩╗┐
+Diagnostics gathered successfully
+[ Stage3 ] Code compiled and bundled successfully.
+[ Stage4 ] Target platform: playground
+[ Stage4 ] Package bundled successfully
+navigateto:https://assets-lunalabs-io.s3-accelerate.amazonaws.com/uploads%2Fdirect%2Fcbc4f6552c8a97496869c6d8e71ffa9e%2FFSAHM_V05_HoaiTT_TamNTM_build.zip
+[ Stage4 ] Package uploaded successfully

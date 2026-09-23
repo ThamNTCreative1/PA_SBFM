@@ -1,0 +1,91 @@
+{
+  "ignores": [
+    "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+  ],
+  "groups": [
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Camera/CameraFollow.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Camera/CameraLook.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/RunAction.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/CollectAction.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Gift.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterCollect.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/GameController.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/TutController.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/HideOnPointer.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterMotor.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterAnimation.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterRotation.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/CharacterInput.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/Joystick.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/JumpButton.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/GroundChecker.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/Hint.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/JumpHint.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/SoundHint.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/AudioController.cs",
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/InputManager.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/RoundEffect.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/IInteractable.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/LunaController.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V05/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
