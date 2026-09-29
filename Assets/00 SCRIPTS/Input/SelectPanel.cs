@@ -21,12 +21,7 @@ public class SelectPanel : MonoBehaviour
 
     public void OpenCTA()
     {
-        gameObject.SetActive(true);
-        _lock.SetActive(false);
-        _title.DOScale(1.2f, 1f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
-        foreach (Button button in _buttonsCTA)
-        {
-            button.onClick.AddListener(() => { LunaController.Instance.EndCard(); });
-        }
+        gameObject.SetActive(false);
+        LunaController.Instance.EndCard();
     }
 }

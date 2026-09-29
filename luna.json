@@ -2,7 +2,7 @@
     "version": "7.2.0",
     "projectId": "1cbfda1e906e7db4a9fd3c53e24fceff",
     "applicationID": 42700,
-    "creativeName": "FSAHM_V04_HoaiTT_HuyNQ",
+    "creativeName": "FSAHM_V06_HoaiTT_HuyNQ",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -15417,7 +15417,7 @@
                     },
                     {
                         "name": "DeltaAngle",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ClosestPowerOfTwo",
@@ -24638,15 +24638,15 @@
                         "excluded": false
                     },
                     {
-                        "name": "Update",
-                        "excluded": false
-                    },
-                    {
                         "name": "Awake",
                         "excluded": false
                     },
                     {
                         "name": "CollectLook",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
                         "excluded": false
                     }
                 ]
@@ -30838,6 +30838,30 @@
                     {
                         "name": "OnPointerUp",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnEndDrag",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnApplicationFocus",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnApplicationPause",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ResetJoystick",
+                        "excluded": false
                     }
                 ]
             },
@@ -34313,6 +34337,26 @@
                     },
                     {
                         "name": "HandleMouse",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ResetPointer",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnApplicationFocus",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsOverInputControl",
+                        "excluded": false
+                    },
+                    {
+                        "name": "InteractAt",
                         "excluded": true
                     }
                 ]
@@ -34456,6 +34500,14 @@
                     {
                         "name": "CompleteScene#get",
                         "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "InitializeGifts",
+                        "excluded": false
                     }
                 ]
             },
@@ -34507,7 +34559,7 @@
                     },
                     {
                         "name": "EndCard",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -35449,7 +35501,7 @@
                     },
                     {
                         "name": "OpenCTA",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -35662,6 +35714,16 @@
                     {
                         "name": "DOShapeCircle",
                         "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "GameController.GiftGroup",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
                     }
                 ]
             }

@@ -19,11 +19,11 @@ public class CameraLook : MonoBehaviour
     {
         defaltYaw = yawPivot.rotation.eulerAngles.y;
         yaw = defaltYaw;
-        defaltPitch = pitchPivot.rotation.eulerAngles.x;
+        defaltPitch = Mathf.DeltaAngle(0f, pitchPivot.localEulerAngles.x);
         pitch = defaltPitch;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         Vector2 look = input.LookDelta;
 

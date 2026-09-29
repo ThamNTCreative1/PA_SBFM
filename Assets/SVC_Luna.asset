@@ -2251,7 +2251,7 @@ MonoBehaviour:
       - _ALPHAPREMULTIPLY_ON
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 505
+  version: 599
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -35473,4 +35473,4 @@ MonoBehaviour:
         "\L\u2025":
         - FOG_LINEAR
   _modifiedShaders: []
-  invalidShaders: 0
+  invalidShaders: 1
