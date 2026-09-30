@@ -2,7 +2,7 @@
     "version": "7.2.0",
     "projectId": "1cbfda1e906e7db4a9fd3c53e24fceff",
     "applicationID": 42700,
-    "creativeName": "FSAHM_V06_HoaiTT_HuyNQ",
+    "creativeName": "FSAHM_V07_HoaiTT_HuyNQ",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -15429,7 +15429,7 @@
                     },
                     {
                         "name": "Exp",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PingPong",
@@ -26887,7 +26887,7 @@
                     },
                     {
                         "name": "interpolation#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "inertiaTensor#get",
@@ -30664,6 +30664,14 @@
                     {
                         "name": "init",
                         "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ConfigureAnimator",
+                        "excluded": false
                     }
                 ]
             },
@@ -30776,6 +30784,10 @@
                     {
                         "name": "Teleport",
                         "excluded": false
+                    },
+                    {
+                        "name": "Body#get",
+                        "excluded": false
                     }
                 ]
             },
@@ -30788,11 +30800,11 @@
                         "excluded": false
                     },
                     {
-                        "name": "Update",
+                        "name": "Rotate",
                         "excluded": false
                     },
                     {
-                        "name": "Rotate",
+                        "name": "FixedUpdate",
                         "excluded": false
                     }
                 ]
@@ -34504,10 +34516,6 @@
                     {
                         "name": "init",
                         "excluded": false
-                    },
-                    {
-                        "name": "InitializeGifts",
-                        "excluded": false
                     }
                 ]
             },
@@ -35714,16 +35722,6 @@
                     {
                         "name": "DOShapeCircle",
                         "excluded": true
-                    }
-                ]
-            },
-            {
-                "className": "GameController.GiftGroup",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
                     }
                 ]
             }

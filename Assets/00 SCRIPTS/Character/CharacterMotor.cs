@@ -25,6 +25,7 @@ public class CharacterMotor : MonoBehaviour
     [SerializeField, Range(0f, 1f)] private float minimumStepFacing = 0.25f;
 
     public float VerticalVelocity => verticalVelocity;
+    public Rigidbody Body => controller;
 
     public float MaxMoveSpeed => moveSpeed;
     public float Speed => (MoveDirection * moveSpeed).magnitude;
@@ -45,6 +46,8 @@ public class CharacterMotor : MonoBehaviour
     {
         capsuleCollider = controller.GetComponent<CapsuleCollider>();
         controller.useGravity = false;
+        // Smooth the rendered pose between physics ticks.
+        controller.interpolation = RigidbodyInterpolation.Interpolate;
     }
 
     public void AutoRun(bool isAuto, Vector3 direction)

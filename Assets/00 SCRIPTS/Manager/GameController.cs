@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -7,12 +6,6 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    [Serializable]
-    public class GiftGroup
-    {
-        public List<Gift> gifts = new List<Gift>();
-    }
-
     [SerializeField] private float timeToShowComplete;
     [SerializeField] private float timeToShowHint;
     [SerializeField] private int currentProgress;
@@ -21,13 +14,12 @@ public class GameController : MonoBehaviour
     [SerializeField] private TMP_Text collectText;
     [SerializeField] private SelectPanel completeScene;
 
-    [LunaPlaygroundField("Hidden Character(0->3)")] [SerializeField, Range(0, 3)]
-    private int _indexGift;
-
-    [SerializeField] private List<GiftGroup> giftGroups = new List<GiftGroup>();
-    private List<Gift> gifts = new List<Gift>();
+    [SerializeField] private List<Gift> gifts = new List<Gift>();
     [SerializeField] private CharacterCollect collect;
     [SerializeField] private TutController tut;
+
+    private int collectedGiftCount;
+    private bool isComplete;
 
     public static GameController Ins { get; private set; }
 
@@ -42,57 +34,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        if (!InitializeGifts()) return;
         UpdateProgress();
-    }
-
-    private bool InitializeGifts()
-    {
-        // Keep existing scene assignments working until gift groups are configured.
-        if (giftGroups == null || giftGroups.Count == 0) return true;
-
-        _indexGift = Mathf.Clamp(_indexGift, 0, 4);
-        if (_indexGift >= giftGroups.Count || giftGroups[_indexGift] == null ||
-            giftGroups[_indexGift].gifts == null)
-        {
-            Debug.LogError($"Gift group {_indexGift} is not configured.", this);
-            return false;
-        }
-
-        // Copy the selected group so collecting gifts does not modify its configuration.
-        List<Gift> selectedGifts = new List<Gift>();
-        foreach (Gift gift in giftGroups[_indexGift].gifts)
-        {
-            if (gift != null && !selectedGifts.Contains(gift)) selectedGifts.Add(gift);
-        }
-
-        if (selectedGifts.Count == 0)
-        {
-            Debug.LogError($"Gift group {_indexGift} has no gifts.", this);
-            return false;
-        }
-
-        foreach (Gift gift in gifts)
-        {
-            if (gift != null) gift.gameObject.SetActive(false);
-        }
-
-        foreach (GiftGroup group in giftGroups)
-        {
-            if (group == null || group.gifts == null) continue;
-            foreach (Gift gift in group.gifts)
-            {
-                if (gift != null) gift.gameObject.SetActive(false);
-            }
-        }
-
-        gifts = selectedGifts;
-        foreach (Gift gift in gifts)
-        {
-            gift.gameObject.SetActive(true);
-        }
-
-        return true;
     }
 
     private void CreateIns()
@@ -131,6 +73,7 @@ public class GameController : MonoBehaviour
         if (collected == -1) return;
         Gift g = gifts[collected];
         gifts.RemoveAt(collected);
+        collectedGiftCount++;
         // g.Collect(collect);
         collectText.transform.localScale = Vector3.zero;
         collectText.transform.DOScale(1.2f, 0.3f).SetEase(Ease.OutCubic).OnComplete(() =>
@@ -153,12 +96,19 @@ public class GameController : MonoBehaviour
         currentProgress++;
         progressText.text = $"{currentProgress}/{target}";
 
-        if (gifts.Count <= 0) StartCoroutine(ShowComplete());
+        if (isComplete) return;
+        if (collectedGiftCount >= 5)
+        {
+            Complete();
+        }
+        else if (gifts.Count <= 0) StartCoroutine(ShowComplete());
     }
 
 
     private void Complete()
     {
+        if (isComplete) return;
+        isComplete = true;
         tut.StopTut();
         completeScene.OpenCTA();
     }

@@ -7,8 +7,6 @@ public class SelectPanel : MonoBehaviour
 {
     [SerializeField] private Transform _title;
     [SerializeField] private List<Button> _buttonsSelectMap;
-    [SerializeField] private List<Button> _buttonsCTA;
-    [SerializeField] private GameObject _lock;
 
     private void Start()
     {

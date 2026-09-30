@@ -5,7 +5,7 @@ public class CharacterRotation : MonoBehaviour
     [SerializeField] private CharacterMotor motor;
     [SerializeField] private float rotationSpeed = 12f;
 
-    private void Update()
+    private void FixedUpdate()
     {
         Rotate();
     }
@@ -18,9 +18,10 @@ public class CharacterRotation : MonoBehaviour
         Quaternion targetRotation =
             Quaternion.LookRotation(motor.MoveDirection);
 
-        transform.rotation = Quaternion.Slerp(
-            transform.rotation,
+        // Rotate through physics so Transform writes do not break interpolation.
+        motor.Body.MoveRotation(Quaternion.Slerp(
+            motor.Body.rotation,
             targetRotation,
-            rotationSpeed * Time.deltaTime);
+            1f - Mathf.Exp(-rotationSpeed * Time.fixedDeltaTime)));
     }
 }

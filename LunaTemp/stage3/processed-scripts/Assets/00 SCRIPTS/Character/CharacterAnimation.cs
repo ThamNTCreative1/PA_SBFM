@@ -12,6 +12,19 @@ public class CharacterAnimation : MonoBehaviour
     private float displayedSpeed;
     private float groundedTimer;
 
+    private void Awake()
+    {
+        ConfigureAnimator();
+        groundedTimer = groundedGraceTime;
+    }
+
+    private void ConfigureAnimator()
+    {
+        // The motor owns movement; animate the visual pose every rendered frame.
+        animator.applyRootMotion = false;
+        animator.updateMode = AnimatorUpdateMode.Normal;
+    }
+
     private void Update()
     {
         UpdateAnimation();
@@ -20,13 +33,16 @@ public class CharacterAnimation : MonoBehaviour
     private void UpdateAnimation()
     {
         float targetSpeed = motor.MaxMoveSpeed > 0f
-            ? motor.Speed / motor.MaxMoveSpeed
+            ? Mathf.Clamp01(motor.Speed / motor.MaxMoveSpeed)
             : 0f;
 
-        displayedSpeed = Mathf.MoveTowards(
+        displayedSpeed = Mathf.Lerp(
             displayedSpeed,
             targetSpeed,
-            speedChangeRate * Time.deltaTime);
+            1f - Mathf.Exp(-speedChangeRate * Time.deltaTime));
+
+        if (Mathf.Abs(displayedSpeed - targetSpeed) < 0.001f)
+            displayedSpeed = targetSpeed;
 
         if (motor.IsGrounded)
             groundedTimer = groundedGraceTime;
@@ -41,6 +57,7 @@ public class CharacterAnimation : MonoBehaviour
     {
         animator.gameObject.SetActive(false);
         animator = avatar;
+        ConfigureAnimator();
         animator.gameObject.SetActive(true);
 
         animator.SetFloat("Speed", displayedSpeed);
