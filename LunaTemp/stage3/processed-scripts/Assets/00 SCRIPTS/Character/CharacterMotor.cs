@@ -110,6 +110,16 @@ public class CharacterMotor : MonoBehaviour
         ApplyJump();
         Move();
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (GameController.Ins != null) GameController.Ins.CheckLanding(collision);
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (GameController.Ins != null) GameController.Ins.CheckLanding(collision);
+    }
     private void ApplyGravity()
     {
         if (IsGrounded && verticalVelocity < 0f)

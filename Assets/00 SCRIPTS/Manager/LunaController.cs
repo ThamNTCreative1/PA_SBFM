@@ -14,6 +14,8 @@ public class LunaController : MonoBehaviour
     [LunaPlaygroundField("Time Play")] public float TimePlay;
     [SerializeField] private List<Image> images;
     [SerializeField] private Button CTA;
+    private Tween installDelay;
+    private bool failEnded;
 
     private void Awake()
     {
@@ -23,15 +25,34 @@ public class LunaController : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(EndGame());
+        if (LimitTimePlay)
+            StartCoroutine(EndGameAfterTimeLimit());
     }
 
     private void ClickCTA()
     {
+        installDelay?.Kill();
         Luna.Unity.Playable.InstallFullGame();
     }
 
-    private IEnumerator EndGame()
+    public void EndGame(GameObject failPopup)
+    {
+        if (failEnded) return;
+        failEnded = true;
+        StopAllCoroutines();
+        installDelay?.Kill();
+        Luna.Unity.LifeCycle.GameEnded();
+        if (failPopup != null)
+        {
+            Button button = failPopup.GetComponent<Button>();
+            if (button == null) button = failPopup.AddComponent<Button>();
+            button.transition = Selectable.Transition.None;
+            button.onClick.AddListener(ClickCTA);
+        }
+        installDelay = DOVirtual.DelayedCall(2f, ClickCTA);
+    }
+
+    private IEnumerator EndGameAfterTimeLimit()
     {
         yield return new WaitForSeconds(TimePlay);
         if (CTA.gameObject.activeSelf) yield break;
@@ -43,7 +64,6 @@ public class LunaController : MonoBehaviour
         line.DOAnchorPosX(520, 0.8f)
             .SetEase(Ease.Linear)
             .SetLoops(-1, LoopType.Restart);
-        GameController.Ins.CompleteScene.gameObject.SetActive(false);
         yield return new WaitForSeconds(1.5f);
         ClickCTA();
     }
@@ -59,7 +79,12 @@ public class LunaController : MonoBehaviour
         line.DOAnchorPosX(520, 0.8f)
             .SetEase(Ease.Linear)
             .SetLoops(-1, LoopType.Restart);
-        GameController.Ins.CompleteScene.gameObject.SetActive(false);
-        DOVirtual.DelayedCall(1.5f, ClickCTA);
+        installDelay = DOVirtual.DelayedCall(1.5f, ClickCTA);
+    }
+
+    private void OnDestroy()
+    {
+        installDelay?.Kill();
+        if (Instance == this) Instance = null;
     }
 }

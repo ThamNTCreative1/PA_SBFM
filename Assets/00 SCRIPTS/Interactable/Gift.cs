@@ -31,6 +31,8 @@ public class Gift : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         if (collectDone || !collision.gameObject.CompareTag("Player")) return;
+        if (GameController.Ins == null || !GameController.Ins.IsPlaying ||
+            GameController.Ins.FirstGift != this) return;
         GameController.Ins.CollectGift(this);
         collectDone = true;
         collectEffect.Play();

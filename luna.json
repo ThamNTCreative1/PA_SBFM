@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "1cbfda1e906e7db4a9fd3c53e24fceff",
-    "applicationID": 42700,
-    "creativeName": "FSAHM_V07_HoaiTT_HuyNQ",
+    "applicationID": 41535,
+    "creativeName": "C1_0810_HuyNQ_SBFM_V04_HoaiTT",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -81,7 +81,7 @@
             "externalJSLibraries": [],
             "scriptingDefines": [],
             "msbuildVersion": "18.9",
-            "monoVersion": "9.0.18",
+            "monoVersion": "9.0.3",
             "dotnetVersion": ""
         },
         "assets": {
@@ -3608,15 +3608,7 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.Collision",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.Collision2D",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.ContactPoint",
                 "excluded": true
             },
             {
@@ -7600,10 +7592,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.UI.SetPropertyUtility",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.UI.BaseMeshEffect",
                 "excluded": true
             },
@@ -8382,6 +8370,74 @@
             {
                 "name": "IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty",
                 "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonException",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonPropertyAttribute",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonSerializerSettings",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Utils.AssemblyVersion",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonSerializationException",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.DefaultValueHandling",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Formatting",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonConstructorAttribute",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonIgnoreAttribute",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.NullValueHandling",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.ObjectCreationHandling",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Required",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Serialization.IContractResolver",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Serialization.ISerializationBinder",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.TypeNameHandling",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver",
+                "excluded": true
+            },
+            {
+                "name": "GameController.GameState",
+                "excluded": false
             }
         ],
         "unusedMethods": [
@@ -15653,7 +15709,7 @@
                     },
                     {
                         "name": "center#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "center#set",
@@ -18239,7 +18295,7 @@
                     },
                     {
                         "name": "Find",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "FindChild",
@@ -19259,7 +19315,7 @@
                     },
                     {
                         "name": "pivot#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "anchoredPosition#get",
@@ -20491,7 +20547,7 @@
                     },
                     {
                         "name": "ForceUpdateCanvases",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "pixelRect#get",
@@ -21067,7 +21123,7 @@
                     },
                     {
                         "name": "raycastTarget#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#get",
@@ -21075,7 +21131,7 @@
                     },
                     {
                         "name": "color#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -21139,7 +21195,7 @@
                     },
                     {
                         "name": "OnCanvasGroupChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "LayoutComplete",
@@ -21151,7 +21207,7 @@
                     },
                     {
                         "name": "OnTransformParentChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PixelAdjustPoint",
@@ -21237,7 +21293,7 @@
                     },
                     {
                         "name": "OnTransformParentChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ParentMaskStateChanged",
@@ -26855,7 +26911,7 @@
                     },
                     {
                         "name": "isKinematic#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "detectCollisions#get",
@@ -27961,7 +28017,7 @@
                     },
                     {
                         "name": "ExtractBlocksRaycast",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "alpha#get",
@@ -28405,7 +28461,7 @@
                     },
                     {
                         "name": "showMaskGraphic#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -30788,6 +30844,14 @@
                     {
                         "name": "Body#get",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnCollisionEnter",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnCollisionStay",
+                        "excluded": false
                     }
                 ]
             },
@@ -32961,7 +33025,7 @@
                     },
                     {
                         "name": "Kill",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ManualUpdate",
@@ -34369,7 +34433,7 @@
                     },
                     {
                         "name": "InteractAt",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -34466,10 +34530,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "CreateIns",
-                        "excluded": false
-                    },
-                    {
                         "name": "Far",
                         "excluded": false
                     },
@@ -34490,15 +34550,7 @@
                         "excluded": false
                     },
                     {
-                        "name": "Complete",
-                        "excluded": false
-                    },
-                    {
                         "name": "ShowComplete",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ShowHint",
                         "excluded": false
                     },
                     {
@@ -34510,12 +34562,44 @@
                         "excluded": false
                     },
                     {
-                        "name": "CompleteScene#get",
+                        "name": "init",
                         "excluded": false
                     },
                     {
-                        "name": "init",
+                        "name": "Update",
                         "excluded": false
+                    },
+                    {
+                        "name": "IsPlaying#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HasFailed#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CheckLanding",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StartFailButtonEffect",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopFailButtonEffect",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "StopPlayer",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
                     }
                 ]
             },
@@ -34568,6 +34652,14 @@
                     {
                         "name": "EndCard",
                         "excluded": false
+                    },
+                    {
+                        "name": "EndGameAfterTimeLimit",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
                     }
                 ]
             },
@@ -35721,6 +35813,226 @@
                     },
                     {
                         "name": "DOShapeCircle",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "Newtonsoft.Json.JsonConvert",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "stringify",
+                        "excluded": true
+                    },
+                    {
+                        "name": "parse",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getEnumerableElementType",
+                        "excluded": true
+                    },
+                    {
+                        "name": "validateReflectable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "defaultGuard",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getCacheByType",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getMembers",
+                        "excluded": true
+                    },
+                    {
+                        "name": "preRawProcess",
+                        "excluded": true
+                    },
+                    {
+                        "name": "preProcess",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PopulateObject",
+                        "excluded": true
+                    },
+                    {
+                        "name": "BindToName",
+                        "excluded": true
+                    },
+                    {
+                        "name": "BindToType",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SplitFullyQualifiedTypeName",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetAssemblyDelimiterIndex",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Trim",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SerializeObject",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getInstanceBuilder",
+                        "excluded": true
+                    },
+                    {
+                        "name": "createInstance",
+                        "excluded": true
+                    },
+                    {
+                        "name": "needReuse",
+                        "excluded": true
+                    },
+                    {
+                        "name": "tryToGetCastOperator",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DeserializeObject",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Collision",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ColliderComponent#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "RigidbodyComponent#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OurRigidbodyComponent#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "other#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "rigidbody#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "gameObject#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "transform#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "collider#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "contacts#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "contactCount#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "relativeVelocity#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "impulse#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ourRigidbody#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetContact",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ConfigureFor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.ContactPoint",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "point#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "normal#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "depth#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "thisCollider#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "otherCollider#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.SetPropertyUtility",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SetColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetStruct",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetClass",
                         "excluded": true
                     }
                 ]

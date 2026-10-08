@@ -27,12 +27,12 @@
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/Joystick.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/JumpButton.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/GroundChecker.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/LunaController.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/SelectPanel.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/TutController.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/HideOnPointer.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/LunaController.cs",
+      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/SelectPanel.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/Hint.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/JumpHint.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/SoundHint.cs"
@@ -81,21 +81,6 @@
     ],
     [
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
-    ],
-    [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Scripts/Assembly-CSharp/SprunkGridItem.cs"
-    ],
-    [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Scripts/Assembly-CSharp/YG/LanguageYG.cs"
-    ],
-    [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Scripts/Unity.ProBuilder/UnityEngine/ProBuilder/ProBuilderMesh.cs"
-    ],
-    [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Scripts/Unity.ProBuilder/UnityEngine/ProBuilder/Shapes/ProBuilderShape.cs"
-    ],
-    [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Scripts/Unity.TextMeshPro/TMPro/TextMeshProUGUI.cs"
     ],
     [
       "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
