@@ -27,6 +27,7 @@
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/Joystick.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/JumpButton.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/GroundChecker.cs",
+      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/MorphSelectionFlow.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/TutController.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/HideOnPointer.cs",
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
@@ -39,6 +40,12 @@
     ],
     [
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/RoundEffect.cs"
+    ],
+    [
+      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/MorphSelectionLayout.cs"
+    ],
+    [
+      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/MorphTitlePulse.cs"
     ],
     [
       "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/ResponsiveCanvasScaler.cs"

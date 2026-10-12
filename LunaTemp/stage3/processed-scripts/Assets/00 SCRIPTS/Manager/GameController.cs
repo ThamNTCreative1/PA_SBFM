@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    [Header("Morph Selection")]
+    [SerializeField] private MorphSelectionFlow morphSelection;
     [SerializeField] private float timeToShowComplete = 0.5f;
     [SerializeField] private int currentProgress;
     [SerializeField] private int target = 1;
@@ -17,15 +19,24 @@ public class GameController : MonoBehaviour
     [SerializeField] private CharacterCollect collect;
     [SerializeField] private TutController tut;
 
-    [Header("Bridge Level")]
-    [SerializeField] private Transform playerSpawn;
+    [Header("Bridge Level")] [SerializeField]
+    private Transform playerSpawn;
+
     [SerializeField] private Transform giftSpawn;
     [SerializeField] private GameObject failUI;
     [SerializeField] private CharacterMotor playerMotor;
-    [Tooltip("Only landing contacts below this world height count as falling to the ground.")]
-    [SerializeField] private float failHeight = 0f;
 
-    private enum GameState { Playing, Completing, Complete, Failed }
+    [Tooltip("Only landing contacts below this world height count as falling to the ground.")] [SerializeField]
+    private float failHeight = 0f;
+
+    private enum GameState
+    {
+        Playing,
+        Completing,
+        Complete,
+        Failed
+    }
+
     private GameState state;
     private Tween collectTween;
     private Tween hideCollectTween;
@@ -48,11 +59,20 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         Ins = this;
     }
 
     private void Start()
     {
+        if (morphSelection != null)
+        {
+            state = GameState.Completing;
+            UpdateProgress();
+            morphSelection.Begin(this);
+            return;
+        }
+
         if (playerMotor == null && collect != null)
             playerMotor = collect.GetComponent<CharacterMotor>();
 
@@ -61,7 +81,7 @@ public class GameController : MonoBehaviour
         if (levelGift != null)
         {
             gifts.Add(levelGift);
-            levelGift.collectDone = false;
+            levelGift.collectDone = false; 
             if (giftSpawn != null)
                 levelGift.transform.position = giftSpawn.position;
         }
@@ -92,6 +112,21 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void CompleteMorphSelection()
+    {
+        if (state == GameState.Complete) return;
+        state = GameState.Complete;
+        if (LunaController.Instance != null) LunaController.Instance.EndCard();
+        else if (_cta != null) _cta.SetActive(true);
+    }
+
+    public void RegisterCollection()
+    {
+        if (state == GameState.Complete || state == GameState.Failed) return;
+        currentProgress++;
+        UpdateProgress();
+    }
+
     public void Far()
     {
         if (IsPlaying && tut != null) tut.ShowFarTut();
@@ -108,6 +143,7 @@ public class GameController : MonoBehaviour
             failUI.SetActive(true);
         }
         else if (tut != null) tut.ShowFailTut();
+
         if (LunaController.Instance != null)
         {
             LunaController.Instance.EndGame(failUI);
@@ -121,17 +157,20 @@ public class GameController : MonoBehaviour
         // Lock the result immediately, including the delay before the CTA appears.
         state = GameState.Completing;
         gifts.Clear();
-        currentProgress = 1;
+        RegisterCollection();
         StopPlayer();
-        UpdateProgress();
         if (collectText != null)
         {
             collectText.transform.localScale = Vector3.zero;
             collectTween = collectText.transform.DOScale(1.2f, 0.3f).SetEase(Ease.OutCubic)
                 .OnComplete(() => collectTween = collectText.transform.DOScale(1f, 0.2f));
             hideCollectTween = DOVirtual.DelayedCall(1f,
-                () => { if (collectText != null) collectText.transform.localScale = Vector3.zero; });
+                () =>
+                {
+                    if (collectText != null) collectText.transform.localScale = Vector3.zero;
+                });
         }
+
         StartCoroutine(WaitForCollect(gift));
         StartCoroutine(ShowComplete());
     }
@@ -179,7 +218,7 @@ public class GameController : MonoBehaviour
         failShine.sizeDelta = new Vector2(lineWidth, lineHeight);
         // Include the rotated stripe's extent so it restarts entirely outside the mask.
         float extent = (lineWidth * Mathf.Cos(24.92f * Mathf.Deg2Rad)
-            + lineHeight * Mathf.Sin(24.92f * Mathf.Deg2Rad)) * 0.5f;
+                        + lineHeight * Mathf.Sin(24.92f * Mathf.Deg2Rad)) * 0.5f;
         float center = failButton.rect.center.x;
         failShineStart = new Vector2(center - width * 0.5f - extent, failButton.rect.center.y);
         failShine.anchoredPosition = failShineStart;

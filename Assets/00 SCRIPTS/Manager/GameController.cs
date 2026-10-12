@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    [Header("Morph Selection")]
+    [SerializeField] private MorphSelectionFlow morphSelection;
     [SerializeField] private float timeToShowComplete = 0.5f;
     [SerializeField] private int currentProgress;
     [SerializeField] private int target = 1;
@@ -63,6 +65,14 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        if (morphSelection != null)
+        {
+            state = GameState.Completing;
+            UpdateProgress();
+            morphSelection.Begin(this);
+            return;
+        }
+
         if (playerMotor == null && collect != null)
             playerMotor = collect.GetComponent<CharacterMotor>();
 
@@ -71,7 +81,7 @@ public class GameController : MonoBehaviour
         if (levelGift != null)
         {
             gifts.Add(levelGift);
-            levelGift.collectDone = false;
+            levelGift.collectDone = false; 
             if (giftSpawn != null)
                 levelGift.transform.position = giftSpawn.position;
         }
@@ -100,6 +110,21 @@ public class GameController : MonoBehaviour
             Fail();
             return;
         }
+    }
+
+    public void CompleteMorphSelection()
+    {
+        if (state == GameState.Complete) return;
+        state = GameState.Complete;
+        if (LunaController.Instance != null) LunaController.Instance.EndCard();
+        else if (_cta != null) _cta.SetActive(true);
+    }
+
+    public void RegisterCollection()
+    {
+        if (state == GameState.Complete || state == GameState.Failed) return;
+        currentProgress++;
+        UpdateProgress();
     }
 
     public void Far()
@@ -132,9 +157,8 @@ public class GameController : MonoBehaviour
         // Lock the result immediately, including the delay before the CTA appears.
         state = GameState.Completing;
         gifts.Clear();
-        currentProgress = 1;
+        RegisterCollection();
         StopPlayer();
-        UpdateProgress();
         if (collectText != null)
         {
             collectText.transform.localScale = Vector3.zero;

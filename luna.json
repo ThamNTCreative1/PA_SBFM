@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "1cbfda1e906e7db4a9fd3c53e24fceff",
-    "applicationID": 41535,
-    "creativeName": "C1_0810_HuyNQ_SBFM_V04_HoaiTT",
+    "applicationID": 42700,
+    "creativeName": "C1_2610_HuyNQ_FSAHM_V08_HoaiTT_applovin",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -6389,7 +6389,7 @@
             },
             {
                 "name": "UnityEngine.Space",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.SpriteAlignment",
@@ -8437,6 +8437,14 @@
             },
             {
                 "name": "GameController.GameState",
+                "excluded": false
+            },
+            {
+                "name": "MorphSelectionFlow.Morph",
+                "excluded": false
+            },
+            {
+                "name": "MorphSelectionFlow.Phase",
                 "excluded": false
             }
         ],
@@ -16471,7 +16479,7 @@
                     },
                     {
                         "name": "fixedUnscaledTime#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fixedUnscaledTimeAsDouble#get",
@@ -18227,7 +18235,7 @@
                     },
                     {
                         "name": "Rotate",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Rotate$1",
@@ -18235,7 +18243,7 @@
                     },
                     {
                         "name": "Rotate$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RotateAround",
@@ -18267,11 +18275,11 @@
                     },
                     {
                         "name": "LookAt$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "LookAt$3",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetAsLastSibling",
@@ -18683,11 +18691,11 @@
                     },
                     {
                         "name": "fieldOfView#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fieldOfView#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fov#get",
@@ -18739,7 +18747,7 @@
                     },
                     {
                         "name": "_aspect#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "_aspect#set",
@@ -18747,7 +18755,7 @@
                     },
                     {
                         "name": "aspect#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "aspect#set",
@@ -19173,7 +19181,7 @@
                     },
                     {
                         "name": "bounds#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingOrder#get",
@@ -20571,7 +20579,7 @@
                     },
                     {
                         "name": "referencePixelsPerUnit#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingLayerName#get",
@@ -20755,7 +20763,7 @@
                     },
                     {
                         "name": "disabledColor#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "disabledColor#set",
@@ -20943,7 +20951,7 @@
                     },
                     {
                         "name": "disabledSprite#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "disabledSprite#set",
@@ -21355,7 +21363,7 @@
                     },
                     {
                         "name": "sprite#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "overrideSprite#get",
@@ -21419,7 +21427,7 @@
                     },
                     {
                         "name": "preserveAspect#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "material#set",
@@ -21507,7 +21515,7 @@
                     },
                     {
                         "name": "SetNativeSize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "MapCoordinate",
@@ -26197,7 +26205,7 @@
                     },
                     {
                         "name": "pixelsPerUnit#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "packed#get",
@@ -26225,7 +26233,7 @@
                     },
                     {
                         "name": "rect#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "border#get",
@@ -28123,7 +28131,7 @@
                     },
                     {
                         "name": "disabledTrigger#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "disabledTrigger#set",
@@ -30503,7 +30511,7 @@
                     },
                     {
                         "name": "fontWeightTable#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fontWeightTable#set",
@@ -34600,6 +34608,14 @@
                     {
                         "name": "OnDestroy",
                         "excluded": true
+                    },
+                    {
+                        "name": "CompleteMorphSelection",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RegisterCollection",
+                        "excluded": false
                     }
                 ]
             },
@@ -36036,6 +36052,78 @@
                         "excluded": true
                     }
                 ]
+            },
+            {
+                "className": "MorphSelectionFlow",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "PlaySfx",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UnlockCount#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Begin",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PreviewMorph",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShowSelection",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ConfirmMorph",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RevealMorph",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlayOrbitSfx",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopOrbitSfx",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "MorphTitlePulse",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": false
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -36126,6 +36214,36 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/01 RESOURCES/Audio/BG2.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:01.772",
+                        "lengthInSeconds": 1.7719999551773072,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/01 RESOURCES/Audio/411460__inspectorj__power-up-bright-a.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:01.772",
+                        "lengthInSeconds": 1.7719999551773072,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/01 RESOURCES/Audio/Magical.audioclip.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:01.772",
+                        "lengthInSeconds": 1.7719999551773072,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/01 RESOURCES/Audio/Win.audioclip.mp3"
                     }
                 ]
             },

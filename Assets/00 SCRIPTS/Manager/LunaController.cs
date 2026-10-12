@@ -65,7 +65,7 @@ public class LunaController : MonoBehaviour
             .SetEase(Ease.Linear)
             .SetLoops(-1, LoopType.Restart);
         yield return new WaitForSeconds(1.5f);
-        ClickCTA();
+        // ClickCTA();
     }
 
     public void EndCard()
@@ -79,7 +79,7 @@ public class LunaController : MonoBehaviour
         line.DOAnchorPosX(520, 0.8f)
             .SetEase(Ease.Linear)
             .SetLoops(-1, LoopType.Restart);
-        installDelay = DOVirtual.DelayedCall(1.5f, ClickCTA);
+        // installDelay = DOVirtual.DelayedCall(1.5f, ClickCTA);
     }
 
     private void OnDestroy()
