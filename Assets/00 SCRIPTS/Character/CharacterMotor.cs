@@ -56,6 +56,13 @@ public class CharacterMotor : MonoBehaviour
         MoveDirection = Vector3.ClampMagnitude(direction, 1f);
     }
 
+    public void SetCourseDirection(Vector3 direction)
+    {
+        direction.y = 0f;
+        if (cameraYawTransform != null && direction.sqrMagnitude > 0.001f)
+            cameraYawTransform.rotation = Quaternion.LookRotation(direction.normalized, Vector3.up);
+    }
+
     public void Teleport(Vector3 position, Quaternion rotation)
     {
         verticalVelocity = 0f;

@@ -15,6 +15,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     public void OnPointerDown(PointerEventData eventData)
     {
         if (isPressed) return;
+        if (TutController.Instance != null) TutController.Instance.HideJoystickTut();
         isPressed = true;
         activePointerId = eventData.pointerId;
         OnDrag(eventData);

@@ -1,56 +1,50 @@
-using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    [Header("Morph Selection")]
+    private const int DeathsBeforeCta = 4;
+
+    [Header("Playable Setup")]
     [SerializeField] private MorphSelectionFlow morphSelection;
-    [SerializeField] private float timeToShowComplete = 0.5f;
-    [SerializeField] private int currentProgress;
-    [SerializeField] private int target = 1;
-    [SerializeField] private TMP_Text progressText;
-    [SerializeField] private TMP_Text collectText;
-    [SerializeField] private GameObject _cta;
-    [SerializeField] private List<Gift> gifts = new List<Gift>();
-    [SerializeField] private CharacterCollect collect;
-    [SerializeField] private TutController tut;
-
-    [Header("Bridge Level")] [SerializeField]
-    private Transform playerSpawn;
-
-    [SerializeField] private Transform giftSpawn;
-    [SerializeField] private GameObject failUI;
+    [SerializeField] private Renderer[] skiSections;
     [SerializeField] private CharacterMotor playerMotor;
+    [SerializeField] private Transform playerSpawn;
+    [SerializeField] private Transform morphPosition;
+    [SerializeField] private GameObject[] morphPrefabs = new GameObject[8];
+    [SerializeField] private GameObject failUI;
+    [SerializeField] private GameObject endCard;
+    [SerializeField] private Transform cameraYaw;
+    [SerializeField, Min(0f)] private float fallConfirmationTime = 0.25f;
 
-    [Tooltip("Only landing contacts below this world height count as falling to the ground.")] [SerializeField]
-    private float failHeight = 0f;
+    [LunaPlaygroundField("Morph (1-8)")]
+    [Range(1, 8)] public int luna = 1;
 
-    private enum GameState
-    {
-        Playing,
-        Completing,
-        Complete,
-        Failed
-    }
+    [LunaPlaygroundField("Applovin")]
+    public bool applovin;
 
-    private GameState state;
-    private Tween collectTween;
-    private Tween hideCollectTween;
-    private RectTransform failButton;
-    private RectTransform failShine;
-    private Vector3 failButtonScale;
-    private Vector2 failShineStart;
-    private Tween failButtonTween;
-    private Tween failShineTween;
+    [LunaPlaygroundField("Count Event")]
+    [Min(1)] public int countEvent = 1;
 
     public static GameController Ins { get; private set; }
-    public Gift FirstGift => gifts != null && gifts.Count > 0 ? gifts[0] : null;
-    public bool IsPlaying => state == GameState.Playing;
-    public bool HasFailed => state == GameState.Failed;
+    public Gift FirstGift => null;
+    public bool IsPlaying => state == State.Playing;
+    public bool HasFailed => state == State.Failed;
+
+    private enum State { Ready, Playing, Complete, Failed }
+    private State state;
+    private Vector3 skiDirection;
+    private Vector3 courseTop;
+    private Vector3 courseBottom;
+    private Vector3 courseVector;
+    private float courseLengthSquared;
+    private bool fallingOffSki;
+    private float airborneFallTime;
+    private int deathCount;
+    private bool mouseHeld;
+    private int currentCountEvent;
+    private readonly List<int> heldFingerIds = new List<int>(2);
+    private GameObject spawnedMorph;
 
     private void Awake()
     {
@@ -59,198 +53,295 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Ins = this;
     }
 
     private void Start()
     {
-        if (morphSelection != null)
+        luna = Mathf.Clamp(luna, 1, 8);
+        countEvent = Mathf.Max(1, countEvent);
+        if (playerMotor == null)
+            playerMotor = GetComponentInChildren<CharacterMotor>(true);
+        if (playerMotor == null)
         {
-            state = GameState.Completing;
-            UpdateProgress();
-            morphSelection.Begin(this);
+            Debug.LogError("GameController needs the existing player CharacterMotor reference.", this);
             return;
         }
 
-        if (playerMotor == null && collect != null)
-            playerMotor = collect.GetComponent<CharacterMotor>();
-
-        Gift levelGift = FirstGift;
-        gifts.Clear();
-        if (levelGift != null)
-        {
-            gifts.Add(levelGift);
-            levelGift.collectDone = false; 
-            if (giftSpawn != null)
-                levelGift.transform.position = giftSpawn.position;
-        }
-
-        target = 1;
-        currentProgress = 0;
-        state = GameState.Playing;
+        if (morphSelection != null) morphSelection.gameObject.SetActive(false);
         if (failUI != null) failUI.SetActive(false);
-        if (_cta != null) _cta.SetActive(false);
-        if (collectText != null) collectText.transform.localScale = Vector3.zero;
-        if (playerSpawn != null && playerMotor != null)
+        if (endCard != null) endCard.SetActive(false);
+
+        SetSkiCourse();
+        if (playerSpawn != null)
             playerMotor.Teleport(playerSpawn.position, playerSpawn.rotation);
-        UpdateProgress();
+
+        SpawnMorph();
+        state = State.Playing;
+        if (playerMotor.Body != null) playerMotor.Body.isKinematic = false;
     }
 
-    public void CheckLanding(Collision collision)
+    private void SetSkiCourse()
     {
-        if (!IsPlaying || playerMotor == null || playerMotor.Body == null) return;
-        // Wait for an actual landing: the motor's ground probe can report grounded
-        // before contact, and a height check alone would stop the player in midair.
-        int count = collision.contactCount;
-        for (int i = 0; i < count; i++)
+        if (skiSections == null || skiSections.Length == 0)
         {
-            ContactPoint contact = collision.GetContact(i);
-            if (contact.normal.y < 0.5f || contact.point.y >= failHeight) continue;
-            Fail();
+            Debug.LogError("GameController needs the ski section references.", this);
             return;
         }
-    }
 
-    public void CompleteMorphSelection()
-    {
-        if (state == GameState.Complete) return;
-        state = GameState.Complete;
-        if (LunaController.Instance != null) LunaController.Instance.EndCard();
-        else if (_cta != null) _cta.SetActive(true);
-    }
-
-    public void RegisterCollection()
-    {
-        if (state == GameState.Complete || state == GameState.Failed) return;
-        currentProgress++;
-        UpdateProgress();
-    }
-
-    public void Far()
-    {
-        if (IsPlaying && tut != null) tut.ShowFarTut();
-    }
-
-    public void Fail()
-    {
-        if (!IsPlaying) return;
-        state = GameState.Failed;
-        StopPlayer();
-        if (failUI != null)
+        bool foundEnd = false;
+        Vector3 bottom = Vector3.zero;
+        Vector3 top = Vector3.zero;
+        for (int i = 0; i < skiSections.Length; i++)
         {
-            if (tut != null) tut.StopTut();
-            failUI.SetActive(true);
+            Renderer renderer = skiSections[i];
+            if (renderer == null) continue;
+            MeshFilter meshFilter = renderer.GetComponent<MeshFilter>();
+            if (meshFilter == null || meshFilter.sharedMesh == null) continue;
+            Bounds localBounds = meshFilter.sharedMesh.bounds;
+            Transform meshTransform = renderer.transform;
+            Vector3 localCenter = localBounds.center;
+            Vector3 positiveEnd = meshTransform.TransformPoint(localCenter + Vector3.forward * localBounds.extents.z);
+            Vector3 negativeEnd = meshTransform.TransformPoint(localCenter - Vector3.forward * localBounds.extents.z);
+            if (!foundEnd)
+            {
+                bottom = positiveEnd.y < negativeEnd.y ? positiveEnd : negativeEnd;
+                top = positiveEnd.y > negativeEnd.y ? positiveEnd : negativeEnd;
+                foundEnd = true;
+            }
+            if (positiveEnd.y < bottom.y) bottom = positiveEnd;
+            if (negativeEnd.y < bottom.y) bottom = negativeEnd;
+            if (positiveEnd.y > top.y) top = positiveEnd;
+            if (negativeEnd.y > top.y) top = negativeEnd;
         }
-        else if (tut != null) tut.ShowFailTut();
+        if (!foundEnd) return;
+        courseBottom = bottom;
+        courseTop = top;
+        courseVector = courseTop - courseBottom;
+        courseLengthSquared = courseVector.sqrMagnitude;
+        skiDirection = (top - bottom).normalized;
+        if (skiDirection.sqrMagnitude < 0.01f) skiDirection = skiSections[0].transform.forward;
 
-        if (LunaController.Instance != null)
-        {
-            LunaController.Instance.EndGame(failUI);
-        }
-        else if (_cta != null) _cta.SetActive(true);
+        if (cameraYaw != null)
+            cameraYaw.rotation = Quaternion.LookRotation(skiDirection, Vector3.up);
+        playerMotor.SetCourseDirection(skiDirection);
+
     }
 
-    public void CollectGift(Gift gift)
+    private void SpawnMorph()
     {
-        if (!IsPlaying || gift == null || gift != FirstGift) return;
-        // Lock the result immediately, including the delay before the CTA appears.
-        state = GameState.Completing;
-        gifts.Clear();
-        RegisterCollection();
-        StopPlayer();
-        if (collectText != null)
+        int index = Mathf.Clamp(luna, 1, 8) - 1;
+        if (morphPrefabs == null || index >= morphPrefabs.Length || morphPrefabs[index] == null)
         {
-            collectText.transform.localScale = Vector3.zero;
-            collectTween = collectText.transform.DOScale(1.2f, 0.3f).SetEase(Ease.OutCubic)
-                .OnComplete(() => collectTween = collectText.transform.DOScale(1f, 0.2f));
-            hideCollectTween = DOVirtual.DelayedCall(1f,
-                () =>
-                {
-                    if (collectText != null) collectText.transform.localScale = Vector3.zero;
-                });
+            Debug.LogError("Assign all eight morph prefabs in GameController.", this);
+            return;
         }
 
-        StartCoroutine(WaitForCollect(gift));
-        StartCoroutine(ShowComplete());
+        Vector3 spawnPosition = morphPosition != null
+            ? morphPosition.position
+            : courseTop + Vector3.up * 0.25f;
+        Quaternion spawnRotation = Quaternion.LookRotation(-skiDirection, Vector3.up);
+        Vector3 spawnEuler = spawnRotation.eulerAngles;
+        spawnEuler.x = 0f;
+        spawnedMorph = Instantiate(morphPrefabs[index], spawnPosition,
+            Quaternion.Euler(spawnEuler));
+        spawnedMorph.name = morphPrefabs[index].name;
+        Collider[] existingColliders = spawnedMorph.GetComponentsInChildren<Collider>(true);
+        for (int i = 0; i < existingColliders.Length; i++)
+            existingColliders[i].enabled = false;
+        Rigidbody[] bodies = spawnedMorph.GetComponentsInChildren<Rigidbody>(true);
+        for (int i = 0; i < bodies.Length; i++)
+        {
+            bodies[i].useGravity = false;
+            bodies[i].isKinematic = true;
+        }
+        SphereCollider trigger = spawnedMorph.AddComponent<SphereCollider>();
+        trigger.isTrigger = true;
+        trigger.radius = 1.5f;
+        spawnedMorph.AddComponent<MorphTouchTarget>().Initialize(this);
     }
 
     private void Update()
     {
-        bool showEffect = state == GameState.Failed && failUI != null && failUI.activeInHierarchy;
-        if (showEffect && failButtonTween == null) StartFailButtonEffect();
-        else if (!showEffect && failButtonTween != null) StopFailButtonEffect();
-    }
-
-    private void StartFailButtonEffect()
-    {
-        if (failButton == null)
+        CountPointerEvents();
+        if (state != State.Playing || playerMotor == null || playerMotor.Body == null)
         {
-            // The TRY AGAIN artwork is the CTA child of the fail popup.
-            failButton = failUI.transform.Find("CTA") as RectTransform;
-            if (failButton == null) return;
-            Image buttonImage = failButton.GetComponent<Image>();
-            if (buttonImage == null) return;
-            failButtonScale = failButton.localScale;
-
-            Mask mask = failButton.GetComponent<Mask>();
-            if (mask == null) mask = failButton.gameObject.AddComponent<Mask>();
-            mask.showMaskGraphic = true;
-
-            GameObject line = new GameObject("FailShine", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
-            line.layer = failButton.gameObject.layer;
-            failShine = line.GetComponent<RectTransform>();
-            failShine.SetParent(failButton, false);
-            failShine.anchorMin = failShine.anchorMax = new Vector2(0.5f, 0.5f);
-            failShine.pivot = new Vector2(0.5f, 0.5f);
-            failShine.localRotation = Quaternion.Euler(0f, 0f, -24.92f);
-            Image shineImage = line.GetComponent<Image>();
-            shineImage.color = new Color(1f, 1f, 1f, 0.2f);
-            shineImage.raycastTarget = false;
+            airborneFallTime = 0f;
+            return;
         }
 
-        if (failShine == null) return;
-        Canvas.ForceUpdateCanvases();
-        float width = failButton.rect.width;
-        float height = failButton.rect.height;
-        float lineWidth = width * 0.15f;
-        float lineHeight = height * 2f;
-        failShine.sizeDelta = new Vector2(lineWidth, lineHeight);
-        // Include the rotated stripe's extent so it restarts entirely outside the mask.
-        float extent = (lineWidth * Mathf.Cos(24.92f * Mathf.Deg2Rad)
-                        + lineHeight * Mathf.Sin(24.92f * Mathf.Deg2Rad)) * 0.5f;
-        float center = failButton.rect.center.x;
-        failShineStart = new Vector2(center - width * 0.5f - extent, failButton.rect.center.y);
-        failShine.anchoredPosition = failShineStart;
-        failShine.gameObject.SetActive(true);
-        failButtonTween = failButton.DOScale(failButtonScale * 1.2f, 0.6f)
-            .SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
-        failShineTween = failShine.DOAnchorPosX(center + width * 0.5f + extent, 0.8f)
-            .SetEase(Ease.Linear).SetLoops(-1, LoopType.Restart);
-    }
-
-    private void StopFailButtonEffect()
-    {
-        failButtonTween?.Kill();
-        failShineTween?.Kill();
-        failButtonTween = null;
-        failShineTween = null;
-        if (failButton != null) failButton.localScale = failButtonScale;
-        if (failShine != null)
+        // Do not use an absolute world-height threshold: a walkable lower bridge
+        // section can be below the ski's lowest endpoint. A fall only becomes
+        // eligible to fail after sustained airborne downward movement.
+        if (!playerMotor.IsGrounded && playerMotor.Body.linearVelocity.y < -0.5f)
         {
-            failShine.anchoredPosition = failShineStart;
-            failShine.gameObject.SetActive(false);
+            airborneFallTime += Time.deltaTime;
+            if (airborneFallTime >= fallConfirmationTime)
+                fallingOffSki = true;
+        }
+        else
+        {
+            airborneFallTime = 0f;
         }
     }
 
-    private void OnDisable()
+    private void CountPointerEvents()
     {
-        StopFailButtonEffect();
+        if (state != State.Playing) return;
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_LUNA
+        if (Input.GetMouseButtonDown(0)) mouseHeld = true;
+        if (Input.GetMouseButtonUp(0) && mouseHeld)
+        {
+            mouseHeld = false;
+            RegisterCountEvent();
+        }
+#else
+        Touch[] touches = Input.touches;
+        for (int i = 0; i < touches.Length; i++)
+        {
+            Touch touch = touches[i];
+            if (touch.phase == TouchPhase.Began && !heldFingerIds.Contains(touch.fingerId))
+                heldFingerIds.Add(touch.fingerId);
+            else if ((touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled) &&
+                     heldFingerIds.Remove(touch.fingerId))
+            {
+                RegisterCountEvent();
+            }
+        }
+#endif
+    }
+
+    private void RegisterCountEvent()
+    {
+        currentCountEvent++;
+        if (currentCountEvent >= countEvent)
+            CompleteMorph();
+    }
+
+    public void CheckLanding(Collision collision)
+    {
+        if (!IsPlaying || playerMotor == null || collision == null) return;
+        if (!fallingOffSki) return;
+        for (int i = 0; i < collision.contactCount; i++)
+        {
+            ContactPoint contact = collision.GetContact(i);
+            if (contact.normal.y > 0.5f)
+            {
+                deathCount++;
+                if (deathCount >= DeathsBeforeCta)
+                    ShowFinalFail();
+                else
+                    ShowFailForRetry();
+                return;
+            }
+        }
+    }
+
+    private void ShowFailForRetry()
+    {
+        state = State.Failed;
+        fallingOffSki = false;
+        airborneFallTime = 0f;
+        FreezePlayer();
+        if (TutController.Instance != null) TutController.Instance.StopTut();
+        if (LunaController.Instance != null)
+            LunaController.Instance.ShowRetryPanel(failUI, RetryAfterFail);
+        else if (failUI != null)
+            failUI.SetActive(true);
+    }
+
+    private void RetryAfterFail()
+    {
+        if (state != State.Failed || deathCount >= DeathsBeforeCta) return;
+        if (failUI != null) failUI.SetActive(false);
+        if (playerMotor == null || playerSpawn == null) return;
+        playerMotor.Teleport(playerSpawn.position, playerSpawn.rotation);
+        if (playerMotor.Body != null) playerMotor.Body.isKinematic = false;
+        playerMotor.enabled = true;
+        playerMotor.AutoRun(false, Vector3.zero);
+        fallingOffSki = false;
+        airborneFallTime = 0f;
+        state = State.Playing;
+    }
+
+    public void TimeExpired()
+    {
+        if (!IsPlaying && state != State.Failed) return;
+        ShowEndCard();
+    }
+
+    private void ShowEndCard()
+    {
+        if (!IsPlaying && state != State.Failed) return;
+        state = State.Complete;
+        if (failUI != null) failUI.SetActive(false);
+        StopPlayer();
+        if (TutController.Instance != null) TutController.Instance.StopTut();
+        if (LunaController.Instance != null) LunaController.Instance.EndCard(applovin);
+        else if (endCard != null) endCard.SetActive(true);
+    }
+
+    private void ShowFinalFail()
+    {
+        if (!IsPlaying) return;
+        state = State.Complete;
+        fallingOffSki = false;
+        StopPlayer();
+        if (TutController.Instance != null) TutController.Instance.StopTut();
+        if (LunaController.Instance != null)
+            LunaController.Instance.EndGame(failUI, !applovin);
+        else if (failUI != null)
+            failUI.SetActive(true);
+    }
+
+    private void FreezePlayer()
+    {
+        if (playerMotor == null) return;
+        playerMotor.AutoRun(true, Vector3.zero);
+        Rigidbody body = playerMotor.Body;
+        if (body == null) return;
+        body.linearVelocity = Vector3.zero;
+        body.angularVelocity = Vector3.zero;
+        body.isKinematic = true;
+    }
+
+    public void CompleteMorph()
+    {
+        if (!IsPlaying) return;
+        state = State.Complete;
+        StopPlayer();
+        if (TutController.Instance != null) TutController.Instance.StopTut();
+        if (LunaController.Instance != null) LunaController.Instance.EndCard(!applovin);
+        else if (endCard != null) endCard.SetActive(true);
+    }
+
+    public void Fail()
+    {
+        if (IsPlaying) ShowFailForRetry();
+    }
+
+    public void Far()
+    {
+        if (IsPlaying && TutController.Instance != null) TutController.Instance.ShowFarTut();
+    }
+
+    public void RegisterCollection()
+    {
+        // Kept for existing scene components; this playable has a single morph target.
+    }
+
+    public void CollectGift(Gift gift)
+    {
+        // The existing gift is inactive in this scene setup.
+    }
+
+    public void CompleteMorphSelection()
+    {
+        CompleteMorph();
     }
 
     private void StopPlayer()
     {
-        if (collect != null) collect.enabled = false;
         if (playerMotor == null) return;
         playerMotor.AutoRun(true, Vector3.zero);
         playerMotor.enabled = false;
@@ -261,32 +352,23 @@ public class GameController : MonoBehaviour
         body.isKinematic = true;
     }
 
-    private IEnumerator WaitForCollect(Gift gift)
+    private void LetPlayerFall()
     {
-        yield return new WaitUntil(() => gift == null || gift.collectDone);
-        if (gift != null) gift.RemoveGift();
-    }
-
-    private void UpdateProgress()
-    {
-        if (progressText != null) progressText.text = $"{currentProgress}/{target}";
-    }
-
-    private IEnumerator ShowComplete()
-    {
-        yield return new WaitForSeconds(timeToShowComplete);
-        if (state != GameState.Completing) yield break;
-        state = GameState.Complete;
-        if (tut != null) tut.StopTut();
-        if (LunaController.Instance != null) LunaController.Instance.EndCard();
-        else if (_cta != null) _cta.SetActive(true);
+        if (playerMotor == null) return;
+        playerMotor.AutoRun(true, Vector3.zero);
+        // Keep CharacterMotor enabled so its custom gravity continues the fall.
+        // Preserve current vertical velocity and stop only horizontal motion.
+        Rigidbody body = playerMotor.Body;
+        if (body == null) return;
+        Vector3 velocity = body.linearVelocity;
+        velocity.x = 0f;
+        velocity.z = 0f;
+        body.linearVelocity = velocity;
     }
 
     private void OnDestroy()
     {
-        StopFailButtonEffect();
-        collectTween?.Kill();
-        hideCollectTween?.Kill();
+        if (spawnedMorph != null) Destroy(spawnedMorph);
         if (Ins == this) Ins = null;
     }
 }
