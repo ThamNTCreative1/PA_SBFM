@@ -1,0 +1,247 @@
+{
+    "BuildID": "be97a683-aea3-4208-995f-ec4c5d019798",
+    "Command": "project:deploy",
+    "ProjectID": "1cbfda1e906e7db4a9fd3c53e24fceff",
+    "ProjectStateHash": "90914057a82308d972ad2c2f375bb54d2996b9a9d36420fb6ef32a2c64b7c21e",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1793089098290,
+    "EndTime": 1793089148115,
+    "PlaygroundUserID": 40396,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 8,
+    "Logs": [
+        {
+            "LogID": "960f5ad8-b048-4639-8e83-c570735b3b51",
+            "Order": 7,
+            "Timestamp": 1793089148347,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3005",
+            "Description": "You are using a Luna reserved keyword: On",
+            "Details": [
+                "You are using a reserved keyword: On for Luna. Please change the name of the field/class"
+            ],
+            "DescriptionValues": [
+                "On"
+            ],
+            "DetailsValues": [
+                "On"
+            ],
+            "LogCount": 1,
+            "LinePosition": 66,
+            "FilePath": "E:\\Gamew\\PA_SBFM\\Assets\\00 SCRIPTS\\Manager\\MonsterSelector.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "7e49a109-c558-4580-b02b-78a2fcf72042",
+            "Order": 7,
+            "Timestamp": 1793089148399,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "527d5736-b870-4f85-911e-34050b50a245",
+            "Order": 0,
+            "Timestamp": 1793089113925,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1001",
+            "Description": "Update shader stripping settings",
+            "Details": [
+                "Some of the scenes appear to have fog enabled and / or lightmapping data. Please modify 'Shader stripping' settings to always include required shader variants."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "291e1c9d-f40b-4956-8adb-e86406aea7c7",
+            "Order": 1,
+            "Timestamp": 1793089127526,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1007",
+            "Description": "Extensive use of mesh colliders",
+            "Details": [
+                "Usage of mesh colliders has negative effect on performance. You can use primitive colliders instead."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "28a53e56-a814-4157-aa61-a334128f59ca",
+            "Order": 2,
+            "Timestamp": 1793089127526,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "8564cfe8-5d2d-4180-b0ee-50b7ad36556b",
+            "Order": 3,
+            "Timestamp": 1793089127526,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of Rigidbody Component",
+            "Details": [
+                "There is extensive usage of the Rigidbody component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 12."
+            ],
+            "DescriptionValues": [
+                "Rigidbody"
+            ],
+            "DetailsValues": [
+                "Rigidbody",
+                "10",
+                "12"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "947918b0-ae59-4e7e-a696-0afbabe2d868",
+            "Order": 4,
+            "Timestamp": 1793089127547,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.12)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "E:/Gamew/PA_SBFM/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "d39d9d81-f7ae-4c27-bbe1-aa22662311bd",
+            "Order": 5,
+            "Timestamp": 1793089127547,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "Morph",
+                "tile-plain_grass",
+                "ParkourCube",
+                "ParkourCube (1)",
+                "ferris-wheel-stand",
+                "souvenir-stall (1)",
+                "bumper-cars-booth",
+                "bumper-car_blue",
+                "bumper-car_yellow",
+                "bumper-car-red",
+                "fountain",
+                "fountain (1)",
+                "water-ride",
+                "roller-coaster-cart-front",
+                "pizza-stall",
+                "shrub-flowers",
+                "shrub-flowers (1)",
+                "shrub-flowers (2)",
+                "shrub-flowers (3)",
+                "shrub-flowers (7)",
+                "bench-wood",
+                "bench-wood (1)",
+                "bench-wood (2)",
+                "bench-wood (4)",
+                "lamp-city",
+                "Cube",
+                "Cube (11)",
+                "Cube (1)",
+                "Cube (6)",
+                "Cube (13)",
+                "Cube (14)",
+                "Cube (2)",
+                "Cube (5)",
+                "Cube (10)",
+                "Cube (4)",
+                "Cube (7)",
+                "Cube (9)",
+                "Cube (3)",
+                "Cube (12)",
+                "Cube (8)",
+                "T-Rex",
+                "hotdog_color_0",
+                "circus_house_color_0",
+                "swing_boat_color_0",
+                "Park-10 (Road Intersection2)_city.001_0.255",
+                "Park-10 (Road Intersection2)_city.001_0.250 (1)",
+                "Park-10 (Road Intersection2)_city.001_0.261 (1)",
+                "Park-10 (Road Intersection2)_city.001_0.250 (3)",
+                "Step_1",
+                "Step_2",
+                "PeakPad"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 51,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

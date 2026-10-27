@@ -7,6 +7,8 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private Transform poolParent;
     [SerializeField] private int startSize;
+    [Tooltip("Loudness multiplier for one-shot SFX (1 = original).")]
+    [SerializeField, Range(0f, 3f)] private float sfxVolumeScale = 1f;
 
     private Queue<AudioSource> SFXPool;
 
@@ -39,7 +41,7 @@ public class AudioController : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         AudioSource s = GetFreeSource();
-        s.PlayOneShot(clip);
+        s.PlayOneShot(clip, sfxVolumeScale);
         StartCoroutine(ReturnToPool(s));
     }
     private AudioSource CreateNewSource()

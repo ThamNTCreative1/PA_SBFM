@@ -12,11 +12,15 @@ public class CharacterRotation : MonoBehaviour
 
     private void Rotate()
     {
-        if (!motor.IsMoving)
-            return;
+        Vector3 facing;
+        if (motor.IsClimbing) facing = motor.ClimbFacing;
+        else if (motor.IsMoving) facing = motor.MoveDirection;
+        else return;
+        facing.y = 0f;
+        if (facing.sqrMagnitude < 0.0001f) return;
 
         Quaternion targetRotation =
-            Quaternion.LookRotation(motor.MoveDirection);
+            Quaternion.LookRotation(facing);
 
         // Rotate through physics so Transform writes do not break interpolation.
         motor.Body.MoveRotation(Quaternion.Slerp(

@@ -1,95 +1,99 @@
 {
   "ignores": [
-    "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
-    "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
-    "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
-    "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
   ],
   "groups": [
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Camera/CameraFollow.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Camera/CameraFollow.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Camera/CameraLook.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/RunAction.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/CollectAction.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/InputManager.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/IInteractable.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Box.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/AudioController.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Gift.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterCollect.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/GameController.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterMotor.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterAnimation.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterRotation.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/CharacterInput.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/Joystick.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/JumpButton.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/GroundChecker.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/TutController.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/HideOnPointer.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/LunaController.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/SelectPanel.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/Hint.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/JumpHint.cs",
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/SoundHint.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Camera/CameraLook.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/RunAction.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/CollectAction.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/InputManager.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/IInteractable.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Box.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/AudioController.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Gift.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterCollect.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/GameController.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterMotor.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterAnimation.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/CharacterRotation.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/FootstepAudio.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Elevator.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Ladder.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/CharacterInput.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/Joystick.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/JumpButton.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Character/GroundChecker.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/TutController.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/HideOnPointer.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/LunaController.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Input/SelectPanel.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/MonsterSelector.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/Hint.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/JumpHint.cs",
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Hint/SoundHint.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/RoundEffect.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Interactable/Collect/RoundEffect.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/ResponsiveCanvasScaler.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Manager/ResponsiveCanvasScaler.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MissingScriptCleanerWindow.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MissingScriptCleanerWindow.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
     ],
     [
-      "D:/Source/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+      "E:/Gamew/PA_SBFM/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
     ],
     [
-      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+      "D:/LunaVer/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
     ],
     [
-      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+      "D:/LunaVer/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
     ],
     [
-      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+      "D:/LunaVer/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
     ]
   ]
 }

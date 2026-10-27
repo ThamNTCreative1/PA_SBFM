@@ -91,7 +91,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.playworks.upp": {
-      "version": "file:F:/7.2.0/scripts",
+      "version": "file:D:/LunaVer/7.2.0/scripts",
       "depth": 0,
       "source": "local",
       "dependencies": {}

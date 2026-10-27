@@ -11,6 +11,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Test.unity
     guid: 371fb8ddcaa41164b9c3d96d441220d8
+  - enabled: 1
+    path: Assets/Scenes/FindFarm.unity
+    guid: 39af530e4cd03a142909867be4357073
+  - enabled: 1
+    path: Assets/Scenes/FindWaterPark.unity
+    guid: 5acfd372a73d1a5439d0697dc743d0d9
+  - enabled: 1
+    path: Assets/Scenes/FindTRex.unity
+    guid: 9866861608cc79a4ca2fbe415f892240
+  - enabled: 1
+    path: Assets/Scenes/FindLadder.unity
+    guid: 79c2bea0a5cae5c46bd1be775a91a28e
+  - enabled: 1
+    path: Assets/Scenes/FindFarmBrainrot.unity
+    guid: 922007f8ed6befb4980c88ebc306b0b1
+  - enabled: 1
+    path: Assets/Scenes/FindWaterParkBrainrot.unity
+    guid: 6ac1f1f1540e2a14e82c3b1b74d212a0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0

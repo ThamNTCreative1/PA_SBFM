@@ -30,7 +30,23 @@ public class CharacterMotor : MonoBehaviour
     public float MaxMoveSpeed => moveSpeed;
     public float Speed => (MoveDirection * moveSpeed).magnitude;
 
-    public bool IsGrounded => groundChecker.IsGrounded || IsOnStepSurface();
+    public bool IsGrounded => climbing || groundChecker.IsGrounded || IsOnStepSurface();
+
+    [Header("Ladder")]
+    [SerializeField] private float climbSpeed = 7f;
+    [SerializeField] private float ladderSnapStrength = 10f;
+
+    private Ladder ladder;
+    private bool climbing;
+    private float fallStartY;
+
+    public bool IsClimbing => climbing;
+    private float lastClimbDirection = 1f;
+
+    // Facing while on the ladder: toward it when climbing up, downhill (away from it) when climbing down, like walking down a slope.
+    public Vector3 ClimbFacing => ladder == null ? transform.forward : (lastClimbDirection < 0f ? -ladder.IntoDirection : ladder.IntoDirection);
+    /// <summary>Height fallen since the character was last supported (ground, platform or ladder).</summary>
+    public float FallDistance => Mathf.Max(0f, fallStartY - (controller != null ? controller.position.y : transform.position.y));
 
     private float verticalVelocity;
     [SerializeField] private Rigidbody controller;
@@ -65,6 +81,9 @@ public class CharacterMotor : MonoBehaviour
         controller.angularVelocity = Vector3.zero;
         controller.position = position;
         controller.rotation = rotation;
+        fallStartY = position.y;
+        wasSupported = true;
+        climbing = false;
 
         transform.SetPositionAndRotation(position, rotation);
     }
@@ -106,9 +125,95 @@ public class CharacterMotor : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (ladder != null && UpdateLadder())
+        {
+            TrackFall(true);
+            return;
+        }
+
         ApplyGravity();
         ApplyJump();
         Move();
+        TrackFall(groundChecker.IsGrounded || IsOnStepSurface());
+    }
+
+    private bool wasSupported = true;
+
+    private void TrackFall(bool supported)
+    {
+        float y = controller.position.y;
+        if (supported && !wasSupported && GameController.Ins != null)
+            GameController.Ins.ReportLanding(fallStartY - y);
+        wasSupported = supported;
+        if (supported || y > fallStartY) fallStartY = y;
+    }
+
+    /// <summary>Call while a moving platform carries the character so the ride never counts as a fall.</summary>
+    public void ResetFall()
+    {
+        fallStartY = controller.position.y;
+        wasSupported = true;
+    }
+
+    public void SetLadder(Ladder value)
+    {
+        ladder = value;
+        if (value == null) climbing = false;
+    }
+
+    public void ClearLadder(Ladder value)
+    {
+        if (ladder != value) return;
+        ladder = null;
+        climbing = false;
+    }
+
+    // Returns true while the ladder owns the movement this physics step.
+    private bool UpdateLadder()
+    {
+        if (autoRun) return false;
+        Vector3 into = ladder.IntoDirection;
+        float input = Vector3.Dot(MoveDirection, into);
+        float t = ladder.GetT(controller.position);
+        bool supported = groundChecker.IsGrounded || IsOnStepSurface();
+
+        if (!climbing)
+        {
+            bool startUp = t < 0.3f && supported && input > 0.3f;
+            bool startDown = t > 0.7f && supported && input < -0.3f && controller.position.y >= ladder.Top.y - 1f;
+            // Walking off the top next to the ladder (or falling past it) grabs the ladder instead of falling.
+            Vector3 offLine = controller.position - ladder.PointAt(t);
+            offLine.y = 0f;
+            bool grab = !supported && verticalVelocity < 0f && t > 0.15f && t < 1.2f && offLine.magnitude < 2f;
+            if (!startUp && !startDown && !grab) return false;
+            lastClimbDirection = startUp ? 1f : -1f;
+            climbing = true;
+        }
+
+        jumpRequested = false;
+        verticalVelocity = 0f;
+        float climb = input > 0.2f ? 1f : (input < -0.2f ? -1f : 0f);
+        if (climb != 0f) lastClimbDirection = climb;
+
+        if (climb > 0f && t >= 1f)
+        {
+            // Reached the top: step off onto the platform the ladder leans on.
+            climbing = false;
+            controller.linearVelocity = into * moveSpeed * 0.6f + Vector3.up * 3f;
+            return true;
+        }
+
+        if (climb < 0f && t <= 0.02f)
+        {
+            climbing = false;
+            return false;
+        }
+
+        Vector3 target = ladder.PointAt(t);
+        Vector3 snap = target - controller.position;
+        snap.y = 0f;
+        controller.linearVelocity = ladder.Up * (climb * climbSpeed) + snap * ladderSnapStrength;
+        return true;
     }
 
     private void OnCollisionEnter(Collision collision)
