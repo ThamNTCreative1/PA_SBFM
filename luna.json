@@ -18203,7 +18203,7 @@
                     },
                     {
                         "name": "IsChildOf",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TransformPoint",
@@ -34652,6 +34652,10 @@
                     {
                         "name": "FreezePlayer",
                         "excluded": false
+                    },
+                    {
+                        "name": "IsSafeLandingSurface",
+                        "excluded": false
                     }
                 ]
             },
@@ -36029,7 +36033,7 @@
                 "instanceMethods": [
                     {
                         "name": "ColliderComponent#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RigidbodyComponent#get",
@@ -36057,7 +36061,7 @@
                     },
                     {
                         "name": "collider#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "contacts#get",

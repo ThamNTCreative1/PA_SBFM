@@ -1471,7 +1471,7 @@ MonoBehaviour:
       - FOG_LINEAR
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 1125
+  version: 1148
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0

@@ -1570,6 +1570,10 @@ MonoBehaviour:
   morphSelection: {fileID: 0}
   skiSections:
   - {fileID: 1861334001942415237}
+  safeLandingSurfaces:
+  - {fileID: 851502222}
+  - {fileID: 1235519628}
+  - {fileID: 1492765970}
   playerMotor: {fileID: 1159794732}
   playerSpawn: {fileID: 1245090092}
   morphPosition: {fileID: 326862934}

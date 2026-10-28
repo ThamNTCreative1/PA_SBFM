@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     [Header("Playable Setup")]
     [SerializeField] private MorphSelectionFlow morphSelection;
     [SerializeField] private Renderer[] skiSections;
+    [SerializeField] private Collider[] safeLandingSurfaces;
     [SerializeField] private CharacterMotor playerMotor;
     [SerializeField] private Transform playerSpawn;
     [SerializeField] private Transform morphPosition;
@@ -172,7 +173,8 @@ public class GameController : MonoBehaviour
 
         // Do not use an absolute world-height threshold: a walkable lower bridge
         // section can be below the ski's lowest endpoint. A fall only becomes
-        // eligible to fail after sustained airborne downward movement.
+        // eligible to fail after sustained airborne downward movement and
+        // landing outside the safe course surfaces.
         if (!playerMotor.IsGrounded && playerMotor.Body.linearVelocity.y < -0.5f)
         {
             airborneFallTime += Time.deltaTime;
@@ -227,6 +229,15 @@ public class GameController : MonoBehaviour
             ContactPoint contact = collision.GetContact(i);
             if (contact.normal.y > 0.5f)
             {
+                // A normal jump also has a sustained downward phase. Landing
+                // back on the course must clear it instead of counting a death.
+                if (IsSafeLandingSurface(collision.collider))
+                {
+                    fallingOffSki = false;
+                    airborneFallTime = 0f;
+                    return;
+                }
+
                 deathCount++;
                 if (deathCount >= DeathsBeforeCta)
                     ShowFinalFail();
@@ -235,6 +246,27 @@ public class GameController : MonoBehaviour
                 return;
             }
         }
+    }
+
+    private bool IsSafeLandingSurface(Collider surface)
+    {
+        if (surface == null) return false;
+        if (safeLandingSurfaces != null)
+        {
+            for (int i = 0; i < safeLandingSurfaces.Length; i++)
+                if (safeLandingSurfaces[i] == surface) return true;
+        }
+
+        if (skiSections != null)
+        {
+            for (int i = 0; i < skiSections.Length; i++)
+            {
+                Renderer section = skiSections[i];
+                if (section != null && surface.transform.IsChildOf(section.transform))
+                    return true;
+            }
+        }
+        return false;
     }
 
     private void ShowFailForRetry()
