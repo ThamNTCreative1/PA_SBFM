@@ -12,6 +12,7 @@ public class LunaController : MonoBehaviour
     public bool LimitTimePlay;
 
     [LunaPlaygroundField("Time Play")] public float TimePlay;
+    [LunaPlaygroundField("Morph Index (1-based)")] public int MorphIndex = 1;
     [SerializeField] private List<Image> images;
     [SerializeField] private Button CTA;
     private Tween installDelay;
@@ -49,7 +50,7 @@ public class LunaController : MonoBehaviour
             button.transition = Selectable.Transition.None;
             button.onClick.AddListener(ClickCTA);
         }
-        installDelay = DOVirtual.DelayedCall(2f, ClickCTA);
+
     }
 
     private IEnumerator EndGameAfterTimeLimit()
@@ -79,7 +80,7 @@ public class LunaController : MonoBehaviour
         line.DOAnchorPosX(520, 0.8f)
             .SetEase(Ease.Linear)
             .SetLoops(-1, LoopType.Restart);
-        installDelay = DOVirtual.DelayedCall(1.5f, ClickCTA);
+
     }
 
     private void OnDestroy()

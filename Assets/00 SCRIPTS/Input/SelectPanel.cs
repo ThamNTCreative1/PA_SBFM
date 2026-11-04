@@ -1,25 +1,30 @@
-﻿using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class SelectPanel : MonoBehaviour
 {
-    [SerializeField] private Transform _title;
-    [SerializeField] private List<Button> _buttonsSelectMap;
-
-    private void Start()
+    [SerializeField] private Button startButton;
+    [SerializeField] private AudioClip startSound;
+    private Tween pulse;
+    private Vector3 buttonScale;
+    private void OnEnable()
     {
-        _title.DOScale(1.2f, 1f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
-        foreach (Button button in _buttonsSelectMap)
-        {
-            button.onClick.AddListener(() => { gameObject.SetActive(false); });
-        }
+        if (startButton == null) return;
+        buttonScale = startButton.transform.localScale;
+        pulse = startButton.transform.DOScale(buttonScale * 1.12f, 0.6f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
+        startButton.onClick.AddListener(Begin);
     }
-
-    public void OpenCTA()
+    private void Begin()
     {
-        gameObject.SetActive(false);
-        LunaController.Instance.EndCard();
+        if (AudioController.Ins != null && startSound != null) AudioController.Ins.PlaySFX(startSound);
+        if (GameController.Ins != null) GameController.Ins.BeginSearch();
     }
+    private void OnDisable()
+    {
+        pulse?.Kill();
+        if (startButton == null) return;
+        startButton.transform.localScale = buttonScale;
+        startButton.onClick.RemoveListener(Begin);
+    }
+    public void OpenCTA() { if (LunaController.Instance != null) LunaController.Instance.EndCard(); }
 }

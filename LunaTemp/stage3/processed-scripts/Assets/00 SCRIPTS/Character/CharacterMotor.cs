@@ -73,7 +73,7 @@ public class CharacterMotor : MonoBehaviour
         if (characterInput.Jump)
             jumpRequested = true;
         ApplyMotor();
-        UpdateArrow();
+
     }
 
     private void UpdateArrow()

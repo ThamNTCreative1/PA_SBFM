@@ -1,0 +1,42 @@
+newmtl Cube0051Mtl.002
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0311Mtl.001
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0041Mtl.008
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0031Mtl.007
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0021Mtl.009
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0011Mtl.011
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+map_Kd lirili.png

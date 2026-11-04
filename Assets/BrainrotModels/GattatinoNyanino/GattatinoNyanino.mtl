@@ -1,0 +1,49 @@
+newmtl Cube0041Mtl.005
+Ka 0.2 0.2 0.2
+Kd 0.991393 0.592438 0.315763
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0091Mtl
+Ka 0.2 0.2 0.2
+Kd 0.173439 0.173439 0.173439
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0131Mtl.002
+Ka 0.2 0.2 0.2
+Kd 0.315763 0.315763 0.315763
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0011Mtl.008
+Ka 0.2 0.2 0.2
+Kd 1.000000 1.000000 1.000000
+Ks 0 0 0
+d 1
+illum 2
+map_Kd nyan.png
+
+newmtl Cube0121Mtl.001
+Ka 0.2 0.2 0.2
+Kd 0.991393 0.163641 0.891262
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0021Mtl.005
+Ka 0.2 0.2 0.2
+Kd 0.991393 0.038473 0.339223
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube1Mtl
+Ka 0.2 0.2 0.2
+Kd 0.991393 0.315763 0.991393
+Ks 0 0 0
+d 1
+illum 2

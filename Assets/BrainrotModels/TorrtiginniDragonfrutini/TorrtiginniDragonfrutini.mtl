@@ -1,0 +1,49 @@
+newmtl Cube0041Mtl.014
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0031Mtl.010
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0061Mtl.007
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0021Mtl.015
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+map_Kd TorrtiginniDragonfrutini.png
+
+newmtl Cube0011Mtl.015
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Sphere0021Mtl.002
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0081Mtl.003
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2

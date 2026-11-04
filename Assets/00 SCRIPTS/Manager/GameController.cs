@@ -7,7 +7,16 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] private float timeToShowComplete = 0.5f;
+    [SerializeField] private float timeToShowComplete = 1f;
+    [SerializeField] private GameObject selectPanel;
+    [SerializeField] private GameObject inputUI;
+    [SerializeField] private InputManager inputManager;
+    [SerializeField] private AudioClip failSound;
+    [Header("Search Timer")]
+    [SerializeField, Min(1f)] private float searchDuration = 30f;
+    [SerializeField] private TMP_Text countdownText;
+    private float searchEndsAt;
+    private int displayedSeconds = -1;
     [SerializeField] private int currentProgress;
     [SerializeField] private int target = 1;
     [SerializeField] private TMP_Text progressText;
@@ -20,7 +29,6 @@ public class GameController : MonoBehaviour
     [Header("Bridge Level")] [SerializeField]
     private Transform playerSpawn;
 
-    [SerializeField] private Transform giftSpawn;
     [SerializeField] private GameObject failUI;
     [SerializeField] private CharacterMotor playerMotor;
 
@@ -29,6 +37,7 @@ public class GameController : MonoBehaviour
 
     private enum GameState
     {
+        Selecting,
         Playing,
         Completing,
         Complete,
@@ -36,6 +45,7 @@ public class GameController : MonoBehaviour
     }
 
     private GameState state;
+    private Gift selectedGift;
     private Tween collectTween;
     private Tween hideCollectTween;
     private RectTransform failButton;
@@ -46,7 +56,9 @@ public class GameController : MonoBehaviour
     private Tween failShineTween;
 
     public static GameController Ins { get; private set; }
-    public Gift FirstGift => gifts != null && gifts.Count > 0 ? gifts[0] : null;
+    public Gift FirstGift => selectedGift != null
+        ? selectedGift
+        : gifts != null && gifts.Count > 0 ? gifts[0] : null;
     public bool IsPlaying => state == GameState.Playing;
     public bool HasFailed => state == GameState.Failed;
 
@@ -66,40 +78,61 @@ public class GameController : MonoBehaviour
         if (playerMotor == null && collect != null)
             playerMotor = collect.GetComponent<CharacterMotor>();
 
-        Gift levelGift = FirstGift;
-        gifts.Clear();
-        if (levelGift != null)
+        selectedGift = gifts != null && gifts.Count > 0 ? gifts[0] : null;
+        if (gifts != null)
         {
-            gifts.Add(levelGift);
-            levelGift.collectDone = false;
-            if (giftSpawn != null)
-                levelGift.transform.position = giftSpawn.position;
+            for (int i = gifts.Count - 1; i > 1; i--)
+            {
+                int j = Random.Range(1, i + 1);
+                if (gifts[i] == null || gifts[j] == null) continue;
+                Vector3 position = gifts[i].transform.position;
+                gifts[i].transform.position = gifts[j].transform.position;
+                gifts[j].transform.position = position;
+            }
+            foreach (Gift gift in gifts)
+            {
+                if (gift == null) continue;
+                gift.collectDone = false;
+                gift.gameObject.SetActive(true);
+            }
         }
-
         target = 1;
         currentProgress = 0;
-        state = GameState.Playing;
+        state = GameState.Selecting;
+        UpdateCountdown(Mathf.CeilToInt(searchDuration));
         if (failUI != null) failUI.SetActive(false);
         if (_cta != null) _cta.SetActive(false);
         if (collectText != null) collectText.transform.localScale = Vector3.zero;
-        if (playerSpawn != null && playerMotor != null)
+        if (playerSpawn != null && playerMotor != null && playerMotor.Body != null)
             playerMotor.Teleport(playerSpawn.position, playerSpawn.rotation);
         UpdateProgress();
+        if (selectPanel != null) selectPanel.SetActive(true);
+        if (tut != null) tut.gameObject.SetActive(false);
+        StopPlayer();
+    }
+    public void BeginSearch()
+    {
+        if (state != GameState.Selecting) return;
+        state = GameState.Playing;
+        searchEndsAt = Time.time + searchDuration;
+        UpdateCountdown(Mathf.CeilToInt(searchDuration));
+        if (selectPanel != null) selectPanel.SetActive(false);
+        if (inputUI != null) inputUI.SetActive(true);
+        if (inputManager != null) inputManager.enabled = true;
+        if (collect != null) collect.enabled = true;
+        if (playerMotor != null)
+        {
+            Rigidbody body = playerMotor.Body;
+            if (body != null) body.isKinematic = false;
+            playerMotor.AutoRun(false, Vector3.zero);
+            playerMotor.enabled = true;
+        }
+        if (tut != null) tut.BeginTutorial();
     }
 
     public void CheckLanding(Collision collision)
     {
-        if (!IsPlaying || playerMotor == null || playerMotor.Body == null) return;
-        // Wait for an actual landing: the motor's ground probe can report grounded
-        // before contact, and a height check alone would stop the player in midair.
-        int count = collision.contactCount;
-        for (int i = 0; i < count; i++)
-        {
-            ContactPoint contact = collision.GetContact(i);
-            if (contact.normal.y < 0.5f || contact.point.y >= failHeight) continue;
-            Fail();
-            return;
-        }
+        // Search results depend only on touching a Sprunki.
     }
 
     public void Far()
@@ -111,6 +144,7 @@ public class GameController : MonoBehaviour
     {
         if (!IsPlaying) return;
         state = GameState.Failed;
+        if (AudioController.Ins != null && failSound != null) AudioController.Ins.PlaySFX(failSound);
         StopPlayer();
         if (failUI != null)
         {
@@ -120,18 +154,15 @@ public class GameController : MonoBehaviour
         else if (tut != null) tut.ShowFailTut();
 
         if (LunaController.Instance != null)
-        {
             LunaController.Instance.EndGame(failUI);
-        }
-        else if (_cta != null) _cta.SetActive(true);
     }
 
     public void CollectGift(Gift gift)
     {
-        if (!IsPlaying || gift == null || gift != FirstGift) return;
+        if (!IsPlaying || gift == null) return;
+        if (gift != FirstGift) { Fail(); return; }
         // Lock the result immediately, including the delay before the CTA appears.
         state = GameState.Completing;
-        gifts.Clear();
         currentProgress = 1;
         StopPlayer();
         UpdateProgress();
@@ -147,12 +178,32 @@ public class GameController : MonoBehaviour
                 });
         }
 
-        StartCoroutine(WaitForCollect(gift));
         StartCoroutine(ShowComplete());
+    }
+
+    private void UpdateCountdown(int seconds)
+    {
+        if (seconds == displayedSeconds) return;
+        displayedSeconds = seconds;
+        if (countdownText != null)
+        {
+            // Avoid numeric format providers in the Luna JavaScript runtime.
+            int minutes = seconds / 60;
+            int remainder = seconds % 60;
+            countdownText.text = (minutes < 10 ? "0" : "") + minutes.ToString()
+                + ":" + (remainder < 10 ? "0" : "") + remainder.ToString();
+        }
     }
 
     private void Update()
     {
+        if (IsPlaying)
+        {
+            float remaining = Mathf.Max(0f, searchEndsAt - Time.time);
+            UpdateCountdown(Mathf.CeilToInt(remaining));
+            if (remaining <= 0f) Fail();
+        }
+
         bool showEffect = state == GameState.Failed && failUI != null && failUI.activeInHierarchy;
         if (showEffect && failButtonTween == null) StartFailButtonEffect();
         else if (!showEffect && failButtonTween != null) StopFailButtonEffect();
@@ -227,6 +278,8 @@ public class GameController : MonoBehaviour
     private void StopPlayer()
     {
         if (collect != null) collect.enabled = false;
+        if (inputUI != null) inputUI.SetActive(false);
+        if (inputManager != null) inputManager.enabled = false;
         if (playerMotor == null) return;
         playerMotor.AutoRun(true, Vector3.zero);
         playerMotor.enabled = false;
@@ -235,12 +288,6 @@ public class GameController : MonoBehaviour
         body.linearVelocity = Vector3.zero;
         body.angularVelocity = Vector3.zero;
         body.isKinematic = true;
-    }
-
-    private IEnumerator WaitForCollect(Gift gift)
-    {
-        yield return new WaitUntil(() => gift == null || gift.collectDone);
-        if (gift != null) gift.RemoveGift();
     }
 
     private void UpdateProgress()

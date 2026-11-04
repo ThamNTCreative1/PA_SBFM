@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Playable
@@ -81,9 +81,10 @@ namespace Playable
                 _canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             }
 
-            if (_canvasScaler.referenceResolution != _referenceResolution)
+            Vector2 resolution = aspectRatio >= 1f ? new Vector2(1920f, 1080f) : new Vector2(1080f, 1920f);
+            if (_canvasScaler.referenceResolution != resolution)
             {
-                _canvasScaler.referenceResolution = _referenceResolution;
+                _canvasScaler.referenceResolution = resolution;
             }
 
             if (_canvasScaler.screenMatchMode != CanvasScaler.ScreenMatchMode.MatchWidthOrHeight)
@@ -91,7 +92,7 @@ namespace Playable
                 _canvasScaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
             }
 
-            float match = GetMatchValue(aspectRatio);
+            float match = 0.5f;
 
             if (!Mathf.Approximately(_canvasScaler.matchWidthOrHeight, match))
             {

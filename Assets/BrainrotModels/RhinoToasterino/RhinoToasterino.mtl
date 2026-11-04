@@ -1,0 +1,56 @@
+newmtl Cube0031Mtl.005
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0141Mtl.002
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0151Mtl.004
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0121Mtl.003
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+map_Kd Cube0121_diff.png
+
+newmtl Cube0091Mtl.005
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0051Mtl.004
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0021Mtl.011
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube1Mtl.002
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2

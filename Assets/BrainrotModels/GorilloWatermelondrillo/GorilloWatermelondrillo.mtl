@@ -1,0 +1,63 @@
+newmtl Cube0221Mtl
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0111Mtl
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+map_Kd gorillo.png
+
+newmtl Cube0101Mtl
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0091Mtl.001
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0071Mtl
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0051Mtl
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0041Mtl.006
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0021Mtl.007
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+
+newmtl Cube0011Mtl.009
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
