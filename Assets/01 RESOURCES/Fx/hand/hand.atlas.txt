@@ -1,0 +1,14 @@
+hand.png
+size:672,420
+filter:Linear,Linear
+pma:true
+circle_shine
+bounds:2,2,414,414
+offsets:7,7,428,428
+hand
+bounds:418,165,251,251
+offsets:3,3,256,256
+hand 1
+bounds:418,30,133,177
+offsets:48,20,216,216
+rotate:90

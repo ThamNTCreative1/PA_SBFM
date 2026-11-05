@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9442a2e468b14244af521ef82f72c8d8, type: 3}
+  m_Name: HiddenCharacter28_SO
+  m_EditorClassIdentifier: Assembly-CSharp::MiniGames.FindMonster.Scripts.Monster.MonsterSO
+  id: HiddenCharacter28
+  displayName: HiddenCharacter28
+  icon: {fileID: 21300000, guid: dd0eb1195ad5b214c96c928f904112a4, type: 3}
+  prefab: {fileID: 1423338384860865588, guid: d906b6f3f3f167c498b7a83baf3d5bce, type: 3}

@@ -1,0 +1,74 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Billboard.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/CharacterFootstep.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FMCharacter.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/ControlsTutorial.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/PortalStory.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FindMonsterManager.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FindMonsterPlayerControl.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/BoostButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/BoostJumpButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FindMonsterEvent.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/TeleportPortal.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FMAudio.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/GameButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/MonsterItemView.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ListMonsterPanel.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/PlayableFrame.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/PopupSuggest.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/PopupSuggestPanel.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/RadarButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/TurtorialArrow.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/HiddenMonsterPanel.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/MonsterSO.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FindMonsterDatabase.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/HiddenMonster.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/MonsterProgressBar.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/HideButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/MapPanel.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/OpenFrameButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/MapButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/MonsterListButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/PlayableAudio.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ScreenTransition.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FM3rdInput.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ScreenDeltaInputSystem.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/BoostSpeedButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ResetMorphButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/PlayerSO.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/PortalGlow.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/PointerHand.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/StoryTextView.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/ShineBurst.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/JumpButton.cs",
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/PlayableJoystick.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FerrisCabin.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/ScaleYoyo.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/WaterRide.cs"
+    ],
+    [
+      "F:/UnityProjects/FSAHM_V12/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/AutoCanvasScaler.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
