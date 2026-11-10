@@ -1464,7 +1464,7 @@ ModelImporter:
     - serializedVersion: 16
       name: HumanoidIdleJumpUp
       takeName: _207_Idle_JumpUpMedium_NoHands1Step_Idle
-      internalID: 0
+      internalID: 7400002
       firstFrame: 56
       lastFrame: 233
       wrapMode: 0
@@ -1495,7 +1495,7 @@ ModelImporter:
     - serializedVersion: 16
       name: HumanoidFall
       takeName: _207_Idle_JumpUpMedium_NoHands1Step_Idle
-      internalID: 0
+      internalID: 7400004
       firstFrame: 127
       lastFrame: 129
       wrapMode: 0
@@ -1820,7 +1820,7 @@ ModelImporter:
     - serializedVersion: 16
       name: HumanoidJumpUp
       takeName: _207_Idle_JumpUpMedium_NoHands1Step_Idle
-      internalID: 0
+      internalID: 7400006
       firstFrame: 125
       lastFrame: 127
       wrapMode: 0
@@ -2145,7 +2145,7 @@ ModelImporter:
     - serializedVersion: 16
       name: HumanoidMidAir
       takeName: _207_Idle_JumpUpMedium_NoHands1Step_Idle
-      internalID: 0
+      internalID: 7400008
       firstFrame: 131
       lastFrame: 133
       wrapMode: 0

@@ -55,8 +55,8 @@ public class FindMonsterManager : MonoBehaviour
 
     private void Start()
     {
-        // With the portal storyline in the scene, it starts the guide line itself (after the controls tutorial).
-        if (PortalStory.Instance == null && !tutorialComplete && arrowTut && targetTutorial && playerTransform)
+        // With a storyline in the scene, it starts the guide line itself (after the controls tutorial).
+        if (PortalStory.Instance == null && MorphHuntStory.Instance == null && !tutorialComplete && arrowTut && targetTutorial && playerTransform)
             arrowTut.StartDraw(targetTutorial, playerTransform);
     }
 
@@ -70,7 +70,8 @@ public class FindMonsterManager : MonoBehaviour
         tutorialComplete = true;
         if (arrowTut) arrowTut.StopDraw();
         collected++;
-        bool storyHandled = PortalStory.Instance && PortalStory.Instance.HandleCollected(monster);
+        bool storyHandled = (PortalStory.Instance && PortalStory.Instance.HandleCollected(monster))
+            || (MorphHuntStory.Instance && MorphHuntStory.Instance.HandleCollected(monster));
         if (!storyHandled && hiddenMonsterPanel) hiddenMonsterPanel.Setup(monster.MonsterSo);
         FindMonsterEvent.DispatchMonsterFound(monster.MonsterSo);
         if (LunaController.Instance) LunaController.Instance.MonsterFound(collected);

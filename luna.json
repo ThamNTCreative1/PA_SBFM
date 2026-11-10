@@ -2,7 +2,7 @@
     "version": "7.2.0",
     "projectId": "83b351e714daeb74c83c822ea4d255be",
     "applicationID": 42700,
-    "creativeName": "C1_2611_TamNTM_FSAHM_V12_HoaiTT",
+    "creativeName": "C1_2611_TamNTM_FSAHM_V13_HoaiTT",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -8174,6 +8174,10 @@
             },
             {
                 "name": "TMPro.HorizontalAlignmentOptions",
+                "excluded": false
+            },
+            {
+                "name": "MorphHuntStory.Step",
                 "excluded": false
             }
         ],
@@ -21846,7 +21850,7 @@
                     },
                     {
                         "name": "GetState",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -22482,7 +22486,7 @@
                     },
                     {
                         "name": "GetState$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetMotion",
@@ -23256,15 +23260,15 @@
                     },
                     {
                         "name": "GetAnimatorTransitionInfo",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetFloat$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetFloat",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetInt",
@@ -23296,7 +23300,7 @@
                     },
                     {
                         "name": "GetCurrentAnimatorStateInfo",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetLayerWeight",
@@ -23360,7 +23364,7 @@
                     },
                     {
                         "name": "Play$4",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Play$1",
@@ -23408,11 +23412,11 @@
                     },
                     {
                         "name": "IsInTransition",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetNextAnimatorStateInfo",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetNextAnimatorClipInfoCount",
@@ -24940,7 +24944,7 @@
                     },
                     {
                         "name": "shortNameHash#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SpeedValue#get",
@@ -30388,7 +30392,7 @@
                     },
                     {
                         "name": "ResizeMeshInfo",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ResizeMeshInfo$1",
@@ -30810,7 +30814,7 @@
                     },
                     {
                         "name": "Resize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Resize$1",
@@ -31144,7 +31148,7 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -31164,7 +31168,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -31537,6 +31541,22 @@
                     {
                         "name": "UpdateCamera",
                         "excluded": false
+                    },
+                    {
+                        "name": "IsTurning#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetView",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LookTowards",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateTurn",
+                        "excluded": false
                     }
                 ]
             },
@@ -31640,7 +31660,7 @@
                     },
                     {
                         "name": "IsGrounded",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IsWalking",
@@ -31760,7 +31780,7 @@
                     },
                     {
                         "name": "Obtained#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
@@ -31900,7 +31920,7 @@
                     },
                     {
                         "name": "ShowEndCard",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -32480,6 +32500,56 @@
                     },
                     {
                         "name": "Reset",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "MorphHuntStory",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "UseHand#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "NextMorph",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GuideTo",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsMorph",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HandleCollected",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AfterUnlock",
                         "excluded": false
                     }
                 ]

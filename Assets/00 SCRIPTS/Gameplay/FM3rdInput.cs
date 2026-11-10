@@ -48,8 +48,24 @@ public class FM3rdInput : MonoBehaviour
 
     private void Start()
     {
-        yaw = transform.eulerAngles.y;
-        pitch = defaultPitch;
+        if (!viewSet)
+        {
+            yaw = transform.eulerAngles.y;
+            pitch = defaultPitch;
+        }
+        UpdateCamera();
+    }
+
+    private bool viewSet;
+
+    // Story start view: camera yaw/pitch set right away (independent of where the player faces).
+    public void SetView(float newYaw, float newPitch)
+    {
+        yaw = newYaw;
+        pitch = Mathf.Clamp(newPitch, minPitch, maxPitch);
+        viewSet = true;
+        autoReturning = false;
+        lastLookInputTime = Time.time;
         UpdateCamera();
     }
 
@@ -71,6 +87,40 @@ public class FM3rdInput : MonoBehaviour
         pitch = Mathf.Clamp(pitch + value, minPitch, maxPitch);
         lastLookInputTime = Time.time;
         autoReturning = false;
+    }
+
+    // Story camera move: turn the view smoothly towards a world point (yaw and pitch), then hand control back.
+    public void LookTowards(Vector3 point, float duration)
+    {
+        if (followTarget == null || planetMode) return;
+        Vector3 d = point - followTarget.transform.position;
+        Vector3 flat = new Vector3(d.x, 0, d.z);
+        if (flat.sqrMagnitude < 0.0001f) return;
+        turnFromYaw = yaw;
+        turnFromPitch = pitch;
+        turnToYaw = Quaternion.LookRotation(flat).eulerAngles.y;
+        // positive pitch looks down
+        turnToPitch = Mathf.Clamp(-Mathf.Atan2(d.y, flat.magnitude) * Mathf.Rad2Deg + defaultPitch, minPitch, maxPitch);
+        turnDuration = Mathf.Max(0.01f, duration);
+        turnClock = 0;
+        autoReturning = false;
+    }
+
+    public bool IsTurning { get { return turnClock >= 0; } }
+
+    private float turnClock = -1, turnDuration, turnFromYaw, turnToYaw, turnFromPitch, turnToPitch;
+
+    private void UpdateTurn()
+    {
+        if (turnClock < 0) return;
+        turnClock += Time.deltaTime;
+        float t = Mathf.Clamp01(turnClock / turnDuration);
+        float e = t * t * (3 - 2 * t);
+        yaw = Mathf.LerpAngle(turnFromYaw, turnToYaw, e);
+        pitch = Mathf.Lerp(turnFromPitch, turnToPitch, e);
+        // the player's look input and auto return wait until the turn is done
+        lastLookInputTime = Time.time;
+        if (t >= 1) turnClock = -1;
     }
 
     public void ResetCameraToPlayerBack()
@@ -112,6 +162,7 @@ public class FM3rdInput : MonoBehaviour
             LookAccumulated += Mathf.Abs(look.x * lookSensitivity.x) + Mathf.Abs(look.y * lookSensitivity.y);
         }
         HandleAutoReturn(look);
+        UpdateTurn();
         UpdateCamera();
     }
 
