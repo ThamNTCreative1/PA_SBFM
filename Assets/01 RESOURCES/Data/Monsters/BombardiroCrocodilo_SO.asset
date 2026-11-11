@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BombardiroCrocodilo_SO
   m_EditorClassIdentifier: 
   id: BombardiroCrocodilo
-  displayName: Bombardiro Crocodilo
-  icon: {fileID: 21300000, guid: 14d17e82661c14d46a7a182aa9bd5da2, type: 3}
+  displayName: Bombordiro Crocodilo
+  icon: {fileID: 21300000, guid: 34f294ae95203a4409550b3a8155cb4a, type: 3}
   prefab: {fileID: 1709254077376921, guid: 04d7762488cb5494583e6a555f0f0332, type: 3}
-  rarity: Legendary
-  rarityColor: {r: 1, g: 0.75, b: 0.05, a: 1}
+  rarity: Epic
+  rarityColor: {r: 0.95, g: 0.15, b: 0.95, a: 1}

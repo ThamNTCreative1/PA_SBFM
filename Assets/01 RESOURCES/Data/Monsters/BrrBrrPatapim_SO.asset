@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: BrrBrrPatapim
   displayName: Brr Brr Patapim
-  icon: {fileID: 21300000, guid: 81bb848186c3ea745aa8c8f9f8420892, type: 3}
+  icon: {fileID: 21300000, guid: 163863d7d2e3f5943a1c523af739e3f9, type: 3}
   prefab: {fileID: 1709254077376921, guid: f7b13f72583e01745840eb0408ad972e, type: 3}
   rarity: Epic
   rarityColor: {r: 0.95, g: 0.15, b: 0.95, a: 1}

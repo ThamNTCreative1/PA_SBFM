@@ -203,6 +203,8 @@ public class FMCharacter : MonoBehaviour
             // Luna ignores stepOffset: when walking on the ground is blocked, climb the step ourselves.
             if (wasGrounded && verticalSpeed <= 0 && step.sqrMagnitude > 1e-6f && Flat(transform.position - start).magnitude < step.magnitude * 0.5f)
                 if (StepUp(step)) grounded = true;
+            // Luna's controller can slip into big boxes (hay bales): push it back out
+            SolidBox.PushOut(controller);
         }
 
         // Stand along up and face the run direction (turns together with the velocity)

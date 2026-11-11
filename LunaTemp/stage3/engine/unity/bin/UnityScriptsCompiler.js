@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["Billboard#init","Billboard#Start","Billboard#LateUpdate","BoostButton#Awake","BoostButton#OnClick","BoostButton#Activate","BoostButton#Update","CharacterFootstep#init","CharacterFootstep#Start","CharacterFootstep#Update","ControlsTutorial#Done#get","ControlsTutorial#init","ControlsTutorial#Skip","ControlsTutorial#Awake","ControlsTutorial#OnDestroy","ControlsTutorial#Begin","ControlsTutorial#Finish","ControlsTutorial#Update","ControlsTutorial#LateUpdate","FindMonsterDatabase#init","FindMonsterDatabase#GetAll","FindMonsterDatabase#GetMonster","FindMonsterDatabase#ResetData","FindMonsterEvent#DispatchBoostSpeed","FindMonsterEvent#DispatchBoostJump","FindMonsterEvent#DispatchMorph","FindMonsterEvent#DispatchResetMorph","FindMonsterEvent#DispatchMonsterFound","FindMonsterEvent#DispatchTeleported","FindMonsterEvent#DispatchTeleportStarted","FindMonsterEvent#Clear","FindMonsterManager#Database#get","FindMonsterManager#PlayerTransform#get","FindMonsterManager#PlayerTouchSize#get","FindMonsterManager#Collected#get","FindMonsterManager#Total#get","FindMonsterManager#init","FindMonsterManager#Awake","FindMonsterManager#DisableUnusedTriggers","FindMonsterManager#OnDestroy","FindMonsterManager#Start","FindMonsterManager#Register","FindMonsterManager#OnMonsterCollected","FindMonsterManager#OnTeleported","FindMonsterManager#AvailableMonsters","FindMonsterManager#ShowNearestMonster","FindMonsterManager#GetPositionRespawn","FindMonsterPlayerControl#init","FindMonsterPlayerControl#MakeSkin","FindMonsterPlayerControl#Awake","FindMonsterPlayerControl#OnDestroy","FindMonsterPlayerControl#Start","FindMonsterPlayerControl#Update","FindMonsterPlayerControl#PlayPoof","FindMonsterPlayerControl#ClearMorph","FindMonsterPlayerControl#Morph","FindMonsterPlayerControl#ResetMorph","FindMonsterPlayerControl#BoostJump","FindMonsterPlayerControl#JumpRoutine","FindMonsterPlayerControl#BoostSpeed","FindMonsterPlayerControl#SpeedRoutine","FM3rdInput#IsTurning#get","FM3rdInput#init","FM3rdInput#Awake","FM3rdInput#Start","FM3rdInput#SetView","FM3rdInput#EnablePlanet","FM3rdInput#AddControlYawInput","FM3rdInput#AddControlPitchInput","FM3rdInput#LookTowards","FM3rdInput#UpdateTurn","FM3rdInput#ResetCameraToPlayerBack","FM3rdInput#LateUpdate","FM3rdInput#HandleAutoReturn","FM3rdInput#UpdateCamera","FMAudio#IsEmpty#get","FMAudio#init","FMAudio#Play","FMAudio#PlayAtPosition","FMCharacter#init","FMCharacter#Flat","FMCharacter#maxWalkSpeed#get","FMCharacter#maxWalkSpeed#set","FMCharacter#jumpImpulse#get","FMCharacter#jumpImpulse#set","FMCharacter#speed#get","FMCharacter#RotationRate#get","FMCharacter#RotationRate#set","FMCharacter#MaxAcceleration#get","FMCharacter#BrakingDeceleration#get","FMCharacter#AirControl#get","FMCharacter#Velocity#get","FMCharacter#Camera#get","FMCharacter#InputEnabled#get","FMCharacter#InputEnabled#set","FMCharacter#IsOnPlanet#get","FMCharacter#PlanetCenter#get","FMCharacter#PlanetRadius#get","FMCharacter#init","FMCharacter#IsGrounded","FMCharacter#IsWalking","FMCharacter#Awake","FMCharacter#Jump","FMCharacter#EnablePlanet","FMCharacter#GetPosition","FMCharacter#SetPosition","FMCharacter#SetRotation","FMCharacter#ReadMoveInput","FMCharacter#Update","FMCharacter#StepUp","FMCharacter#GetPlanetUp","FMCharacter#MoveOnPlanet","FMCharacter#SetMoveAnimSpeed","GameButton#init","GameButton#SetBackground","GameButton#SetIcon","GameButton#SetTitle","GameButton#OnPointerClick","GameButton#OnPointerDown","GameButton#OnPointerUp","GameButton#OnDisable","GameButton#Update","HiddenMonster#MonsterSo#get","HiddenMonster#CheckMark#get","HiddenMonster#ClaimFx#get","HiddenMonster#Obtained#get","HiddenMonster#init","HiddenMonster#Awake","HiddenMonster#Start","HiddenMonster#ComputeVolume","HiddenMonster#Update","HiddenMonster#Collect","PlayableFrame#IsOpen#get","PlayableFrame#init","PlayableFrame#Awake","PlayableFrame#Show","PlayableFrame#Hide","PlayableFrame#OnShow","PlayableFrame#OnHide","PlayableFrame#OnDisable","PlayableFrame#Update","HideButton#Awake","HideButton#Hide","JumpButton#OnPointerDown","LunaController#PatchMeshColliderUV","LunaController#Rewarded","LunaController#Clicks#get","LunaController#Ended#get","LunaController#init","LunaController#Awake","LunaController#Start","LunaController#OnDestroy","LunaController#Update","LunaController#SendGameEnded","LunaController#ShowEndUI","LunaController#ShowEndCard","LunaController#ClickCTA","LunaController#EndAfterTime","OpenFrameButton#Awake","OpenFrameButton#OnClick","MonsterItemView#SetModel","MonsterItemView#UpdateUI","MonsterItemView#Morph","MonsterProgressBar#Found#get","MonsterProgressBar#init","MonsterProgressBar#Awake","MonsterProgressBar#Start","MonsterProgressBar#Init","MonsterProgressBar#OnDestroy","MonsterProgressBar#OnMonsterFound","MonsterProgressBar#Refresh","MonsterProgressBar#Update","MonsterSO#IsOwn#get","MonsterSO#init","MonsterSO#Obtain","MonsterSO#ResetData","MorphHuntStory#SetMorph","MorphHuntStory#init","MorphHuntStory#Awake","MorphHuntStory#ApplyMorphTypes","MorphHuntStory#Start","MorphHuntStory#OnDestroy","MorphHuntStory#Update","MorphHuntStory#NextMorph","MorphHuntStory#GuideTo","MorphHuntStory#IsMorph","MorphHuntStory#HandleCollected","MorphHuntStory#AfterUnlock","PlayableAudio#Play","PlayableAudio#PlayButtonClick","PlayableAudio#Awake","PlayableAudio#OnDestroy","PlayableJoystick#init","PlayableJoystick#Awake","PlayableJoystick#OnPointerDown","PlayableJoystick#OnDrag","PlayableJoystick#OnPointerUp","PlayableJoystick#ResetInput","PlayableJoystick#OnDisable","PlayerSO#MaxSpeed#get","PlayerSO#JumpImpulse#get","PlayerSO#init","PointerHand#init","PointerHand#Sample","PointerHand#init","PointerHand#Awake","PointerHand#Point","PointerHand#Hide","PointerHand#LateUpdate","PopupSuggest#init","PopupSuggest#Start","PopupSuggest#Update","PortalGlow#Active#get","PortalGlow#init","PortalGlow#SetColor","PortalGlow#Awake","PortalGlow#Activate","PortalGlow#Deactivate","PortalGlow#Update","PortalStory#init","PortalStory#Awake","PortalStory#OnDestroy","PortalStory#Update","PortalStory#OnTeleportStarted","PortalStory#OnTeleported","PortalStory#AppearRoutine","PortalStory#HandleCollected","PortalStory#UnlockRoutine","RadarButton#init","RadarButton#Awake","RadarButton#Update","RadarButton#OnClick","RadarButton#Radar","ResetMorphButton#Awake","ScaleYoyo#IsRotate#get","ScaleYoyo#init","ScaleYoyo#Awake","ScaleYoyo#OnEnable","ScaleYoyo#OnDisable","ScaleYoyo#Restore","ScaleYoyo#Update","ScaleYoyo#Ease","ScreenDeltaInputSystem#init","ScreenDeltaInputSystem#OnPointerDown","ScreenDeltaInputSystem#OnDrag","ScreenDeltaInputSystem#OnPointerUp","ScreenDeltaInputSystem#ConsumeDelta","ScreenDeltaInputSystem#OnDisable","ScreenTransition#init","ScreenTransition#Awake","ScreenTransition#OnDestroy","ScreenTransition#FindCameraRig","ScreenTransition#Register","ScreenTransition#SetAlpha","ScreenTransition#SetScale","ScreenTransition#HideAll","ScreenTransition#Animate","ScreenTransition#Flash","ScreenTransition#Cover","ScreenTransition#Reveal","ScreenTransition.Layer#init","ShineBurst#init","ShineBurst#Awake","ShineBurst#Play","ShineBurst#Update","StoryTextView#init","StoryTextView#Awake","StoryTextView#Show","StoryTextView#Hide","StoryTextView#SetAlpha","StoryTextView#Update","TeleportPortal#init","TeleportPortal#init","TeleportPortal#Start","TeleportPortal#OnDestroy","TeleportPortal#Update","TeleportPortal#TeleportRoutine","TurtorialArrow#Active#get","TurtorialArrow#CurrentTarget#get","TurtorialArrow#init","TurtorialArrow#Awake","TurtorialArrow#OnDestroy","TurtorialArrow#StartDraw","TurtorialArrow#Update","TurtorialArrow#StopDraw","UIRays#SetAlpha","UIRays#init","UIRays#EnsureAges","UIRays#OnEnable","UIRays#Update","UIRays#Spawn","BoostJumpButton#Dispatch","BoostSpeedButton#Dispatch","HiddenMonsterPanel#init","HiddenMonsterPanel#Setup","HiddenMonsterPanel#Morph","HiddenMonsterPanel#Update","ListMonsterPanel#init","ListMonsterPanel#OnShow","ListMonsterPanel#Morph","MapPanel#init","MapPanel#OnShow","MorphUnlockedPanel#init","MorphUnlockedPanel#Setup","MorphUnlockedPanel#Fill","PopupSuggestPanel#init","PopupSuggestPanel#OnShow","PopupSuggestPanel#Update","PopupSuggestPanel#OnHide","PopupSuggestPanel#HideButton","PopupSuggestPanel#BoostSpeed","PopupSuggestPanel#BoostJump","PopupSuggestPanel#BoostRadar"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["Billboard#init","Billboard#Start","Billboard#LateUpdate","BoostButton#Awake","BoostButton#OnClick","BoostButton#Activate","BoostButton#Update","CharacterFootstep#init","CharacterFootstep#Start","CharacterFootstep#Update","ControlsTutorial#Done#get","ControlsTutorial#init","ControlsTutorial#Skip","ControlsTutorial#Awake","ControlsTutorial#OnDestroy","ControlsTutorial#Begin","ControlsTutorial#Finish","ControlsTutorial#Update","ControlsTutorial#LateUpdate","FindMonsterDatabase#init","FindMonsterDatabase#GetAll","FindMonsterDatabase#GetMonster","FindMonsterDatabase#ResetData","FindMonsterEvent#DispatchBoostSpeed","FindMonsterEvent#DispatchBoostJump","FindMonsterEvent#DispatchMorph","FindMonsterEvent#DispatchResetMorph","FindMonsterEvent#DispatchMonsterFound","FindMonsterEvent#DispatchTeleported","FindMonsterEvent#DispatchTeleportStarted","FindMonsterEvent#Clear","FindMonsterManager#Database#get","FindMonsterManager#PlayerTransform#get","FindMonsterManager#PlayerTouchSize#get","FindMonsterManager#Collected#get","FindMonsterManager#Total#get","FindMonsterManager#init","FindMonsterManager#Awake","FindMonsterManager#DisableUnusedTriggers","FindMonsterManager#OnDestroy","FindMonsterManager#Start","FindMonsterManager#Register","FindMonsterManager#OnMonsterCollected","FindMonsterManager#OnTeleported","FindMonsterManager#AvailableMonsters","FindMonsterManager#ShowNearestMonster","FindMonsterManager#GetPositionRespawn","FindMonsterPlayerControl#init","FindMonsterPlayerControl#MakeSkin","FindMonsterPlayerControl#Awake","FindMonsterPlayerControl#OnDestroy","FindMonsterPlayerControl#Start","FindMonsterPlayerControl#Update","FindMonsterPlayerControl#PlayPoof","FindMonsterPlayerControl#ClearMorph","FindMonsterPlayerControl#Morph","FindMonsterPlayerControl#ResetMorph","FindMonsterPlayerControl#BoostJump","FindMonsterPlayerControl#JumpRoutine","FindMonsterPlayerControl#BoostSpeed","FindMonsterPlayerControl#SpeedRoutine","FM3rdInput#IsTurning#get","FM3rdInput#init","FM3rdInput#Awake","FM3rdInput#Start","FM3rdInput#SetView","FM3rdInput#EnablePlanet","FM3rdInput#AddControlYawInput","FM3rdInput#AddControlPitchInput","FM3rdInput#LookTowards","FM3rdInput#TurnTo","FM3rdInput#UpdateTurn","FM3rdInput#ResetCameraToPlayerBack","FM3rdInput#LateUpdate","FM3rdInput#HandleAutoReturn","FM3rdInput#UpdateCamera","FMAudio#IsEmpty#get","FMAudio#init","FMAudio#Play","FMAudio#PlayAtPosition","FMCharacter#init","FMCharacter#Flat","FMCharacter#maxWalkSpeed#get","FMCharacter#maxWalkSpeed#set","FMCharacter#jumpImpulse#get","FMCharacter#jumpImpulse#set","FMCharacter#speed#get","FMCharacter#RotationRate#get","FMCharacter#RotationRate#set","FMCharacter#MaxAcceleration#get","FMCharacter#BrakingDeceleration#get","FMCharacter#AirControl#get","FMCharacter#Velocity#get","FMCharacter#Camera#get","FMCharacter#InputEnabled#get","FMCharacter#InputEnabled#set","FMCharacter#IsOnPlanet#get","FMCharacter#PlanetCenter#get","FMCharacter#PlanetRadius#get","FMCharacter#init","FMCharacter#IsGrounded","FMCharacter#IsWalking","FMCharacter#Awake","FMCharacter#Jump","FMCharacter#EnablePlanet","FMCharacter#GetPosition","FMCharacter#SetPosition","FMCharacter#SetRotation","FMCharacter#ReadMoveInput","FMCharacter#Update","FMCharacter#StepUp","FMCharacter#GetPlanetUp","FMCharacter#MoveOnPlanet","FMCharacter#SetMoveAnimSpeed","GameButton#init","GameButton#SetBackground","GameButton#SetIcon","GameButton#SetTitle","GameButton#OnPointerClick","GameButton#OnPointerDown","GameButton#OnPointerUp","GameButton#OnDisable","GameButton#Update","HiddenMonster#MonsterSo#get","HiddenMonster#CheckMark#get","HiddenMonster#ClaimFx#get","HiddenMonster#Obtained#get","HiddenMonster#init","HiddenMonster#Awake","HiddenMonster#Start","HiddenMonster#ComputeVolume","HiddenMonster#Update","HiddenMonster#Collect","PlayableFrame#IsOpen#get","PlayableFrame#init","PlayableFrame#Awake","PlayableFrame#Show","PlayableFrame#Hide","PlayableFrame#OnShow","PlayableFrame#OnHide","PlayableFrame#OnDisable","PlayableFrame#Update","HideButton#Awake","HideButton#Hide","JumpButton#OnPointerDown","LunaController#PatchMeshColliderUV","LunaController#Rewarded","LunaController#Clicks#get","LunaController#Ended#get","LunaController#init","LunaController#Awake","LunaController#Start","LunaController#OnDestroy","LunaController#Update","LunaController#SendGameEnded","LunaController#ShowEndUI","LunaController#ShowEndCard","LunaController#ClickCTA","LunaController#EndAfterTime","OpenFrameButton#Awake","OpenFrameButton#OnClick","MonsterItemView#SetModel","MonsterItemView#UpdateUI","MonsterItemView#Morph","MonsterProgressBar#Found#get","MonsterProgressBar#init","MonsterProgressBar#Awake","MonsterProgressBar#Start","MonsterProgressBar#Init","MonsterProgressBar#OnDestroy","MonsterProgressBar#OnMonsterFound","MonsterProgressBar#Refresh","MonsterProgressBar#Update","MonsterSO#IsOwn#get","MonsterSO#init","MonsterSO#Obtain","MonsterSO#ResetData","MorphHuntStory#SetMorph","MorphHuntStory#init","MorphHuntStory#Awake","MorphHuntStory#ApplyMorphType","MorphHuntStory#Start","MorphHuntStory#TurnToMorph","MorphHuntStory#OnDestroy","MorphHuntStory#Update","MorphHuntStory#NextMorph","MorphHuntStory#GuideTo","MorphHuntStory#HideGuide","MorphHuntStory#IsMorph","MorphHuntStory#HandleCollected","MorphHuntStory#AfterUnlock","PlayableAudio#Play","PlayableAudio#PlayButtonClick","PlayableAudio#Awake","PlayableAudio#OnDestroy","PlayableJoystick#init","PlayableJoystick#Awake","PlayableJoystick#OnPointerDown","PlayableJoystick#OnDrag","PlayableJoystick#OnPointerUp","PlayableJoystick#ResetInput","PlayableJoystick#OnDisable","PlayerSO#MaxSpeed#get","PlayerSO#JumpImpulse#get","PlayerSO#init","PointerHand#init","PointerHand#Sample","PointerHand#init","PointerHand#Awake","PointerHand#Point","PointerHand#Hide","PointerHand#LateUpdate","PopupSuggest#init","PopupSuggest#Start","PopupSuggest#Update","PortalGlow#Active#get","PortalGlow#init","PortalGlow#SetColor","PortalGlow#Awake","PortalGlow#Activate","PortalGlow#Deactivate","PortalGlow#Update","PortalStory#init","PortalStory#Awake","PortalStory#OnDestroy","PortalStory#Update","PortalStory#OnTeleportStarted","PortalStory#OnTeleported","PortalStory#AppearRoutine","PortalStory#HandleCollected","PortalStory#UnlockRoutine","RadarButton#init","RadarButton#Awake","RadarButton#Update","RadarButton#OnClick","RadarButton#Radar","ResetMorphButton#Awake","ScaleYoyo#IsRotate#get","ScaleYoyo#init","ScaleYoyo#Awake","ScaleYoyo#OnEnable","ScaleYoyo#OnDisable","ScaleYoyo#Restore","ScaleYoyo#Update","ScaleYoyo#Ease","ScreenDeltaInputSystem#init","ScreenDeltaInputSystem#OnPointerDown","ScreenDeltaInputSystem#OnDrag","ScreenDeltaInputSystem#OnPointerUp","ScreenDeltaInputSystem#ConsumeDelta","ScreenDeltaInputSystem#OnDisable","ScreenTransition#init","ScreenTransition#Awake","ScreenTransition#OnDestroy","ScreenTransition#FindCameraRig","ScreenTransition#Register","ScreenTransition#SetAlpha","ScreenTransition#SetScale","ScreenTransition#HideAll","ScreenTransition#Animate","ScreenTransition#Flash","ScreenTransition#Cover","ScreenTransition#Reveal","ScreenTransition.Layer#init","ShineBurst#init","ShineBurst#Awake","ShineBurst#Play","ShineBurst#Update","SolidBox#init","SolidBox#PushOut","SolidBox#init","SolidBox#Awake","SolidBox#OnEnable","SolidBox#OnDisable","SolidBox#Penetration","StoryTextView#init","StoryTextView#Awake","StoryTextView#Show","StoryTextView#Hide","StoryTextView#SetAlpha","StoryTextView#Update","TeleportPortal#init","TeleportPortal#init","TeleportPortal#Start","TeleportPortal#OnDestroy","TeleportPortal#Update","TeleportPortal#TeleportRoutine","TurtorialArrow#Active#get","TurtorialArrow#CurrentTarget#get","TurtorialArrow#init","TurtorialArrow#Awake","TurtorialArrow#OnDestroy","TurtorialArrow#StartDraw","TurtorialArrow#Update","TurtorialArrow#StopDraw","UIRays#SetAlpha","UIRays#init","UIRays#EnsureAges","UIRays#OnEnable","UIRays#Update","UIRays#Spawn","BoostJumpButton#Dispatch","BoostSpeedButton#Dispatch","HiddenMonsterPanel#init","HiddenMonsterPanel#Setup","HiddenMonsterPanel#Morph","HiddenMonsterPanel#Update","ListMonsterPanel#init","ListMonsterPanel#OnShow","ListMonsterPanel#Morph","MapPanel#init","MapPanel#OnShow","MorphUnlockedPanel#init","MorphUnlockedPanel#Setup","MorphUnlockedPanel#Fill","PopupSuggestPanel#init","PopupSuggestPanel#OnShow","PopupSuggestPanel#Update","PopupSuggestPanel#OnHide","PopupSuggestPanel#HideButton","PopupSuggestPanel#BoostSpeed","PopupSuggestPanel#BoostJump","PopupSuggestPanel#BoostRadar"]' ) ); }
 /**
- * @version 1.0.9810.32240
+ * @version 1.0.9811.26440
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -1353,6 +1353,23 @@ if ( TRACE ) { TRACE( "FM3rdInput#LookTowards", this ); }
             },
             /*FM3rdInput.LookTowards end.*/
 
+            /*FM3rdInput.TurnTo start.*/
+            TurnTo: function (newYaw, newPitch, duration) {
+if ( TRACE ) { TRACE( "FM3rdInput#TurnTo", this ); }
+
+                if (this.planetMode) {
+                    return;
+                }
+                this.turnFromYaw = this.yaw;
+                this.turnFromPitch = this.pitch;
+                this.turnToYaw = newYaw;
+                this.turnToPitch = Math.max(this.minPitch, Math.min(newPitch, this.maxPitch));
+                this.turnDuration = UnityEngine.Mathf.Max(0.01, duration);
+                this.turnClock = 0;
+                this.autoReturning = false;
+            },
+            /*FM3rdInput.TurnTo end.*/
+
             /*FM3rdInput.UpdateTurn start.*/
             UpdateTurn: function () {
 if ( TRACE ) { TRACE( "FM3rdInput#UpdateTurn", this ); }
@@ -1954,6 +1971,8 @@ if ( TRACE ) { TRACE( "FMCharacter#Update", this ); }
                             this.grounded = true;
                         }
                     }
+                    // Luna's controller can slip into big boxes (hay bales): push it back out
+                    SolidBox.PushOut(this.controller);
                 }
 
                 // Stand along up and face the run direction (turns together with the velocity)
@@ -2539,8 +2558,7 @@ if ( TRACE ) { TRACE( "LunaController#Rewarded", this ); }
         fields: {
             LimitTimePlay: false,
             TimePlay: 0,
-            TypeMorph1: 0,
-            TypeMorph2: 0,
+            TypeMorph: 0,
             LimitClick: false,
             MaxClick: 0,
             BGM: null,
@@ -2574,8 +2592,7 @@ if ( TRACE ) { TRACE( "LunaController#Ended#get", this ); }
 if ( TRACE ) { TRACE( "LunaController#init", this ); }
 
                 this.TimePlay = 60;
-                this.TypeMorph1 = 0;
-                this.TypeMorph2 = 1;
+                this.TypeMorph = 0;
                 this.LimitClick = false;
                 this.MaxClick = 30;
                 this.musicVolume = 0.68;
@@ -3080,39 +3097,52 @@ if ( TRACE ) { TRACE( "MorphHuntStory#SetMorph", this ); }
             startPitch: 0,
             hand: null,
             handOffset: null,
+            guideAnchor: null,
+            arrowAnchor: null,
+            guideLabel: null,
             storyText: null,
             unlockText: null,
             shine: null,
             finalPanel: null,
             introText: null,
+            almostText: null,
             unlockedFormat: null,
             oneMoreText: null,
             introDelay: 0,
             handHideDistance: 0,
+            almostDistance: 0,
+            almostHeight: 0,
             cameraTurnDuration: 0,
             finalDuration: 0,
             step: 0,
             clock: 0,
             unlocked: 0,
-            target: null
+            target: null,
+            almostShown: false,
+            arrowOnAnchor: false,
+            arrowSwitchBelow: 0
         },
         ctors: {
             init: function () {
 if ( TRACE ) { TRACE( "MorphHuntStory#init", this ); }
 
                 this.handOffset = new UnityEngine.Vector3();
-                this.morphs = System.Array.init(2, null, HiddenMonster);
+                this.morphs = System.Array.init(1, null, HiddenMonster);
                 this.morphOptions = System.Array.init(0, null, MonsterSO);
                 this.startPitch = -15.0;
                 this.handOffset = new pc.Vec3( 0, 1.5, 0 );
-                this.introText = "2 HIDDEN MORPHS! FIND THEM ALL!";
-                this.unlockedFormat = "MORPH UNLOCKED! {0}/{1}";
+                this.introText = "Look! A Morph is There!";
+                this.almostText = "Almost There!";
+                this.unlockedFormat = "";
                 this.oneMoreText = "ONE MORE TO FIND!";
                 this.introDelay = 0.2;
                 this.handHideDistance = 6.0;
+                this.almostDistance = 9.0;
+                this.almostHeight = 0.5;
                 this.cameraTurnDuration = 1.2;
                 this.finalDuration = 2.5;
                 this.step = MorphHuntStory.Step.Intro;
+                this.arrowSwitchBelow = 0.4;
             }
         },
         methods: {
@@ -3123,6 +3153,9 @@ if ( TRACE ) { TRACE( "MorphHuntStory#Awake", this ); }
                 MorphHuntStory.Instance = this;
                 if (UnityEngine.Object.op_Implicit(this.hand)) {
                     this.hand.gameObject.SetActive(false);
+                }
+                if (UnityEngine.Object.op_Implicit(this.guideLabel)) {
+                    this.guideLabel.SetActive(false);
                 }
                 if (UnityEngine.Object.op_Implicit(this.shine)) {
                     this.shine.gameObject.SetActive(false);
@@ -3137,35 +3170,25 @@ if ( TRACE ) { TRACE( "MorphHuntStory#Awake", this ); }
                 if (UnityEngine.Object.op_Implicit(this.finalPanel)) {
                     this.finalPanel.gameObject.SetActive(false);
                 }
-                this.ApplyMorphTypes();
+                this.ApplyMorphType();
             },
             /*MorphHuntStory.Awake end.*/
 
-            /*MorphHuntStory.ApplyMorphTypes start.*/
-            ApplyMorphTypes: function () {
-if ( TRACE ) { TRACE( "MorphHuntStory#ApplyMorphTypes", this ); }
+            /*MorphHuntStory.ApplyMorphType start.*/
+            ApplyMorphType: function () {
+if ( TRACE ) { TRACE( "MorphHuntStory#ApplyMorphType", this ); }
 
-                if (this.morphOptions == null || this.morphOptions.length === 0) {
+                if (this.morphOptions == null || this.morphOptions.length === 0 || this.morphs == null || this.morphs.length === 0) {
                     return;
                 }
                 var luna = UnityEngine.Object.op_Implicit(LunaController.Instance) ? LunaController.Instance : UnityEngine.Object.FindObjectOfType(LunaController);
                 if (UnityEngine.MonoBehaviour.op_Equality(luna, null)) {
                     return;
                 }
-                var first = Math.max(0, Math.min(luna.TypeMorph1, ((this.morphOptions.length - 1) | 0)));
-                var second = Math.max(0, Math.min(luna.TypeMorph2, ((this.morphOptions.length - 1) | 0)));
-                // the same morph twice would count as one: take the next one for the second spot
-                if (second === first) {
-                    second = (((first + 1) | 0)) % this.morphOptions.length;
-                }
-                if (this.morphs.length > 0) {
-                    MorphHuntStory.SetMorph(this.morphs[0], this.morphOptions[first]);
-                }
-                if (this.morphs.length > 1) {
-                    MorphHuntStory.SetMorph(this.morphs[1], this.morphOptions[second]);
-                }
+                var type = Math.max(0, Math.min(luna.TypeMorph, ((this.morphOptions.length - 1) | 0)));
+                MorphHuntStory.SetMorph(this.morphs[0], this.morphOptions[type]);
             },
-            /*MorphHuntStory.ApplyMorphTypes end.*/
+            /*MorphHuntStory.ApplyMorphType end.*/
 
             /*MorphHuntStory.Start start.*/
             Start: function () {
@@ -3180,6 +3203,22 @@ if ( TRACE ) { TRACE( "MorphHuntStory#Start", this ); }
                 }
             },
             /*MorphHuntStory.Start end.*/
+
+            /*MorphHuntStory.TurnToMorph start.*/
+            TurnToMorph: function (morph) {
+if ( TRACE ) { TRACE( "MorphHuntStory#TurnToMorph", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Equality(this.look, null) || UnityEngine.MonoBehaviour.op_Equality(this.player, null) || UnityEngine.Component.op_Equality(morph, null)) {
+                    return;
+                }
+                var d = morph.position.$clone().sub( this.player.transform.position );
+                d.y = 0;
+                if (d.lengthSq() < 0.0001) {
+                    return;
+                }
+                this.look.TurnTo(new pc.Quat().lookRotation( d, pc.Vec3.UP ).getPositiveEulerAngles().y, this.startPitch, this.cameraTurnDuration);
+            },
+            /*MorphHuntStory.TurnToMorph end.*/
 
             /*MorphHuntStory.OnDestroy start.*/
             OnDestroy: function () {
@@ -3203,19 +3242,52 @@ if ( TRACE ) { TRACE( "MorphHuntStory#Update", this ); }
                             this.clock = 0;
                             return;
                         }
+                        // the tutorial ends with a jump: wait until the player has landed before turning the camera
+                        if (UnityEngine.Object.op_Implicit(this.player) && !this.player.IsGrounded()) {
+                            this.clock = 0;
+                            return;
+                        }
                         if (this.clock < this.introDelay) {
                             return;
                         }
                         if (UnityEngine.Object.op_Implicit(this.storyText)) {
                             this.storyText.Show(this.introText);
                         }
-                        this.GuideTo(this.NextMorph());
+                        var first = this.NextMorph();
+                        if (UnityEngine.Object.op_Implicit(first)) {
+                            this.TurnToMorph(first.transform);
+                        }
+                        this.GuideTo(first);
                         this.step = MorphHuntStory.Step.Hunt;
                         break;
                     case MorphHuntStory.Step.Hunt: 
-                        // Right at the morph the hand would cover the player: hide it.
-                        if (UnityEngine.Object.op_Implicit(this.hand) && this.hand.gameObject.activeSelf && UnityEngine.Object.op_Implicit(this.target) && UnityEngine.Object.op_Implicit(this.player) && (this.player.transform.position.$clone().sub( this.target.position )).length() < this.handHideDistance) {
-                            this.hand.Hide();
+                        if (UnityEngine.MonoBehaviour.op_Equality(this.player, null) || UnityEngine.Component.op_Equality(this.target, null)) {
+                            return;
+                        }
+                        var p = this.player.transform.position.$clone();
+                        // up on the wheelbarrow (or anywhere above the ground at its height): the arrow now points at the morph
+                        if (this.arrowOnAnchor && UnityEngine.Object.op_Implicit(this.guideAnchor) && this.player.IsGrounded() && p.y > this.guideAnchor.position.y - this.arrowSwitchBelow) {
+                            this.arrowOnAnchor = false;
+                            if (UnityEngine.Object.op_Implicit(TurtorialArrow.Instance)) {
+                                TurtorialArrow.Instance.StartDraw(this.target, this.player.transform);
+                            }
+                        }
+                        // Right at the hand's target the hand would cover the player: hide it (and its label).
+                        var handTarget = UnityEngine.Object.op_Implicit(this.guideAnchor) ? this.guideAnchor : this.target;
+                        if (UnityEngine.Object.op_Implicit(this.hand) && this.hand.gameObject.activeSelf && (p.$clone().sub( handTarget.position )).length() < this.handHideDistance) {
+                            this.HideGuide();
+                        }
+                        if (!this.almostShown && !System.String.isNullOrEmpty(this.almostText)) {
+                            var d = this.target.position.$clone().sub( p );
+                            d.y = 0;
+                            // standing on the morph's level (landed on the haystack), not just jumping past it
+                            if (d.length() < this.almostDistance && p.y > this.target.position.y - this.almostHeight && this.player.IsGrounded()) {
+                                this.almostShown = true;
+                                this.HideGuide();
+                                if (UnityEngine.Object.op_Implicit(this.storyText)) {
+                                    this.storyText.Show(this.almostText);
+                                }
+                            }
                         }
                         break;
                 }
@@ -3243,14 +3315,34 @@ if ( TRACE ) { TRACE( "MorphHuntStory#GuideTo", this ); }
                 if (UnityEngine.Component.op_Equality(this.target, null) || UnityEngine.MonoBehaviour.op_Equality(this.player, null)) {
                     return;
                 }
+                // the wheelbarrow guide is only for the first morph
+                var handTarget = UnityEngine.Object.op_Implicit(this.guideAnchor) && this.unlocked === 0 ? this.guideAnchor : this.target;
+                // the guide arrow first leads to the wheelbarrow; once the player stands on it, to the morph
+                this.arrowOnAnchor = UnityEngine.Component.op_Equality(handTarget, this.guideAnchor);
                 if (UnityEngine.Object.op_Implicit(TurtorialArrow.Instance)) {
-                    TurtorialArrow.Instance.StartDraw(this.target, this.player.transform);
+                    TurtorialArrow.Instance.StartDraw(this.arrowOnAnchor ? (UnityEngine.Object.op_Implicit(this.arrowAnchor) ? this.arrowAnchor : this.guideAnchor) : this.target, this.player.transform);
                 }
                 if (UnityEngine.Object.op_Implicit(this.hand)) {
-                    this.hand.Point(this.target, this.handOffset);
+                    this.hand.Point(handTarget, this.handOffset);
+                }
+                if (UnityEngine.Object.op_Implicit(this.guideLabel) && UnityEngine.Component.op_Equality(handTarget, this.guideAnchor)) {
+                    this.guideLabel.SetActive(true);
                 }
             },
             /*MorphHuntStory.GuideTo end.*/
+
+            /*MorphHuntStory.HideGuide start.*/
+            HideGuide: function () {
+if ( TRACE ) { TRACE( "MorphHuntStory#HideGuide", this ); }
+
+                if (UnityEngine.Object.op_Implicit(this.hand)) {
+                    this.hand.Hide();
+                }
+                if (UnityEngine.Object.op_Implicit(this.guideLabel)) {
+                    this.guideLabel.SetActive(false);
+                }
+            },
+            /*MorphHuntStory.HideGuide end.*/
 
             /*MorphHuntStory.IsMorph start.*/
             IsMorph: function (monster) {
@@ -3274,9 +3366,7 @@ if ( TRACE ) { TRACE( "MorphHuntStory#HandleCollected", this ); }
                 }
                 this.unlocked = (this.unlocked + 1) | 0;
                 this.step = MorphHuntStory.Step.Unlocking;
-                if (UnityEngine.Object.op_Implicit(this.hand)) {
-                    this.hand.Hide();
-                }
+                this.HideGuide();
                 if (UnityEngine.Object.op_Implicit(TurtorialArrow.Instance)) {
                     TurtorialArrow.Instance.StopDraw();
                 }
@@ -3286,7 +3376,7 @@ if ( TRACE ) { TRACE( "MorphHuntStory#HandleCollected", this ); }
                 if (UnityEngine.Object.op_Implicit(this.storyText)) {
                     this.storyText.Hide();
                 }
-                if (UnityEngine.Object.op_Implicit(this.unlockText)) {
+                if (UnityEngine.Object.op_Implicit(this.unlockText) && !System.String.isNullOrEmpty(this.unlockedFormat)) {
                     this.unlockText.Show(System.String.format(this.unlockedFormat, Bridge.box(this.unlocked, System.Int32), Bridge.box(this.morphs.length, System.Int32)));
                 }
                 this.StartCoroutine$1(this.AfterUnlock());
@@ -3303,6 +3393,7 @@ if ( TRACE ) { TRACE( "MorphHuntStory#AfterUnlock", this ); }
                     $returnValue,
                     next,
                     unlockedPanel,
+                    found,
                     $async_e;
 
                 var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
@@ -3358,6 +3449,7 @@ if ( TRACE ) { TRACE( "MorphHuntStory#AfterUnlock", this ); }
                                         if (UnityEngine.Object.op_Implicit(this.storyText)) {
                                             this.storyText.Show(this.oneMoreText);
                                         }
+                                        this.almostShown = false;
                                         this.GuideTo(next);
                                         this.step = MorphHuntStory.Step.Hunt;
                                         return false;
@@ -3365,27 +3457,40 @@ if ( TRACE ) { TRACE( "MorphHuntStory#AfterUnlock", this ); }
                                     continue;
                                 }
                                 case 7: {
-                                    // Both found: show them together, then the end card (CTA)
+                                    // All found: show them together, then the end UI + end card (CTA)
                                         this.step = MorphHuntStory.Step.Final;
                                         if (UnityEngine.Object.op_Implicit(this.player)) {
                                             this.player.InputEnabled = false;
                                         }
                                         unlockedPanel = Bridge.as(this.finalPanel, MorphUnlockedPanel);
-                                        if (UnityEngine.Object.op_Implicit(unlockedPanel) && this.morphs.length > 1 && UnityEngine.Object.op_Implicit(this.morphs[0]) && UnityEngine.Object.op_Implicit(this.morphs[1])) {
-                                            unlockedPanel.Setup(this.morphs[0].MonsterSo, this.morphs[1].MonsterSo);
+                                        if (UnityEngine.Object.op_Implicit(unlockedPanel)) {
+                                            found = System.Array.init(this.morphs.length, null, MonsterSO);
+                                            for (var i = 0; i < this.morphs.length; i = (i + 1) | 0) {
+                                                found[i] = UnityEngine.Object.op_Implicit(this.morphs[i]) ? this.morphs[i].MonsterSo : null;
+                                            }
+                                            unlockedPanel.Setup(found);
                                         }
+                                        // no final panel set: the end UI follows the found popup right away
                                         if (UnityEngine.Object.op_Implicit(this.finalPanel)) {
-                                            this.finalPanel.Show();
-                                        }
-                                        $enumerator.current = new UnityEngine.WaitForSeconds(this.finalDuration);
-                                        $step = 8;
-                                        return true;
+                                            $step = 8;
+                                            continue;
+                                        } 
+                                        $step = 10;
+                                        continue;
                                 }
                                 case 8: {
-                                    if (UnityEngine.Object.op_Implicit(this.finalPanel)) {
-                                            this.finalPanel.Hide();
-                                        }
-                                        if (UnityEngine.Object.op_Implicit(LunaController.Instance)) {
+                                    this.finalPanel.Show();
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(this.finalDuration);
+                                        $step = 9;
+                                        return true;
+                                }
+                                case 9: {
+                                    this.finalPanel.Hide();
+                                    $step = 10;
+                                    continue;
+                                }
+                                case 10: {
+                                    if (UnityEngine.Object.op_Implicit(LunaController.Instance)) {
                                             LunaController.Instance.ShowEndUI();
                                         }
 
@@ -3738,6 +3843,7 @@ if ( TRACE ) { TRACE( "PointerHand#Sample", this ); }
             liftDistance: 0,
             rippleScale: 0,
             appearDuration: 0,
+            bob: false,
             target: null,
             offset: null,
             cam: null,
@@ -3766,6 +3872,7 @@ if ( TRACE ) { TRACE( "PointerHand#init", this ); }
                 this.liftDistance = 0.6;
                 this.rippleScale = 0.9;
                 this.appearDuration = 0.3;
+                this.bob = false;
                 this.pivotScale = new pc.Vec3( 1, 1, 1 );
                 this.visualScale = new pc.Vec3( 1, 1, 1 );
                 this.rippleBaseScale = new pc.Vec3( 1, 1, 1 );
@@ -3832,14 +3939,32 @@ if ( TRACE ) { TRACE( "PointerHand#LateUpdate", this ); }
 
                 var u = Math.max(0, Math.min(1, ($t = this.cycle + this.pause, this.clock - Math.floor(this.clock / $t) * $t) / this.cycle));
                 var dir = this.fingerDirection.lengthSq() > 0.0001 ? this.fingerDirection.clone().normalize().$clone() : pc.Vec2.UP.clone();
+                if (this.bob) {
+                    // smooth up/down: back along the finger and towards the target again
+                    var k = 0.5 - 0.5 * Math.cos(this.clock / UnityEngine.Mathf.Max(0.01, this.cycle) * UnityEngine.Mathf.PI * 2.0);
+                    if (UnityEngine.Object.op_Implicit(this.pivot)) {
+                        this.pivot.localPosition = this.pivotBase.$clone().sub( UnityEngine.Vector3.FromVector2((dir.$clone().scale( k ).scale( this.liftDistance ))) );
+                        this.pivot.localRotation = pc.Quat.IDENTITY.clone();
+                        this.pivot.localScale = this.pivotScale.$clone();
+                    }
+                    if (UnityEngine.Object.op_Implicit(this.visual)) {
+                        this.visual.localScale = this.visualScale.$clone().clone().scale( pc.math.smoothstep(0, 1, Math.max(0, Math.min(1, this.clock / this.appearDuration))) );
+                    }
+                    if (UnityEngine.Object.op_Implicit(this.ripple)) {
+                        var rc = this.rippleColor.$clone();
+                        rc.a = 0;
+                        this.ripple.color = rc.$clone();
+                    }
+                    return;
+                }
                 if (UnityEngine.Object.op_Implicit(this.pivot)) {
                     this.pivot.localPosition = this.pivotBase.$clone().add( UnityEngine.Vector3.FromVector2((dir.$clone().scale( PointerHand.Sample(PointerHand.MoveK, u) ).scale( this.liftDistance ))) );
                     this.pivot.localRotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, PointerHand.Sample(PointerHand.RotK, u) );
                     this.pivot.localScale = this.pivotScale.$clone().clone().scale( PointerHand.Sample(PointerHand.ScaleK, u) );
                 }
                 if (UnityEngine.Object.op_Implicit(this.visual)) {
-                    var k = Math.max(0, Math.min(1, this.clock / this.appearDuration));
-                    this.visual.localScale = this.visualScale.$clone().clone().scale( pc.math.smoothstep(0, 1, k) );
+                    var k1 = Math.max(0, Math.min(1, this.clock / this.appearDuration));
+                    this.visual.localScale = this.visualScale.$clone().clone().scale( pc.math.smoothstep(0, 1, k1) );
                 }
                 if (UnityEngine.Object.op_Implicit(this.ripple)) {
                     // ring at the finger tip right after the press
@@ -5395,6 +5520,120 @@ if ( TRACE ) { TRACE( "ShineBurst#Update", this ); }
     });
     /*ShineBurst end.*/
 
+    /*SolidBox start.*/
+    Bridge.define("SolidBox", {
+        inherits: [UnityEngine.MonoBehaviour],
+        statics: {
+            fields: {
+                All: null
+            },
+            ctors: {
+                init: function () {
+if ( TRACE ) { TRACE( "SolidBox#init", this ); }
+
+                    this.All = new (System.Collections.Generic.List$1(SolidBox)).ctor();
+                }
+            },
+            methods: {
+                /*SolidBox.PushOut:static start.*/
+                PushOut: function (controller) {
+if ( TRACE ) { TRACE( "SolidBox#PushOut", this ); }
+
+                    if (UnityEngine.Component.op_Equality(controller, null) || SolidBox.All.Count === 0) {
+                        return;
+                    }
+                    var t = controller.transform;
+                    for (var i = 0; i < SolidBox.All.Count; i = (i + 1) | 0) {
+                        var push = { v : new UnityEngine.Vector3() };
+                        if (UnityEngine.Object.op_Implicit(SolidBox.All.getItem(i)) && UnityEngine.Object.op_Implicit(SolidBox.All.getItem(i).box) && SolidBox.All.getItem(i).Penetration(t.position, controller, push)) {
+                            controller.enabled = false;
+                            t.position = t.position.$clone().add( push.v );
+                            controller.enabled = true;
+                        }
+                    }
+                },
+                /*SolidBox.PushOut:static end.*/
+
+
+            }
+        },
+        fields: {
+            liftOntoTop: 0,
+            box: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "SolidBox#init", this ); }
+
+                this.liftOntoTop = 0.4;
+            }
+        },
+        methods: {
+            /*SolidBox.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "SolidBox#Awake", this ); }
+
+                this.box = this.GetComponent(UnityEngine.BoxCollider);
+            },
+            /*SolidBox.Awake end.*/
+
+            /*SolidBox.OnEnable start.*/
+            OnEnable: function () {
+if ( TRACE ) { TRACE( "SolidBox#OnEnable", this ); }
+
+                if (!SolidBox.All.contains(this)) {
+                    SolidBox.All.add(this);
+                }
+            },
+            /*SolidBox.OnEnable end.*/
+
+            /*SolidBox.OnDisable start.*/
+            OnDisable: function () {
+if ( TRACE ) { TRACE( "SolidBox#OnDisable", this ); }
+
+                SolidBox.All.remove(this);
+            },
+            /*SolidBox.OnDisable end.*/
+
+            /*SolidBox.Penetration start.*/
+            Penetration: function (position, controller, push) {
+if ( TRACE ) { TRACE( "SolidBox#Penetration", this ); }
+
+                push.v = pc.Vec3.ZERO.clone();
+                var half = this.box.size.$clone().clone().scale( 0.5 );
+                var radius = controller.radius;
+                var feet = position.y + controller.center.y - controller.height * 0.5;
+                var head = feet + controller.height;
+                var centre = this.transform.TransformPoint$1(this.box.center);
+                var top = centre.y + half.y, bottom = centre.y - half.y;
+                if (feet >= top - 0.05 || head <= bottom) {
+                    return false;
+                }
+
+                // horizontal position in the box's own axes
+                var local = this.transform.rotation.clone().invert().transformVector( (position.$clone().sub( centre )) );
+                var dx = half.x + radius - Math.abs(local.x);
+                var dz = half.z + radius - Math.abs(local.z);
+                if (dx <= 0.0 || dz <= 0.0) {
+                    return false;
+                }
+
+                var up = top - feet;
+                if (up <= this.liftOntoTop && up < dx && up < dz) {
+                    push.v = pc.Vec3.UP.clone().clone().scale( (up + 0.01) );
+                    return true;
+                }
+                var localPush = dx < dz ? new pc.Vec3( (local.x >= 0.0 ? 1.0 : -1.0) * (dx + 0.01), 0.0, 0.0 ) : new pc.Vec3( 0.0, 0.0, (local.z >= 0.0 ? 1.0 : -1.0) * (dz + 0.01) );
+                push.v = this.transform.rotation.transformVector( localPush );
+                return true;
+            },
+            /*SolidBox.Penetration end.*/
+
+
+        }
+    });
+    /*SolidBox end.*/
+
     /*StoryTextView start.*/
     Bridge.define("StoryTextView", {
         inherits: [UnityEngine.MonoBehaviour],
@@ -6215,16 +6454,20 @@ if ( TRACE ) { TRACE( "MapPanel#OnShow", this ); }
             init: function () {
 if ( TRACE ) { TRACE( "MorphUnlockedPanel#init", this ); }
 
-                this.cards = System.Array.init(2, null, MorphUnlockedPanel.Card);
+                this.cards = System.Array.init(1, null, MorphUnlockedPanel.Card);
             }
         },
         methods: {
             /*MorphUnlockedPanel.Setup start.*/
-            Setup: function (first, second) {
+            Setup: function (morphs) {
 if ( TRACE ) { TRACE( "MorphUnlockedPanel#Setup", this ); }
 
-                this.Fill(0, first);
-                this.Fill(1, second);
+                if (morphs == null) {
+                    return;
+                }
+                for (var i = 0; i < morphs.length; i = (i + 1) | 0) {
+                    this.Fill(i, morphs[i]);
+                }
             },
             /*MorphUnlockedPanel.Setup end.*/
 
@@ -6415,7 +6658,7 @@ if ( TRACE ) { TRACE( "PopupSuggestPanel#BoostRadar", this ); }
     /*FindMonsterPlayerControl end.*/
 
     /*FM3rdInput start.*/
-    $m("FM3rdInput", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"AddControlPitchInput","t":8,"pi":[{"n":"value","pt":$n[0].Single,"ps":0}],"sn":"AddControlPitchInput","rt":$n[0].Void,"p":[$n[0].Single]},{"v":true,"a":2,"n":"AddControlYawInput","t":8,"pi":[{"n":"value","pt":$n[0].Single,"ps":0}],"sn":"AddControlYawInput","rt":$n[0].Void,"p":[$n[0].Single]},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"EnablePlanet","t":8,"pi":[{"n":"newPlanetTransform","pt":$n[1].Transform,"ps":0},{"n":"enable","pt":$n[0].Boolean,"ps":1}],"sn":"EnablePlanet","rt":$n[0].Void,"p":[$n[1].Transform,$n[0].Boolean]},{"a":1,"n":"HandleAutoReturn","t":8,"pi":[{"n":"look","pt":$n[1].Vector2,"ps":0}],"sn":"HandleAutoReturn","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":2,"n":"LookTowards","t":8,"pi":[{"n":"point","pt":$n[1].Vector3,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1}],"sn":"LookTowards","rt":$n[0].Void,"p":[$n[1].Vector3,$n[0].Single]},{"a":2,"n":"ResetCameraToPlayerBack","t":8,"sn":"ResetCameraToPlayerBack","rt":$n[0].Void},{"a":2,"n":"SetView","t":8,"pi":[{"n":"newYaw","pt":$n[0].Single,"ps":0},{"n":"newPitch","pt":$n[0].Single,"ps":1}],"sn":"SetView","rt":$n[0].Void,"p":[$n[0].Single,$n[0].Single]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"v":true,"a":2,"n":"UpdateCamera","t":8,"sn":"UpdateCamera","rt":$n[0].Void},{"a":1,"n":"UpdateTurn","t":8,"sn":"UpdateTurn","rt":$n[0].Void},{"a":2,"n":"IsTurning","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsTurning","t":8,"rt":$n[0].Boolean,"fg":"IsTurning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsTurning"},{"a":2,"n":"LookAccumulated","t":16,"rt":$n[0].Single,"g":{"a":2,"n":"get_LookAccumulated","t":8,"rt":$n[0].Single,"fg":"LookAccumulated","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},"s":{"a":1,"n":"set_LookAccumulated","t":8,"p":[$n[0].Single],"rt":$n[0].Void,"fs":"LookAccumulated"},"fn":"LookAccumulated"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"autoReturnDelay","t":4,"rt":$n[0].Single,"sn":"autoReturnDelay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"autoReturnSpeed","t":4,"rt":$n[0].Single,"sn":"autoReturnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"autoReturning","t":4,"rt":$n[0].Boolean,"sn":"autoReturning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"backwardSpeedMultiplier","t":4,"rt":$n[0].Single,"sn":"backwardSpeedMultiplier","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"cam","t":4,"rt":$n[1].Camera,"sn":"cam"},{"at":[new UnityEngine.TooltipAttribute("Camera distance from the follow target (Cinemachine 3rd Person Follow CameraDistance in the source).")],"a":2,"n":"cameraDistance","t":4,"rt":$n[0].Single,"sn":"cameraDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"cameraRadius","t":4,"rt":$n[0].Single,"sn":"cameraRadius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("How fast the camera goes back out after an obstacle pulled it in (units per second).")],"a":2,"n":"cameraReturnSpeed","t":4,"rt":$n[0].Single,"sn":"cameraReturnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"character","t":4,"rt":FMCharacter,"sn":"character"},{"a":1,"n":"currentDistance","t":4,"rt":$n[0].Single,"sn":"currentDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"defaultPitch","t":4,"rt":$n[0].Single,"sn":"defaultPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"enableAutoReturn","t":4,"rt":$n[0].Boolean,"sn":"enableAutoReturn","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HideInInspector()],"a":2,"n":"extraRoll","t":4,"rt":$n[0].Single,"sn":"extraRoll","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followDistance","t":4,"rt":$n[0].Single,"sn":"followDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followMaxDistance","t":4,"rt":$n[0].Single,"sn":"followMaxDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followMinDistance","t":4,"rt":$n[0].Single,"sn":"followMinDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followTarget","t":4,"rt":$n[1].GameObject,"sn":"followTarget"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"forwardSpeedMultiplier","t":4,"rt":$n[0].Single,"sn":"forwardSpeedMultiplier","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"invertLook","t":4,"rt":$n[0].Boolean,"sn":"invertLook","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"lastLookInputTime","t":4,"rt":$n[0].Single,"sn":"lastLookInputTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"lookArea","t":4,"rt":ScreenDeltaInputSystem,"sn":"lookArea"},{"a":2,"n":"lookSensitivity","t":4,"rt":$n[1].Vector2,"sn":"lookSensitivity"},{"a":2,"n":"maxPitch","t":4,"rt":$n[0].Single,"sn":"maxPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"minPitch","t":4,"rt":$n[0].Single,"sn":"minPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"pitch","t":4,"rt":$n[0].Single,"sn":"pitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"planetForward","t":4,"rt":$n[1].Vector3,"sn":"planetForward"},{"a":1,"n":"planetMode","t":4,"rt":$n[0].Boolean,"sn":"planetMode","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SpaceAttribute.$ctor1(15.0)],"a":2,"n":"planetTransform","t":4,"rt":$n[1].Transform,"sn":"planetTransform"},{"a":1,"n":"turnClock","t":4,"rt":$n[0].Single,"sn":"turnClock","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnDuration","t":4,"rt":$n[0].Single,"sn":"turnDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnFromPitch","t":4,"rt":$n[0].Single,"sn":"turnFromPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnFromYaw","t":4,"rt":$n[0].Single,"sn":"turnFromYaw","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnToPitch","t":4,"rt":$n[0].Single,"sn":"turnToPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnToYaw","t":4,"rt":$n[0].Single,"sn":"turnToYaw","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"viewSet","t":4,"rt":$n[0].Boolean,"sn":"viewSet","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"yaw","t":4,"rt":$n[0].Single,"sn":"yaw","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"backing":true,"n":"<LookAccumulated>k__BackingField","t":4,"rt":$n[0].Single,"sn":"LookAccumulated","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("FM3rdInput", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"AddControlPitchInput","t":8,"pi":[{"n":"value","pt":$n[0].Single,"ps":0}],"sn":"AddControlPitchInput","rt":$n[0].Void,"p":[$n[0].Single]},{"v":true,"a":2,"n":"AddControlYawInput","t":8,"pi":[{"n":"value","pt":$n[0].Single,"ps":0}],"sn":"AddControlYawInput","rt":$n[0].Void,"p":[$n[0].Single]},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"EnablePlanet","t":8,"pi":[{"n":"newPlanetTransform","pt":$n[1].Transform,"ps":0},{"n":"enable","pt":$n[0].Boolean,"ps":1}],"sn":"EnablePlanet","rt":$n[0].Void,"p":[$n[1].Transform,$n[0].Boolean]},{"a":1,"n":"HandleAutoReturn","t":8,"pi":[{"n":"look","pt":$n[1].Vector2,"ps":0}],"sn":"HandleAutoReturn","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":2,"n":"LookTowards","t":8,"pi":[{"n":"point","pt":$n[1].Vector3,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1}],"sn":"LookTowards","rt":$n[0].Void,"p":[$n[1].Vector3,$n[0].Single]},{"a":2,"n":"ResetCameraToPlayerBack","t":8,"sn":"ResetCameraToPlayerBack","rt":$n[0].Void},{"a":2,"n":"SetView","t":8,"pi":[{"n":"newYaw","pt":$n[0].Single,"ps":0},{"n":"newPitch","pt":$n[0].Single,"ps":1}],"sn":"SetView","rt":$n[0].Void,"p":[$n[0].Single,$n[0].Single]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"TurnTo","t":8,"pi":[{"n":"newYaw","pt":$n[0].Single,"ps":0},{"n":"newPitch","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"TurnTo","rt":$n[0].Void,"p":[$n[0].Single,$n[0].Single,$n[0].Single]},{"v":true,"a":2,"n":"UpdateCamera","t":8,"sn":"UpdateCamera","rt":$n[0].Void},{"a":1,"n":"UpdateTurn","t":8,"sn":"UpdateTurn","rt":$n[0].Void},{"a":2,"n":"IsTurning","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsTurning","t":8,"rt":$n[0].Boolean,"fg":"IsTurning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsTurning"},{"a":2,"n":"LookAccumulated","t":16,"rt":$n[0].Single,"g":{"a":2,"n":"get_LookAccumulated","t":8,"rt":$n[0].Single,"fg":"LookAccumulated","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},"s":{"a":1,"n":"set_LookAccumulated","t":8,"p":[$n[0].Single],"rt":$n[0].Void,"fs":"LookAccumulated"},"fn":"LookAccumulated"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"autoReturnDelay","t":4,"rt":$n[0].Single,"sn":"autoReturnDelay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"autoReturnSpeed","t":4,"rt":$n[0].Single,"sn":"autoReturnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"autoReturning","t":4,"rt":$n[0].Boolean,"sn":"autoReturning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"backwardSpeedMultiplier","t":4,"rt":$n[0].Single,"sn":"backwardSpeedMultiplier","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"cam","t":4,"rt":$n[1].Camera,"sn":"cam"},{"at":[new UnityEngine.TooltipAttribute("Camera distance from the follow target (Cinemachine 3rd Person Follow CameraDistance in the source).")],"a":2,"n":"cameraDistance","t":4,"rt":$n[0].Single,"sn":"cameraDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"cameraRadius","t":4,"rt":$n[0].Single,"sn":"cameraRadius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("How fast the camera goes back out after an obstacle pulled it in (units per second).")],"a":2,"n":"cameraReturnSpeed","t":4,"rt":$n[0].Single,"sn":"cameraReturnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"character","t":4,"rt":FMCharacter,"sn":"character"},{"a":1,"n":"currentDistance","t":4,"rt":$n[0].Single,"sn":"currentDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"defaultPitch","t":4,"rt":$n[0].Single,"sn":"defaultPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"enableAutoReturn","t":4,"rt":$n[0].Boolean,"sn":"enableAutoReturn","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HideInInspector()],"a":2,"n":"extraRoll","t":4,"rt":$n[0].Single,"sn":"extraRoll","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followDistance","t":4,"rt":$n[0].Single,"sn":"followDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followMaxDistance","t":4,"rt":$n[0].Single,"sn":"followMaxDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followMinDistance","t":4,"rt":$n[0].Single,"sn":"followMinDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followTarget","t":4,"rt":$n[1].GameObject,"sn":"followTarget"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"forwardSpeedMultiplier","t":4,"rt":$n[0].Single,"sn":"forwardSpeedMultiplier","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"invertLook","t":4,"rt":$n[0].Boolean,"sn":"invertLook","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"lastLookInputTime","t":4,"rt":$n[0].Single,"sn":"lastLookInputTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"lookArea","t":4,"rt":ScreenDeltaInputSystem,"sn":"lookArea"},{"a":2,"n":"lookSensitivity","t":4,"rt":$n[1].Vector2,"sn":"lookSensitivity"},{"a":2,"n":"maxPitch","t":4,"rt":$n[0].Single,"sn":"maxPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"minPitch","t":4,"rt":$n[0].Single,"sn":"minPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"pitch","t":4,"rt":$n[0].Single,"sn":"pitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"planetForward","t":4,"rt":$n[1].Vector3,"sn":"planetForward"},{"a":1,"n":"planetMode","t":4,"rt":$n[0].Boolean,"sn":"planetMode","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SpaceAttribute.$ctor1(15.0)],"a":2,"n":"planetTransform","t":4,"rt":$n[1].Transform,"sn":"planetTransform"},{"a":1,"n":"turnClock","t":4,"rt":$n[0].Single,"sn":"turnClock","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnDuration","t":4,"rt":$n[0].Single,"sn":"turnDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnFromPitch","t":4,"rt":$n[0].Single,"sn":"turnFromPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnFromYaw","t":4,"rt":$n[0].Single,"sn":"turnFromYaw","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnToPitch","t":4,"rt":$n[0].Single,"sn":"turnToPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnToYaw","t":4,"rt":$n[0].Single,"sn":"turnToYaw","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"viewSet","t":4,"rt":$n[0].Boolean,"sn":"viewSet","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"yaw","t":4,"rt":$n[0].Single,"sn":"yaw","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"backing":true,"n":"<LookAccumulated>k__BackingField","t":4,"rt":$n[0].Single,"sn":"LookAccumulated","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*FM3rdInput end.*/
 
     /*FMAudio start.*/
@@ -6437,7 +6680,7 @@ if ( TRACE ) { TRACE( "PopupSuggestPanel#BoostRadar", this ); }
     /*MonsterSO end.*/
 
     /*MorphHuntStory start.*/
-    $m("MorphHuntStory", function () { return {"nested":[MorphHuntStory.Step],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"AfterUnlock","t":8,"sn":"AfterUnlock","rt":$n[3].IEnumerator},{"a":1,"n":"ApplyMorphTypes","t":8,"sn":"ApplyMorphTypes","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"GuideTo","t":8,"pi":[{"n":"morph","pt":HiddenMonster,"ps":0}],"sn":"GuideTo","rt":$n[0].Void,"p":[HiddenMonster]},{"a":2,"n":"HandleCollected","t":8,"pi":[{"n":"monster","pt":HiddenMonster,"ps":0}],"sn":"HandleCollected","rt":$n[0].Boolean,"p":[HiddenMonster],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"IsMorph","t":8,"pi":[{"n":"monster","pt":HiddenMonster,"ps":0}],"sn":"IsMorph","rt":$n[0].Boolean,"p":[HiddenMonster],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"NextMorph","t":8,"sn":"NextMorph","rt":HiddenMonster},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"SetMorph","is":true,"t":8,"pi":[{"n":"spot","pt":HiddenMonster,"ps":0},{"n":"so","pt":MonsterSO,"ps":1}],"sn":"SetMorph","rt":$n[0].Void,"p":[HiddenMonster,MonsterSO]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"Instance","is":true,"t":16,"rt":MorphHuntStory,"g":{"a":2,"n":"get_Instance","t":8,"rt":MorphHuntStory,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[MorphHuntStory],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cameraTurnDuration","t":4,"rt":$n[0].Single,"sn":"cameraTurnDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"clock","t":4,"rt":$n[0].Single,"sn":"clock","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"finalDuration","t":4,"rt":$n[0].Single,"sn":"finalDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Shown at the end: both morph icons + text (built in the scene)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"finalPanel","t":4,"rt":PlayableFrame,"sn":"finalPanel"},{"at":[new UnityEngine.HeaderAttribute("Feedback"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hand","t":4,"rt":PointerHand,"sn":"hand"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"handHideDistance","t":4,"rt":$n[0].Single,"sn":"handHideDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Where the hand's finger taps, from the morph's position (world axes)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"handOffset","t":4,"rt":$n[1].Vector3,"sn":"handOffset"},{"at":[new UnityEngine.HeaderAttribute("Timing"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"introDelay","t":4,"rt":$n[0].Single,"sn":"introDelay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Texts"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"introText","t":4,"rt":$n[0].String,"sn":"introText"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"look","t":4,"rt":FM3rdInput,"sn":"look"},{"at":[new UnityEngine.TooltipAttribute("Morphs that LunaController.TypeMorph1/TypeMorph2 pick from (index = type value)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"morphOptions","t":4,"rt":System.Array.type(MonsterSO),"sn":"morphOptions"},{"at":[new UnityEngine.TooltipAttribute("The two hidden morphs, in the order the guide shows them."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"morphs","t":4,"rt":System.Array.type(HiddenMonster),"sn":"morphs"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"oneMoreText","t":4,"rt":$n[0].String,"sn":"oneMoreText"},{"at":[new UnityEngine.HeaderAttribute("Scene"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"player","t":4,"rt":FMCharacter,"sn":"player"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"shine","t":4,"rt":ShineBurst,"sn":"shine"},{"at":[new UnityEngine.HeaderAttribute("Start view"),new UnityEngine.TooltipAttribute("At the start the camera looks towards this point (e.g. the first morph on top of the pyramid)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startLookAt","t":4,"rt":$n[1].Transform,"sn":"startLookAt"},{"at":[new UnityEngine.TooltipAttribute("Camera pitch at the start; negative looks up."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startPitch","t":4,"rt":$n[0].Single,"sn":"startPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"step","t":4,"rt":MorphHuntStory.Step,"sn":"step","box":function ($v) { return Bridge.box($v, MorphHuntStory.Step, System.Enum.toStringFn(MorphHuntStory.Step));}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"storyText","t":4,"rt":StoryTextView,"sn":"storyText"},{"a":1,"n":"target","t":4,"rt":$n[1].Transform,"sn":"target"},{"at":[new UnityEngine.TooltipAttribute("Text shown above the found popup when a morph is unlocked (its own canvas above the popup)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"unlockText","t":4,"rt":StoryTextView,"sn":"unlockText"},{"a":1,"n":"unlocked","t":4,"rt":$n[0].Int32,"sn":"unlocked","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.TooltipAttribute("{0} = morphs unlocked, {1} = total"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"unlockedFormat","t":4,"rt":$n[0].String,"sn":"unlockedFormat"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":MorphHuntStory,"sn":"Instance"}]}; }, $n);
+    $m("MorphHuntStory", function () { return {"nested":[MorphHuntStory.Step],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"AfterUnlock","t":8,"sn":"AfterUnlock","rt":$n[3].IEnumerator},{"a":1,"n":"ApplyMorphType","t":8,"sn":"ApplyMorphType","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"GuideTo","t":8,"pi":[{"n":"morph","pt":HiddenMonster,"ps":0}],"sn":"GuideTo","rt":$n[0].Void,"p":[HiddenMonster]},{"a":2,"n":"HandleCollected","t":8,"pi":[{"n":"monster","pt":HiddenMonster,"ps":0}],"sn":"HandleCollected","rt":$n[0].Boolean,"p":[HiddenMonster],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"HideGuide","t":8,"sn":"HideGuide","rt":$n[0].Void},{"a":1,"n":"IsMorph","t":8,"pi":[{"n":"monster","pt":HiddenMonster,"ps":0}],"sn":"IsMorph","rt":$n[0].Boolean,"p":[HiddenMonster],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"NextMorph","t":8,"sn":"NextMorph","rt":HiddenMonster},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"SetMorph","is":true,"t":8,"pi":[{"n":"spot","pt":HiddenMonster,"ps":0},{"n":"so","pt":MonsterSO,"ps":1}],"sn":"SetMorph","rt":$n[0].Void,"p":[HiddenMonster,MonsterSO]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"TurnToMorph","t":8,"pi":[{"n":"morph","pt":$n[1].Transform,"ps":0}],"sn":"TurnToMorph","rt":$n[0].Void,"p":[$n[1].Transform]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"Instance","is":true,"t":16,"rt":MorphHuntStory,"g":{"a":2,"n":"get_Instance","t":8,"rt":MorphHuntStory,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[MorphHuntStory],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.TooltipAttribute("\"Almost There!\": horizontal distance to the morph..."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"almostDistance","t":4,"rt":$n[0].Single,"sn":"almostDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("...with the player's feet at most this far below the morph's feet."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"almostHeight","t":4,"rt":$n[0].Single,"sn":"almostHeight","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"almostShown","t":4,"rt":$n[0].Boolean,"sn":"almostShown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("Shown once the player is up close to the morph. Empty = none."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"almostText","t":4,"rt":$n[0].String,"sn":"almostText"},{"at":[new UnityEngine.TooltipAttribute("Optional: where the guide arrow ends while it leads to the guide anchor (e.g. the ground under the wheelbarrow)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"arrowAnchor","t":4,"rt":$n[1].Transform,"sn":"arrowAnchor"},{"a":1,"n":"arrowOnAnchor","t":4,"rt":$n[0].Boolean,"sn":"arrowOnAnchor","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("The arrow switches from the wheelbarrow to the morph once the player stands no lower than this below the guide anchor."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"arrowSwitchBelow","t":4,"rt":$n[0].Single,"sn":"arrowSwitchBelow","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cameraTurnDuration","t":4,"rt":$n[0].Single,"sn":"cameraTurnDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"clock","t":4,"rt":$n[0].Single,"sn":"clock","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"finalDuration","t":4,"rt":$n[0].Single,"sn":"finalDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Shown at the end: the morph icons + text (built in the scene)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"finalPanel","t":4,"rt":PlayableFrame,"sn":"finalPanel"},{"at":[new UnityEngine.TooltipAttribute("Optional: the hand points here instead of at the morph (e.g. the wheelbarrow to climb on)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"guideAnchor","t":4,"rt":$n[1].Transform,"sn":"guideAnchor"},{"at":[new UnityEngine.TooltipAttribute("Optional world label shown with the hand at the guide anchor (built in the scene)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"guideLabel","t":4,"rt":$n[1].GameObject,"sn":"guideLabel"},{"at":[new UnityEngine.HeaderAttribute("Feedback"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hand","t":4,"rt":PointerHand,"sn":"hand"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"handHideDistance","t":4,"rt":$n[0].Single,"sn":"handHideDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Where the hand taps, from the target's position (target's orientation)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"handOffset","t":4,"rt":$n[1].Vector3,"sn":"handOffset"},{"at":[new UnityEngine.HeaderAttribute("Timing"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"introDelay","t":4,"rt":$n[0].Single,"sn":"introDelay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Texts"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"introText","t":4,"rt":$n[0].String,"sn":"introText"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"look","t":4,"rt":FM3rdInput,"sn":"look"},{"at":[new UnityEngine.TooltipAttribute("Morphs that LunaController.TypeMorph picks from for the first spot (index = type value)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"morphOptions","t":4,"rt":System.Array.type(MonsterSO),"sn":"morphOptions"},{"at":[new UnityEngine.TooltipAttribute("The hidden morphs, in the order the guide shows them."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"morphs","t":4,"rt":System.Array.type(HiddenMonster),"sn":"morphs"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"oneMoreText","t":4,"rt":$n[0].String,"sn":"oneMoreText"},{"at":[new UnityEngine.HeaderAttribute("Scene"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"player","t":4,"rt":FMCharacter,"sn":"player"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"shine","t":4,"rt":ShineBurst,"sn":"shine"},{"at":[new UnityEngine.HeaderAttribute("Start view"),new UnityEngine.TooltipAttribute("At the start the camera looks towards this point (e.g. the morph on the haystack)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startLookAt","t":4,"rt":$n[1].Transform,"sn":"startLookAt"},{"at":[new UnityEngine.TooltipAttribute("Camera pitch at the start; negative looks up."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startPitch","t":4,"rt":$n[0].Single,"sn":"startPitch","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"step","t":4,"rt":MorphHuntStory.Step,"sn":"step","box":function ($v) { return Bridge.box($v, MorphHuntStory.Step, System.Enum.toStringFn(MorphHuntStory.Step));}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"storyText","t":4,"rt":StoryTextView,"sn":"storyText"},{"a":1,"n":"target","t":4,"rt":$n[1].Transform,"sn":"target"},{"at":[new UnityEngine.TooltipAttribute("Text shown above the found popup when a morph is unlocked (its own canvas above the popup)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"unlockText","t":4,"rt":StoryTextView,"sn":"unlockText"},{"a":1,"n":"unlocked","t":4,"rt":$n[0].Int32,"sn":"unlocked","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.TooltipAttribute("{0} = morphs unlocked, {1} = total. Empty = no text over the found popup."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"unlockedFormat","t":4,"rt":$n[0].String,"sn":"unlockedFormat"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":MorphHuntStory,"sn":"Instance"}]}; }, $n);
     /*MorphHuntStory end.*/
 
     /*MorphHuntStory+Step start.*/
@@ -6455,7 +6698,7 @@ if ( TRACE ) { TRACE( "PopupSuggestPanel#BoostRadar", this ); }
     /*PlayerSO end.*/
 
     /*PointerHand start.*/
-    $m("PointerHand", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"Hide","t":8,"sn":"Hide","rt":$n[0].Void},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":2,"n":"Point","t":8,"pi":[{"n":"newTarget","pt":$n[1].Transform,"ps":0},{"n":"newOffset","pt":$n[1].Vector3,"ps":1}],"sn":"Point","rt":$n[0].Void,"p":[$n[1].Transform,$n[1].Vector3]},{"a":1,"n":"Sample","is":true,"t":8,"pi":[{"n":"v","pt":$n[0].Array.type(System.Single),"ps":0},{"n":"time","pt":$n[0].Single,"ps":1}],"sn":"Sample","rt":$n[0].Single,"p":[$n[0].Array.type(System.Single),$n[0].Single],"box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"KeyT","is":true,"t":4,"rt":$n[0].Array.type(System.Single),"sn":"KeyT","ro":true},{"a":1,"n":"MoveK","is":true,"t":4,"rt":$n[0].Array.type(System.Single),"sn":"MoveK","ro":true},{"a":1,"n":"RotK","is":true,"t":4,"rt":$n[0].Array.type(System.Single),"sn":"RotK","ro":true},{"a":1,"n":"ScaleK","is":true,"t":4,"rt":$n[0].Array.type(System.Single),"sn":"ScaleK","ro":true},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"appearDuration","t":4,"rt":$n[0].Single,"sn":"appearDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"cam","t":4,"rt":$n[1].Camera,"sn":"cam"},{"a":1,"n":"clock","t":4,"rt":$n[0].Single,"sn":"clock","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Seconds per tap."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cycle","t":4,"rt":$n[0].Single,"sn":"cycle","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Finger direction in the sprite (from the palm to the finger tip), in the hand's local XY."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fingerDirection","t":4,"rt":$n[1].Vector2,"sn":"fingerDirection"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"height","t":4,"rt":$n[0].Single,"sn":"height","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("How far (world units) the hand lifts back before pressing in."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"liftDistance","t":4,"rt":$n[0].Single,"sn":"liftDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"offset","t":4,"rt":$n[1].Vector3,"sn":"offset"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pause","t":4,"rt":$n[0].Single,"sn":"pause","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pivot","t":4,"rt":$n[1].Transform,"sn":"pivot"},{"a":1,"n":"pivotBase","t":4,"rt":$n[1].Vector3,"sn":"pivotBase"},{"a":1,"n":"pivotScale","t":4,"rt":$n[1].Vector3,"sn":"pivotScale"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"ripple","t":4,"rt":$n[1].SpriteRenderer,"sn":"ripple"},{"a":1,"n":"rippleBaseScale","t":4,"rt":$n[1].Vector3,"sn":"rippleBaseScale"},{"a":1,"n":"rippleColor","t":4,"rt":$n[1].Color,"sn":"rippleColor"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rippleScale","t":4,"rt":$n[0].Single,"sn":"rippleScale","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"target","t":4,"rt":$n[1].Transform,"sn":"target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"visual","t":4,"rt":$n[1].Transform,"sn":"visual"},{"a":1,"n":"visualScale","t":4,"rt":$n[1].Vector3,"sn":"visualScale"}]}; }, $n);
+    $m("PointerHand", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"Hide","t":8,"sn":"Hide","rt":$n[0].Void},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":2,"n":"Point","t":8,"pi":[{"n":"newTarget","pt":$n[1].Transform,"ps":0},{"n":"newOffset","pt":$n[1].Vector3,"ps":1}],"sn":"Point","rt":$n[0].Void,"p":[$n[1].Transform,$n[1].Vector3]},{"a":1,"n":"Sample","is":true,"t":8,"pi":[{"n":"v","pt":$n[0].Array.type(System.Single),"ps":0},{"n":"time","pt":$n[0].Single,"ps":1}],"sn":"Sample","rt":$n[0].Single,"p":[$n[0].Array.type(System.Single),$n[0].Single],"box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"KeyT","is":true,"t":4,"rt":$n[0].Array.type(System.Single),"sn":"KeyT","ro":true},{"a":1,"n":"MoveK","is":true,"t":4,"rt":$n[0].Array.type(System.Single),"sn":"MoveK","ro":true},{"a":1,"n":"RotK","is":true,"t":4,"rt":$n[0].Array.type(System.Single),"sn":"RotK","ro":true},{"a":1,"n":"ScaleK","is":true,"t":4,"rt":$n[0].Array.type(System.Single),"sn":"ScaleK","ro":true},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"appearDuration","t":4,"rt":$n[0].Single,"sn":"appearDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("On: the hand just moves up and down along the finger (no press squash, no wobble, no ring)."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bob","t":4,"rt":$n[0].Boolean,"sn":"bob","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"cam","t":4,"rt":$n[1].Camera,"sn":"cam"},{"a":1,"n":"clock","t":4,"rt":$n[0].Single,"sn":"clock","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Seconds per tap."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cycle","t":4,"rt":$n[0].Single,"sn":"cycle","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Finger direction in the sprite (from the palm to the finger tip), in the hand's local XY."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fingerDirection","t":4,"rt":$n[1].Vector2,"sn":"fingerDirection"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"height","t":4,"rt":$n[0].Single,"sn":"height","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("How far (world units) the hand lifts back before pressing in."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"liftDistance","t":4,"rt":$n[0].Single,"sn":"liftDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"offset","t":4,"rt":$n[1].Vector3,"sn":"offset"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pause","t":4,"rt":$n[0].Single,"sn":"pause","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pivot","t":4,"rt":$n[1].Transform,"sn":"pivot"},{"a":1,"n":"pivotBase","t":4,"rt":$n[1].Vector3,"sn":"pivotBase"},{"a":1,"n":"pivotScale","t":4,"rt":$n[1].Vector3,"sn":"pivotScale"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"ripple","t":4,"rt":$n[1].SpriteRenderer,"sn":"ripple"},{"a":1,"n":"rippleBaseScale","t":4,"rt":$n[1].Vector3,"sn":"rippleBaseScale"},{"a":1,"n":"rippleColor","t":4,"rt":$n[1].Color,"sn":"rippleColor"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rippleScale","t":4,"rt":$n[0].Single,"sn":"rippleScale","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"target","t":4,"rt":$n[1].Transform,"sn":"target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"visual","t":4,"rt":$n[1].Transform,"sn":"visual"},{"a":1,"n":"visualScale","t":4,"rt":$n[1].Vector3,"sn":"visualScale"}]}; }, $n);
     /*PointerHand end.*/
 
     /*PopupSuggest start.*/
@@ -6482,6 +6725,10 @@ if ( TRACE ) { TRACE( "PopupSuggestPanel#BoostRadar", this ); }
     $m("ShineBurst", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"Play","t":8,"pi":[{"n":"position","pt":$n[1].Vector3,"ps":0}],"sn":"Play","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"baseColor","t":4,"rt":$n[1].Color,"sn":"baseColor"},{"a":1,"n":"cam","t":4,"rt":$n[1].Camera,"sn":"cam"},{"a":1,"n":"clock","t":4,"rt":$n[0].Single,"sn":"clock","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"duration","t":4,"rt":$n[0].Single,"sn":"duration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endScale","t":4,"rt":$n[0].Single,"sn":"endScale","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"sprite","t":4,"rt":$n[1].SpriteRenderer,"sn":"sprite"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startScale","t":4,"rt":$n[0].Single,"sn":"startScale","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*ShineBurst end.*/
 
+    /*SolidBox start.*/
+    $m("SolidBox", function () { return {"att":1048577,"a":2,"at":[new UnityEngine.RequireComponent.ctor(UnityEngine.BoxCollider)],"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"Penetration","t":8,"pi":[{"n":"position","pt":$n[1].Vector3,"ps":0},{"n":"controller","pt":$n[1].CharacterController,"ps":1},{"n":"push","out":true,"pt":$n[1].Vector3,"ps":2}],"sn":"Penetration","rt":$n[0].Boolean,"p":[$n[1].Vector3,$n[1].CharacterController,$n[1].Vector3],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"PushOut","is":true,"t":8,"pi":[{"n":"controller","pt":$n[1].CharacterController,"ps":0}],"sn":"PushOut","rt":$n[0].Void,"p":[$n[1].CharacterController]},{"a":1,"n":"All","is":true,"t":4,"rt":$n[2].List$1(SolidBox),"sn":"All","ro":true},{"a":1,"n":"box","t":4,"rt":$n[1].BoxCollider,"sn":"box"},{"at":[new UnityEngine.TooltipAttribute("Feet this close below the top are lifted onto it instead of being pushed out sideways."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"liftOntoTop","t":4,"rt":$n[0].Single,"sn":"liftOntoTop","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*SolidBox end.*/
+
     /*TeleportPortal start.*/
     $m("TeleportPortal", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"TeleportRoutine","t":8,"pi":[{"n":"character","pt":FMCharacter,"ps":0}],"sn":"TeleportRoutine","rt":$n[3].IEnumerator,"p":[FMCharacter]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"Cooldown","is":true,"t":4,"rt":$n[0].Single,"sn":"Cooldown","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"busy","is":true,"t":4,"rt":$n[0].Boolean,"sn":"busy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"hasVolume","t":4,"rt":$n[0].Boolean,"sn":"hasVolume","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("On: planet gravity around 'planet'. Off: back to normal gravity.")],"a":2,"n":"isPlanet","t":4,"rt":$n[0].Boolean,"sn":"isPlanet","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"lastTeleportTime","is":true,"t":4,"rt":$n[0].Single,"sn":"lastTeleportTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Planet to walk on after the teleport (its centre is the gravity centre).")],"a":2,"n":"planet","t":4,"rt":$n[1].Transform,"sn":"planet"},{"at":[new UnityEngine.TooltipAttribute("Arrival point (position and rotation).")],"a":2,"n":"pos","t":4,"rt":$n[1].Transform,"sn":"pos"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"teleportSound","t":4,"rt":FMAudio,"sn":"teleportSound"},{"at":[new UnityEngine.TooltipAttribute("Extra size added to the portal box when testing the player (the portal is thin).")],"a":2,"n":"touchPadding","t":4,"rt":$n[1].Vector3,"sn":"touchPadding"},{"a":1,"n":"volume","t":4,"rt":$n[1].Bounds,"sn":"volume"}]}; }, $n);
     /*TeleportPortal end.*/
@@ -6491,7 +6738,7 @@ if ( TRACE ) { TRACE( "PopupSuggestPanel#BoostRadar", this ); }
     /*TurtorialArrow end.*/
 
     /*LunaController start.*/
-    $m("LunaController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"ClickCTA","t":8,"sn":"ClickCTA","rt":$n[0].Void},{"a":1,"n":"EndAfterTime","t":8,"sn":"EndAfterTime","rt":$n[3].IEnumerator},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"PatchMeshColliderUV","is":true,"t":8,"sn":"PatchMeshColliderUV","rt":$n[0].Void},{"a":2,"n":"Rewarded","is":true,"t":8,"pi":[{"n":"onReward","pt":Function,"ps":0}],"sn":"Rewarded","rt":$n[0].Void,"p":[Function]},{"a":1,"n":"SendGameEnded","t":8,"sn":"SendGameEnded","rt":$n[0].Void},{"a":2,"n":"ShowEndCard","t":8,"sn":"ShowEndCard","rt":$n[0].Void},{"a":2,"n":"ShowEndUI","t":8,"sn":"ShowEndUI","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"Clicks","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_Clicks","t":8,"rt":$n[0].Int32,"fg":"Clicks","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"Clicks"},{"a":2,"n":"Ended","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_Ended","t":8,"rt":$n[0].Boolean,"fg":"Ended","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"Ended"},{"a":2,"n":"Instance","is":true,"t":16,"rt":LunaController,"g":{"a":2,"n":"get_Instance","t":8,"rt":LunaController,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[LunaController],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("BGM", 0, null)],"a":2,"n":"BGM","t":4,"rt":$n[1].AudioClip,"sn":"BGM"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"CTA","t":4,"rt":$n[2].List$1(UnityEngine.UI.Button),"sn":"CTA"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Limit Click?", -1, null, false, null)],"a":2,"n":"LimitClick","t":4,"rt":$n[0].Boolean,"sn":"LimitClick","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Limit Time Play?", -1, null, false, null)],"a":2,"n":"LimitTimePlay","t":4,"rt":$n[0].Boolean,"sn":"LimitTimePlay","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Max Click", -1, null, false, null)],"a":2,"n":"MaxClick","t":4,"rt":$n[0].Int32,"sn":"MaxClick","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Time Play", -1, null, false, null)],"a":2,"n":"TimePlay","t":4,"rt":$n[0].Single,"sn":"TimePlay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Type Morph 1: 0 -> 9", -1, null, false, null)],"a":2,"n":"TypeMorph1","t":4,"rt":$n[0].Int32,"sn":"TypeMorph1","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Type Morph 2: 0 -> 9", -1, null, false, null)],"a":2,"n":"TypeMorph2","t":4,"rt":$n[0].Int32,"sn":"TypeMorph2","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"clicks","t":4,"rt":$n[0].Int32,"sn":"clicks","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.TooltipAttribute("End Card: the PLAY NOW button. Shown alone when MaxClick is reached."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endCard","t":4,"rt":$n[1].GameObject,"sn":"endCard"},{"at":[new UnityEngine.TooltipAttribute("End UI: the end display (background, title). Shown with the End Card when the game ends."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endUI","t":4,"rt":$n[1].GameObject,"sn":"endUI"},{"a":1,"n":"ended","t":4,"rt":$n[0].Boolean,"sn":"ended","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"gameEndedSent","t":4,"rt":$n[0].Boolean,"sn":"gameEndedSent","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"musicSource","t":4,"rt":$n[1].AudioSource,"sn":"musicSource"},{"at":[new UnityEngine.SerializeFieldAttribute(),new UnityEngine.RangeAttribute(0.0, 1.0)],"a":1,"n":"musicVolume","t":4,"rt":$n[0].Single,"sn":"musicVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":LunaController,"sn":"Instance"}]}; }, $n);
+    $m("LunaController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"ClickCTA","t":8,"sn":"ClickCTA","rt":$n[0].Void},{"a":1,"n":"EndAfterTime","t":8,"sn":"EndAfterTime","rt":$n[3].IEnumerator},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"PatchMeshColliderUV","is":true,"t":8,"sn":"PatchMeshColliderUV","rt":$n[0].Void},{"a":2,"n":"Rewarded","is":true,"t":8,"pi":[{"n":"onReward","pt":Function,"ps":0}],"sn":"Rewarded","rt":$n[0].Void,"p":[Function]},{"a":1,"n":"SendGameEnded","t":8,"sn":"SendGameEnded","rt":$n[0].Void},{"a":2,"n":"ShowEndCard","t":8,"sn":"ShowEndCard","rt":$n[0].Void},{"a":2,"n":"ShowEndUI","t":8,"sn":"ShowEndUI","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"Clicks","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_Clicks","t":8,"rt":$n[0].Int32,"fg":"Clicks","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"Clicks"},{"a":2,"n":"Ended","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_Ended","t":8,"rt":$n[0].Boolean,"fg":"Ended","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"Ended"},{"a":2,"n":"Instance","is":true,"t":16,"rt":LunaController,"g":{"a":2,"n":"get_Instance","t":8,"rt":LunaController,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[LunaController],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("BGM", 0, null)],"a":2,"n":"BGM","t":4,"rt":$n[1].AudioClip,"sn":"BGM"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"CTA","t":4,"rt":$n[2].List$1(UnityEngine.UI.Button),"sn":"CTA"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Limit Click?", -1, null, false, null)],"a":2,"n":"LimitClick","t":4,"rt":$n[0].Boolean,"sn":"LimitClick","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Limit Time Play?", -1, null, false, null)],"a":2,"n":"LimitTimePlay","t":4,"rt":$n[0].Boolean,"sn":"LimitTimePlay","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Max Click", -1, null, false, null)],"a":2,"n":"MaxClick","t":4,"rt":$n[0].Int32,"sn":"MaxClick","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Time Play", -1, null, false, null)],"a":2,"n":"TimePlay","t":4,"rt":$n[0].Single,"sn":"TimePlay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Type Morph: 0 -> 8", -1, null, false, null)],"a":2,"n":"TypeMorph","t":4,"rt":$n[0].Int32,"sn":"TypeMorph","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"clicks","t":4,"rt":$n[0].Int32,"sn":"clicks","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.TooltipAttribute("End Card: the PLAY NOW button. Shown alone when MaxClick is reached."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endCard","t":4,"rt":$n[1].GameObject,"sn":"endCard"},{"at":[new UnityEngine.TooltipAttribute("End UI: the end display (background, title). Shown with the End Card when the game ends."),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endUI","t":4,"rt":$n[1].GameObject,"sn":"endUI"},{"a":1,"n":"ended","t":4,"rt":$n[0].Boolean,"sn":"ended","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"gameEndedSent","t":4,"rt":$n[0].Boolean,"sn":"gameEndedSent","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"musicSource","t":4,"rt":$n[1].AudioSource,"sn":"musicSource"},{"at":[new UnityEngine.SerializeFieldAttribute(),new UnityEngine.RangeAttribute(0.0, 1.0)],"a":1,"n":"musicVolume","t":4,"rt":$n[0].Single,"sn":"musicVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":LunaController,"sn":"Instance"}]}; }, $n);
     /*LunaController end.*/
 
     /*BoostButton start.*/
@@ -6547,7 +6794,7 @@ if ( TRACE ) { TRACE( "PopupSuggestPanel#BoostRadar", this ); }
     /*MonsterProgressBar end.*/
 
     /*MorphUnlockedPanel start.*/
-    $m("MorphUnlockedPanel", function () { return {"nested":[MorphUnlockedPanel.Card],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Fill","t":8,"pi":[{"n":"index","pt":$n[0].Int32,"ps":0},{"n":"so","pt":MonsterSO,"ps":1}],"sn":"Fill","rt":$n[0].Void,"p":[$n[0].Int32,MonsterSO]},{"a":2,"n":"Setup","t":8,"pi":[{"n":"first","pt":MonsterSO,"ps":0},{"n":"second","pt":MonsterSO,"ps":1}],"sn":"Setup","rt":$n[0].Void,"p":[MonsterSO,MonsterSO]},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cards","t":4,"rt":System.Array.type(MorphUnlockedPanel.Card),"sn":"cards"}]}; }, $n);
+    $m("MorphUnlockedPanel", function () { return {"nested":[MorphUnlockedPanel.Card],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Fill","t":8,"pi":[{"n":"index","pt":$n[0].Int32,"ps":0},{"n":"so","pt":MonsterSO,"ps":1}],"sn":"Fill","rt":$n[0].Void,"p":[$n[0].Int32,MonsterSO]},{"a":2,"n":"Setup","t":8,"pi":[{"n":"morphs","pt":System.Array.type(MonsterSO),"ps":0}],"sn":"Setup","rt":$n[0].Void,"p":[System.Array.type(MonsterSO)]},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cards","t":4,"rt":System.Array.type(MorphUnlockedPanel.Card),"sn":"cards"}]}; }, $n);
     /*MorphUnlockedPanel end.*/
 
     /*MorphUnlockedPanel+Card start.*/

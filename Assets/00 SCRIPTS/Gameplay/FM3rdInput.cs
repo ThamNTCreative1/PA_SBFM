@@ -109,6 +109,19 @@ public class FM3rdInput : MonoBehaviour
         autoReturning = false;
     }
 
+    // Story camera move to a given view (yaw, pitch), smoothly, then hand control back.
+    public void TurnTo(float newYaw, float newPitch, float duration)
+    {
+        if (planetMode) return;
+        turnFromYaw = yaw;
+        turnFromPitch = pitch;
+        turnToYaw = newYaw;
+        turnToPitch = Mathf.Clamp(newPitch, minPitch, maxPitch);
+        turnDuration = Mathf.Max(0.01f, duration);
+        turnClock = 0;
+        autoReturning = false;
+    }
+
     public bool IsTurning { get { return turnClock >= 0; } }
 
     private float turnClock = -1, turnDuration, turnFromYaw, turnToYaw, turnFromPitch, turnToPitch;

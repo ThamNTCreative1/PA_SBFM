@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: TaTaTaTaSahur
   displayName: Ta Ta Ta Sahur
-  icon: {fileID: 21300000, guid: a24bb43e285ace249afe791b83cc21cc, type: 3}
+  icon: {fileID: 21300000, guid: b372124c0d6e70a4f9d2671f012583f5, type: 3}
   prefab: {fileID: 1709254077376921, guid: 840311a647b21e04fbc193bbeee19538, type: 3}
   rarity: Legendary
   rarityColor: {r: 1, g: 0.75, b: 0.05, a: 1}

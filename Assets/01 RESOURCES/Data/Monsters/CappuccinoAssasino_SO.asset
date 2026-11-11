@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: CappuccinoAssasino
   displayName: Cappuccino Assassino
-  icon: {fileID: 21300000, guid: a3c5b14d22b667b4a987ed97314213d6, type: 3}
+  icon: {fileID: 21300000, guid: fa1a4d55165f0aa4ab45c699b7044a87, type: 3}
   prefab: {fileID: 1709254077376921, guid: 5f67a7c20bd39234b8cf0ff6d5b6807e, type: 3}
   rarity: Epic
   rarityColor: {r: 0.95, g: 0.15, b: 0.95, a: 1}

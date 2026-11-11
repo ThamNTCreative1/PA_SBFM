@@ -1,14 +1,14 @@
 using System.Collections;
 using UnityEngine;
 
-// Playable storyline (Egypt): two hidden morphs.
-// 1. After the controls tutorial: "2 HIDDEN MORPHS! FIND THEM ALL!", guide arrow (and hand, if one is set) to
-//    the first morph, high up near the sphinx's head.
-// 2. Touching it: flash + "MORPH UNLOCKED! 1/2" over the source game's found popup (Morph button). When the popup
-//    closes the camera turns towards the second morph on the sphinx's body: "ONE MORE TO FIND!".
-// 3. Touching the second: flash + "MORPH UNLOCKED! 2/2" + popup; then both morphs are shown on screen with
-//    "YOU FOUND BOTH! CAN YOU FIND MORE?" and the end card (CTA) follows.
-// The morphs can be found in any order; the texts follow the count.
+// Playable storyline (farm): one morph on top of the haystack.
+// 1. After the controls tutorial the camera turns straight at the morph once the player has landed, then
+//    "Look! A Morph is There!" and the guide arrow to the morph; the hand and a guide
+//    label point at the wheelbarrow (the step up onto the haystack).
+// 2. Up close to the morph (same height, near it): "Almost There!".
+// 3. Touching it: flash + the source game's found popup (Morph button), the HUD counter goes up by one. When the
+//    popup closes, the "MORPH UNLOCKED!" screen shows the morph(s) found, then the end UI + end card.
+// Works with any number of morphs: after each one (but the last) the camera turns to the next.
 public class MorphHuntStory : MonoBehaviour
 {
     public static MorphHuntStory Instance { get; private set; }
@@ -16,37 +16,49 @@ public class MorphHuntStory : MonoBehaviour
     [Header("Scene")]
     [SerializeField] private FMCharacter player;
     [SerializeField] private FM3rdInput look;
-    [Tooltip("The two hidden morphs, in the order the guide shows them.")]
-    [SerializeField] private HiddenMonster[] morphs = new HiddenMonster[2];
-    [Tooltip("Morphs that LunaController.TypeMorph1/TypeMorph2 pick from (index = type value).")]
+    [Tooltip("The hidden morphs, in the order the guide shows them.")]
+    [SerializeField] private HiddenMonster[] morphs = new HiddenMonster[1];
+    [Tooltip("Morphs that LunaController.TypeMorph picks from for the first spot (index = type value).")]
     [SerializeField] private MonsterSO[] morphOptions = new MonsterSO[0];
 
     [Header("Start view")]
-    [Tooltip("At the start the camera looks towards this point (e.g. the first morph on top of the pyramid).")]
+    [Tooltip("At the start the camera looks towards this point (e.g. the morph on the haystack).")]
     [SerializeField] private Transform startLookAt;
     [Tooltip("Camera pitch at the start; negative looks up.")]
     [SerializeField] private float startPitch = -15f;
 
     [Header("Feedback")]
     [SerializeField] private PointerHand hand;
-    [Tooltip("Where the hand's finger taps, from the morph's position (world axes).")]
+    [Tooltip("Where the hand taps, from the target's position (target's orientation).")]
     [SerializeField] private Vector3 handOffset = new Vector3(0, 1.5f, 0);
+    [Tooltip("Optional: the hand points here instead of at the morph (e.g. the wheelbarrow to climb on).")]
+    [SerializeField] private Transform guideAnchor;
+    [Tooltip("Optional: where the guide arrow ends while it leads to the guide anchor (e.g. the ground under the wheelbarrow).")]
+    [SerializeField] private Transform arrowAnchor;
+    [Tooltip("Optional world label shown with the hand at the guide anchor (built in the scene).")]
+    [SerializeField] private GameObject guideLabel;
     [SerializeField] private StoryTextView storyText;
     [Tooltip("Text shown above the found popup when a morph is unlocked (its own canvas above the popup).")]
     [SerializeField] private StoryTextView unlockText;
     [SerializeField] private ShineBurst shine;
-    [Tooltip("Shown at the end: both morph icons + text (built in the scene).")]
+    [Tooltip("Shown at the end: the morph icons + text (built in the scene).")]
     [SerializeField] private PlayableFrame finalPanel;
 
     [Header("Texts")]
-    [SerializeField] private string introText = "2 HIDDEN MORPHS! FIND THEM ALL!";
-    [Tooltip("{0} = morphs unlocked, {1} = total")]
-    [SerializeField] private string unlockedFormat = "MORPH UNLOCKED! {0}/{1}";
+    [SerializeField] private string introText = "Look! A Morph is There!";
+    [Tooltip("Shown once the player is up close to the morph. Empty = none.")]
+    [SerializeField] private string almostText = "Almost There!";
+    [Tooltip("{0} = morphs unlocked, {1} = total. Empty = no text over the found popup.")]
+    [SerializeField] private string unlockedFormat = "";
     [SerializeField] private string oneMoreText = "ONE MORE TO FIND!";
 
     [Header("Timing")]
     [SerializeField] private float introDelay = 0.2f;
     [SerializeField] private float handHideDistance = 6f;
+    [Tooltip("\"Almost There!\": horizontal distance to the morph...")]
+    [SerializeField] private float almostDistance = 9f;
+    [Tooltip("...with the player's feet at most this far below the morph's feet.")]
+    [SerializeField] private float almostHeight = 0.5f;
     [SerializeField] private float cameraTurnDuration = 1.2f;
     [SerializeField] private float finalDuration = 2.5f;
 
@@ -55,33 +67,33 @@ public class MorphHuntStory : MonoBehaviour
     private float clock;
     private int unlocked;
     private Transform target;
-
+    private bool almostShown;
+    private bool arrowOnAnchor;
+    [Tooltip("The arrow switches from the wheelbarrow to the morph once the player stands no lower than this below the guide anchor.")]
+    [SerializeField] private float arrowSwitchBelow = 0.4f;
 
     private void Awake()
     {
         Instance = this;
         if (hand) hand.gameObject.SetActive(false);
+        if (guideLabel) guideLabel.SetActive(false);
         if (shine) shine.gameObject.SetActive(false);
         // Texts/panels may be left switched on in the scene while editing them: start hidden.
         if (storyText) storyText.gameObject.SetActive(false);
         if (unlockText) unlockText.gameObject.SetActive(false);
         if (finalPanel) finalPanel.gameObject.SetActive(false);
-        ApplyMorphTypes();
+        ApplyMorphType();
     }
 
-    // Puts the morphs chosen in LunaController (TypeMorph1/2) at the two hidden spots. Runs in Awake, before
+    // Puts the morph chosen in LunaController (TypeMorph) at the first hidden spot. Runs in Awake, before
     // HiddenMonster.Start reads its name to find its MonsterSO.
-    private void ApplyMorphTypes()
+    private void ApplyMorphType()
     {
-        if (morphOptions == null || morphOptions.Length == 0) return;
+        if (morphOptions == null || morphOptions.Length == 0 || morphs == null || morphs.Length == 0) return;
         LunaController luna = LunaController.Instance ? LunaController.Instance : FindObjectOfType<LunaController>();
         if (luna == null) return;
-        int first = Mathf.Clamp(luna.TypeMorph1, 0, morphOptions.Length - 1);
-        int second = Mathf.Clamp(luna.TypeMorph2, 0, morphOptions.Length - 1);
-        // the same morph twice would count as one: take the next one for the second spot
-        if (second == first) second = (first + 1) % morphOptions.Length;
-        if (morphs.Length > 0) SetMorph(morphs[0], morphOptions[first]);
-        if (morphs.Length > 1) SetMorph(morphs[1], morphOptions[second]);
+        int type = Mathf.Clamp(luna.TypeMorph, 0, morphOptions.Length - 1);
+        SetMorph(morphs[0], morphOptions[type]);
     }
 
     private static void SetMorph(HiddenMonster spot, MonsterSO so)
@@ -127,6 +139,15 @@ public class MorphHuntStory : MonoBehaviour
         }
     }
 
+    // After the controls tutorial the view may point anywhere: turn it straight at the morph.
+    private void TurnToMorph(Transform morph)
+    {
+        if (look == null || player == null || morph == null) return;
+        Vector3 d = morph.position - player.transform.position; d.y = 0;
+        if (d.sqrMagnitude < 0.0001f) return;
+        look.TurnTo(Quaternion.LookRotation(d).eulerAngles.y, startPitch, cameraTurnDuration);
+    }
+
     private void OnDestroy() { if (Instance == this) Instance = null; }
 
     private void Update()
@@ -137,15 +158,38 @@ public class MorphHuntStory : MonoBehaviour
             case Step.Intro:
                 // the hunt starts only after the controls tutorial (view -> move -> jump)
                 if (ControlsTutorial.Instance && !ControlsTutorial.Instance.Done) { clock = 0; return; }
+                // the tutorial ends with a jump: wait until the player has landed before turning the camera
+                if (player && !player.IsGrounded()) { clock = 0; return; }
                 if (clock < introDelay) return;
                 if (storyText) storyText.Show(introText);
-                GuideTo(NextMorph());
+                HiddenMonster first = NextMorph();
+                if (first) TurnToMorph(first.transform);
+                GuideTo(first);
                 step = Step.Hunt;
                 break;
             case Step.Hunt:
-                // Right at the morph the hand would cover the player: hide it.
-                if (hand && hand.gameObject.activeSelf && target && player
-                    && (player.transform.position - target.position).magnitude < handHideDistance) hand.Hide();
+                if (player == null || target == null) return;
+                Vector3 p = player.transform.position;
+                // up on the wheelbarrow (or anywhere above the ground at its height): the arrow now points at the morph
+                if (arrowOnAnchor && guideAnchor && player.IsGrounded() && p.y > guideAnchor.position.y - arrowSwitchBelow)
+                {
+                    arrowOnAnchor = false;
+                    if (TurtorialArrow.Instance) TurtorialArrow.Instance.StartDraw(target, player.transform);
+                }
+                // Right at the hand's target the hand would cover the player: hide it (and its label).
+                Transform handTarget = guideAnchor ? guideAnchor : target;
+                if (hand && hand.gameObject.activeSelf && (p - handTarget.position).magnitude < handHideDistance) HideGuide();
+                if (!almostShown && !string.IsNullOrEmpty(almostText))
+                {
+                    Vector3 d = target.position - p; d.y = 0;
+                    // standing on the morph's level (landed on the haystack), not just jumping past it
+                    if (d.magnitude < almostDistance && p.y > target.position.y - almostHeight && player.IsGrounded())
+                    {
+                        almostShown = true;
+                        HideGuide();
+                        if (storyText) storyText.Show(almostText);
+                    }
+                }
                 break;
         }
     }
@@ -161,8 +205,19 @@ public class MorphHuntStory : MonoBehaviour
     {
         target = morph ? morph.transform : null;
         if (target == null || player == null) return;
-        if (TurtorialArrow.Instance) TurtorialArrow.Instance.StartDraw(target, player.transform);
-        if (hand) hand.Point(target, handOffset);
+        // the wheelbarrow guide is only for the first morph
+        Transform handTarget = guideAnchor && unlocked == 0 ? guideAnchor : target;
+        // the guide arrow first leads to the wheelbarrow; once the player stands on it, to the morph
+        arrowOnAnchor = handTarget == guideAnchor;
+        if (TurtorialArrow.Instance) TurtorialArrow.Instance.StartDraw(arrowOnAnchor ? (arrowAnchor ? arrowAnchor : guideAnchor) : target, player.transform);
+        if (hand) hand.Point(handTarget, handOffset);
+        if (guideLabel && handTarget == guideAnchor) guideLabel.SetActive(true);
+    }
+
+    private void HideGuide()
+    {
+        if (hand) hand.Hide();
+        if (guideLabel) guideLabel.SetActive(false);
     }
 
     private bool IsMorph(HiddenMonster monster)
@@ -172,17 +227,17 @@ public class MorphHuntStory : MonoBehaviour
     }
 
     // Called by FindMonsterManager when a monster is collected. Returns false: the source game's found popup (Morph
-    // button) still opens; the story adds the flash and the "MORPH UNLOCKED! x/2" text and goes on once it closes.
+    // button) still opens; the story adds the flash (and the optional unlock text) and goes on once it closes.
     public bool HandleCollected(HiddenMonster monster)
     {
         if (monster == null || !IsMorph(monster)) return false;
         unlocked++;
         step = Step.Unlocking;
-        if (hand) hand.Hide();
+        HideGuide();
         if (TurtorialArrow.Instance) TurtorialArrow.Instance.StopDraw();
         if (shine) shine.Play(monster.transform.position + Vector3.up * 1f);
         if (storyText) storyText.Hide();
-        if (unlockText) unlockText.Show(string.Format(unlockedFormat, unlocked, morphs.Length));
+        if (unlockText && !string.IsNullOrEmpty(unlockedFormat)) unlockText.Show(string.Format(unlockedFormat, unlocked, morphs.Length));
         StartCoroutine(AfterUnlock());
         return false;
     }
@@ -199,19 +254,29 @@ public class MorphHuntStory : MonoBehaviour
             // Turn the view towards the next morph, then guide the player there
             if (look) look.LookTowards(next.transform.position, cameraTurnDuration);
             if (storyText) storyText.Show(oneMoreText);
+            almostShown = false;
             GuideTo(next);
             step = Step.Hunt;
             yield break;
         }
 
-        // Both found: show them together, then the end card (CTA)
+        // All found: show them together, then the end UI + end card (CTA)
         step = Step.Final;
         if (player) player.InputEnabled = false;
         MorphUnlockedPanel unlockedPanel = finalPanel as MorphUnlockedPanel;
-        if (unlockedPanel && morphs.Length > 1 && morphs[0] && morphs[1]) unlockedPanel.Setup(morphs[0].MonsterSo, morphs[1].MonsterSo);
-        if (finalPanel) finalPanel.Show();
-        yield return new WaitForSeconds(finalDuration);
-        if (finalPanel) finalPanel.Hide();
+        if (unlockedPanel)
+        {
+            MonsterSO[] found = new MonsterSO[morphs.Length];
+            for (int i = 0; i < morphs.Length; i++) found[i] = morphs[i] ? morphs[i].MonsterSo : null;
+            unlockedPanel.Setup(found);
+        }
+        // no final panel set: the end UI follows the found popup right away
+        if (finalPanel)
+        {
+            finalPanel.Show();
+            yield return new WaitForSeconds(finalDuration);
+            finalPanel.Hide();
+        }
         if (LunaController.Instance) LunaController.Instance.ShowEndUI();
     }
 }

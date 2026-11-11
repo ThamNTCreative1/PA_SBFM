@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// "MORPH UNLOCKED!" screen: the two morphs found, each on a card in its rarity colour (layout built in the scene).
+// "MORPH UNLOCKED!" screen: the morphs found, each on a card in its rarity colour (layout built in the scene).
 public class MorphUnlockedPanel : PlayableFrame
 {
     [System.Serializable]
@@ -14,12 +14,12 @@ public class MorphUnlockedPanel : PlayableFrame
         public TMP_Text rarityText;
     }
 
-    [SerializeField] private Card[] cards = new Card[2];
+    [SerializeField] private Card[] cards = new Card[1];
 
-    public void Setup(MonsterSO first, MonsterSO second)
+    public void Setup(MonsterSO[] morphs)
     {
-        Fill(0, first);
-        Fill(1, second);
+        if (morphs == null) return;
+        for (int i = 0; i < morphs.Length; i++) Fill(i, morphs[i]);
     }
 
     private void Fill(int index, MonsterSO so)

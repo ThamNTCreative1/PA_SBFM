@@ -11,11 +11,10 @@ public class LunaController : MonoBehaviour
 
     [LunaPlaygroundField("Limit Time Play?")] public bool LimitTimePlay;
     [LunaPlaygroundField("Time Play")] public float TimePlay = 60;
-    // Morph shown at each hidden spot (1 = in the pen, 2 = on the chimney). 0 Los Tralaleritos, 1 Bambini Crostino,
-    // 2 Trenostruzzo Turbo 3000, 3 Bobrito Bandito, 4 Boneca Ambalabu, 5 Chimpanzini Bananini, 6 Zibra Zubra Zibralini,
-    // 7 Orcalero Orcala, 8 Pi Pi Kiwi, 9 Svinina Bombardino (list in MorphHuntStory.morphOptions).
-    [LunaPlaygroundField("Type Morph 1: 0 -> 9")] public int TypeMorph1 = 0;
-    [LunaPlaygroundField("Type Morph 2: 0 -> 9")] public int TypeMorph2 = 1;
+    // Morph on the haystack: 0 Cappuccino Assassino, 1 Tralalelo Tralala, 2 Trulimero Trulicina, 3 Bambini Crossini,
+    // 4 Bananitta Dolfinitta, 5 Bombordiro Crocodilo, 6 Bombardini Gusini, 7 Burbaloni Lulioli, 8 Frigo Camelo
+    // (list in MorphHuntStory.morphOptions).
+    [LunaPlaygroundField("Type Morph: 0 -> 8")] public int TypeMorph = 0;
     [LunaPlaygroundField("Limit Click?")] public bool LimitClick = false;
     [LunaPlaygroundField("Max Click")] public int MaxClick = 30;
     [LunaPlaygroundAsset("BGM")] public AudioClip BGM;

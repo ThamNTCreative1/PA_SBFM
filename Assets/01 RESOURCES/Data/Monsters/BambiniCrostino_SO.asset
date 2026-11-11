@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BambiniCrostino_SO
   m_EditorClassIdentifier: 
   id: BambiniCrostino
-  displayName: Bambini Crostino
+  displayName: Bambini Crossini
   icon: {fileID: 21300000, guid: c2fafb6944862b64b89865c2ea34c534, type: 3}
   prefab: {fileID: 1709254077376921, guid: 55d584d68100bcd43bb4595c37f47f7f, type: 3}
   rarity: Epic

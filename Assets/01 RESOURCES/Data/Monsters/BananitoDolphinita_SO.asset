@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BananitoDolphinita_SO
   m_EditorClassIdentifier: 
   id: BananitoDolphinita
-  displayName: Bananito Dolphinito
-  icon: {fileID: 21300000, guid: adf111a116734064ab94f3eec3ca8b7a, type: 3}
+  displayName: Bananitta Dolfinitta
+  icon: {fileID: 21300000, guid: 883d902f2b2cf7a46bfb7949503a06fa, type: 3}
   prefab: {fileID: 1709254077376921, guid: bc198996c6c090e4cb6c41829e81e736, type: 3}
-  rarity: Rare
-  rarityColor: {r: 0.2, g: 0.55, b: 1, a: 1}
+  rarity: Epic
+  rarityColor: {r: 0.95, g: 0.15, b: 0.95, a: 1}

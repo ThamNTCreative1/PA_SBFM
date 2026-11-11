@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: LiriliLarila
   displayName: Lirili Larila
-  icon: {fileID: 21300000, guid: d8ba4507e5ef4444580aa4ba2b7bfba5, type: 3}
+  icon: {fileID: 21300000, guid: 0bd7e293a7a49d54081ea5870f4690d0, type: 3}
   prefab: {fileID: 1709254077376921, guid: 2763743e6cf485f4398dbb1fe530cf77, type: 3}
   rarity: Rare
   rarityColor: {r: 0.2, g: 0.55, b: 1, a: 1}

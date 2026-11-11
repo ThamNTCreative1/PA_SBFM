@@ -20,6 +20,8 @@ public class PointerHand : MonoBehaviour
     [SerializeField] private float liftDistance = 0.6f;
     [SerializeField] private float rippleScale = 0.9f;
     [SerializeField] private float appearDuration = 0.3f;
+    [Tooltip("On: the hand just moves up and down along the finger (no press squash, no wobble, no ring).")]
+    [SerializeField] private bool bob = false;
 
     // Tap keys over one cycle (0..1): lift back, press in (small overshoot), settle.
     private static readonly float[] KeyT = { 0f, 0.4f, 0.55f, 0.68f, 1f };
@@ -81,6 +83,20 @@ public class PointerHand : MonoBehaviour
 
         float u = Mathf.Clamp01(Mathf.Repeat(clock, cycle + pause) / cycle);
         Vector2 dir = fingerDirection.sqrMagnitude > 0.0001f ? fingerDirection.normalized : Vector2.up;
+        if (bob)
+        {
+            // smooth up/down: back along the finger and towards the target again
+            float k = 0.5f - 0.5f * Mathf.Cos(clock / Mathf.Max(0.01f, cycle) * Mathf.PI * 2f);
+            if (pivot)
+            {
+                pivot.localPosition = pivotBase - (Vector3)(dir * k * liftDistance);
+                pivot.localRotation = Quaternion.identity;
+                pivot.localScale = pivotScale;
+            }
+            if (visual) visual.localScale = visualScale * Mathf.SmoothStep(0, 1, Mathf.Clamp01(clock / appearDuration));
+            if (ripple) { Color rc = rippleColor; rc.a = 0; ripple.color = rc; }
+            return;
+        }
         if (pivot)
         {
             pivot.localPosition = pivotBase + (Vector3)(dir * Sample(MoveK, u) * liftDistance);

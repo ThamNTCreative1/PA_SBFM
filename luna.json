@@ -2,7 +2,7 @@
     "version": "7.2.0",
     "projectId": "21ebec284f99a524b91c2dde2f1e39ec",
     "applicationID": 43843,
-    "creativeName": "C1_2611_TamNTM_BAH_V04_HoaiTT",
+    "creativeName": "C1_2611_TamNTM_BAH_V05_HoaiTT",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -7173,10 +7173,6 @@
             },
             {
                 "name": "MonsterItemView",
-                "excluded": true
-            },
-            {
-                "name": "PointerHand",
                 "excluded": true
             },
             {
@@ -16479,7 +16475,7 @@
                     },
                     {
                         "name": "length#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "length#set",
@@ -19139,7 +19135,7 @@
                     },
                     {
                         "name": "color#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#set",
@@ -24713,7 +24709,7 @@
                     },
                     {
                         "name": "parameters#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "parameters#set",
@@ -24721,7 +24717,7 @@
                     },
                     {
                         "name": "layers#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "layers#set",
@@ -24793,7 +24789,7 @@
                     },
                     {
                         "name": "GetMotion",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetBehaviour",
@@ -24825,7 +24821,7 @@
                     },
                     {
                         "name": "GetOverrideClip",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetEffectiveController",
@@ -30077,7 +30073,7 @@
                     },
                     {
                         "name": "Resize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Resize$1",
@@ -30411,7 +30407,7 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -30431,7 +30427,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -31281,7 +31277,7 @@
                     },
                     {
                         "name": "SetView",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "EnablePlanet",
@@ -31317,6 +31313,10 @@
                     },
                     {
                         "name": "UpdateCamera",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TurnTo",
                         "excluded": false
                     }
                 ]
@@ -31425,7 +31425,7 @@
                     },
                     {
                         "name": "IsGrounded",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IsWalking",
@@ -31679,7 +31679,7 @@
                     },
                     {
                         "name": "ShowEndUI",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -31764,10 +31764,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "ApplyMorphTypes",
-                        "excluded": false
-                    },
-                    {
                         "name": "Start",
                         "excluded": false
                     },
@@ -31797,6 +31793,18 @@
                     },
                     {
                         "name": "AfterUnlock",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ApplyMorphType",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TurnToMorph",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HideGuide",
                         "excluded": false
                     }
                 ]
@@ -32710,6 +32718,66 @@
                     {
                         "name": "Has",
                         "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "PointerHand",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Sample",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Point",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Hide",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "SolidBox",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PushOut",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Penetration",
+                        "excluded": false
                     }
                 ]
             }

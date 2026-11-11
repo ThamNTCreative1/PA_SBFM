@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Tralalelo_SO
   m_EditorClassIdentifier: 
   id: Tralalelo
-  displayName: Tralalero Tralala
-  icon: {fileID: 21300000, guid: 7d1750f778107ee46a2c892cfc1f7aaf, type: 3}
+  displayName: Tralalelo Tralala
+  icon: {fileID: 21300000, guid: c96680a69a5d2934b894a6a91fdc7700, type: 3}
   prefab: {fileID: 1709254077376921, guid: 5f420f91710a8cc418978595059644ef, type: 3}
-  rarity: Legendary
-  rarityColor: {r: 1, g: 0.75, b: 0.05, a: 1}
+  rarity: Rare
+  rarityColor: {r: 0.15, g: 0.4, b: 1, a: 1}
