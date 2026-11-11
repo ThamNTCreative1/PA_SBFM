@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9442a2e468b14244af521ef82f72c8d8, type: 3}
+  m_Name: FrigoCamelo_SO
+  m_EditorClassIdentifier: 
+  id: FrigoCamelo
+  displayName: Frigo Camelo
+  icon: {fileID: 21300000, guid: 7017f27e97c3e3e4593aa21d4556f5b3, type: 3}
+  prefab: {fileID: 1709254077376921, guid: 01f72b72a2222184da59f07aebf7d0c7, type: 3}
+  rarity: Common
+  rarityColor: {r: 0.62, g: 0.66, b: 0.7, a: 1}

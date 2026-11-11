@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9442a2e468b14244af521ef82f72c8d8, type: 3}
+  m_Name: LiriliLarila_SO
+  m_EditorClassIdentifier: 
+  id: LiriliLarila
+  displayName: Lirili Larila
+  icon: {fileID: 21300000, guid: d8ba4507e5ef4444580aa4ba2b7bfba5, type: 3}
+  prefab: {fileID: 1709254077376921, guid: 2763743e6cf485f4398dbb1fe530cf77, type: 3}
+  rarity: Rare
+  rarityColor: {r: 0.2, g: 0.55, b: 1, a: 1}

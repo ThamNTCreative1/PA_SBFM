@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21836b9399e0472197848a209ebfebda, type: 3}
+  m_Name: FindMonsterDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::MiniGames.FindMonster.Scripts.Manager.FindMonsterDatabase
+  database:
+  - {fileID: 11400000, guid: b8852a05db9772f4dab79c1913f0306b, type: 2}
+  - {fileID: 11400000, guid: df52c00d6925e044ca4190a978653096, type: 2}
+  - {fileID: 11400000, guid: 7bc536f519cb921429634ea4847c8eec, type: 2}
+  - {fileID: 11400000, guid: c67ab260468595b43bdcca62ee0fefc3, type: 2}
+  - {fileID: 11400000, guid: 18536142920125646850c974581f96e4, type: 2}
+  - {fileID: 11400000, guid: ee97a649a86ca8045a365f4f1108af06, type: 2}
+  - {fileID: 11400000, guid: 79cef853ba201b54daf2b0ad856e46b2, type: 2}
+  - {fileID: 11400000, guid: 5de6527dbc5b272459541a548a618e59, type: 2}
+  - {fileID: 11400000, guid: 860ccacf9a627bd4d9386b588ca3c7ff, type: 2}
+  - {fileID: 11400000, guid: 88190689820a2824fa4f5133738c1831, type: 2}
+  - {fileID: 11400000, guid: 6043ed5cd4b9d154899afe4aae948a86, type: 2}
+  - {fileID: 11400000, guid: 52c1c098d72178e4796e0c1c3d8e65d7, type: 2}
+  - {fileID: 11400000, guid: 00a28d94f06bbb4468cc6a6ad7ea6113, type: 2}
+  - {fileID: 11400000, guid: 6b16d0eb1b1a2e4418f179a4bc09321d, type: 2}
+  - {fileID: 11400000, guid: b3cc0bb4a19689a4baa9a674f0b626a4, type: 2}
+  - {fileID: 11400000, guid: b1469fa2e3342464abedec5bac6a897b, type: 2}
+  - {fileID: 11400000, guid: 026ff7dd48b5be247bd178043abbc8d6, type: 2}

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Enter - Pop - Idle (Rotate) 4
+  m_Controller: {fileID: 9100000, guid: 10e7a106ed6303f419a2a305c77e8e43, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7faa4ced357ce3b4fab54c1e6a194ad9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7faa4ced357ce3b4fab54c1e6a194ad9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b3e5f0e11833b96489f22fb263aca30c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b3e5f0e11833b96489f22fb263aca30c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c98d578aeec51cd4b9d23ba44f60f6b4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a15ea79e036c44c4faeb6b38937e0a69, type: 2}
