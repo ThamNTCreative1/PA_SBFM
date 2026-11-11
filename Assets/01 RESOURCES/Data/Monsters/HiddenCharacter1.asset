@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9442a2e468b14244af521ef82f72c8d8, type: 3}
+  m_Name: HiddenCharacter1
+  m_EditorClassIdentifier: 
+  id: HiddenCharacter1
+  displayName: Black
+  icon: {fileID: 21300000, guid: f5d946cda3e5ed142a6c16eab16c6525, type: 2}
+  prefab: {fileID: 4757056936893299340, guid: 4c3135beff237ca49b138eab538c653c, type: 3}

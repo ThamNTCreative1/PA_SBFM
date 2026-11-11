@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9442a2e468b14244af521ef82f72c8d8, type: 3}
+  m_Name: HiddenCharacter2
+  m_EditorClassIdentifier: 
+  id: HiddenCharacter2
+  displayName: Brud
+  icon: {fileID: 21300000, guid: 733287b486aa12d45b75fa87efaf4c61, type: 2}
+  prefab: {fileID: 2658973295936921274, guid: 2a9df293aa6a1444da1002eef35d0e05, type: 3}
